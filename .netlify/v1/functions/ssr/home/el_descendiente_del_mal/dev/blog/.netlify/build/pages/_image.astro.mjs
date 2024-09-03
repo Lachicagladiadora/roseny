@@ -1,7 +1,6 @@
 import { A as AstroError, N as NoImageMetadata, F as FailedToFetchRemoteImageDimensions, E as ExpectedImageOptions, c as ExpectedImage, d as ExpectedNotESMImage, r as resolveSrc, i as isRemoteImage, e as isESMImportedImage, f as isLocalService, D as DEFAULT_HASH_PROPS, g as InvalidImageService, h as ImageMissingAlt, j as isRemoteAllowed } from '../chunks/astro/assets-service_hw-3dcod.mjs';
 import { isRemotePath } from '@astrojs/internal-helpers/path';
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as addAttribute, s as spreadAttributes, b as createAstro } from '../chunks/astro/server_OUFvhD1P.mjs';
-import 'html-escaper';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as addAttribute, s as spreadAttributes, b as createAstro } from '../chunks/astro/server_CvsVr5mG.mjs';
 import 'clsx';
 import * as mime from 'mrmime';
 export { renderers } from '../renderers.mjs';

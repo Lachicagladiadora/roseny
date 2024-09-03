@@ -1,7 +1,7 @@
 import 'kleur/colors';
 import { A as AstroError, I as InvalidComponentArgs, a as AstroGlobUsedOutside, b as AstroGlobNoMatch } from './assets-service_hw-3dcod.mjs';
-import { escape } from 'html-escaper';
 import { clsx } from 'clsx';
+import { escape } from 'html-escaper';
 import { decodeBase64 } from '@oslojs/encoding';
 import 'cssesc';
 
@@ -73,8 +73,27 @@ function createAstro(site) {
 function isPromise(value) {
   return !!value && typeof value === "object" && "then" in value && typeof value.then === "function";
 }
+async function* streamAsyncIterator(stream) {
+  const reader = stream.getReader();
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) return;
+      yield value;
+    }
+  } finally {
+    reader.releaseLock();
+  }
+}
 
 const escapeHTML = escape;
+class HTMLBytes extends Uint8Array {
+}
+Object.defineProperty(HTMLBytes.prototype, Symbol.toStringTag, {
+  get() {
+    return "HTMLBytes";
+  }
+});
 class HTMLString extends String {
   get [Symbol.toStringTag]() {
     return "HTMLString";
@@ -91,6 +110,49 @@ const markHTMLString = (value) => {
 };
 function isHTMLString(value) {
   return Object.prototype.toString.call(value) === "[object HTMLString]";
+}
+function markHTMLBytes(bytes) {
+  return new HTMLBytes(bytes);
+}
+function hasGetReader(obj) {
+  return typeof obj.getReader === "function";
+}
+async function* unescapeChunksAsync(iterable) {
+  if (hasGetReader(iterable)) {
+    for await (const chunk of streamAsyncIterator(iterable)) {
+      yield unescapeHTML(chunk);
+    }
+  } else {
+    for await (const chunk of iterable) {
+      yield unescapeHTML(chunk);
+    }
+  }
+}
+function* unescapeChunks(iterable) {
+  for (const chunk of iterable) {
+    yield unescapeHTML(chunk);
+  }
+}
+function unescapeHTML(str) {
+  if (!!str && typeof str === "object") {
+    if (str instanceof Uint8Array) {
+      return markHTMLBytes(str);
+    } else if (str instanceof Response && str.body) {
+      const body = str.body;
+      return unescapeChunksAsync(body);
+    } else if (typeof str.then === "function") {
+      return Promise.resolve(str).then((value) => {
+        return unescapeHTML(value);
+      });
+    } else if (str[Symbol.for("astro:slot-string")]) {
+      return str;
+    } else if (Symbol.iterator in str) {
+      return unescapeChunks(str);
+    } else if (Symbol.asyncIterator in str || hasGetReader(str)) {
+      return unescapeChunksAsync(str);
+    }
+  }
+  return markHTMLString(str);
 }
 
 const RenderInstructionSymbol = Symbol.for("astro:render");
@@ -197,6 +259,9 @@ function isHttpUrl(url) {
   }
 }
 
+function renderHead() {
+  return createRenderInstruction({ type: "head" });
+}
 function maybeRenderHead() {
   return createRenderInstruction({ type: "maybe-head" });
 }
@@ -336,4 +401,4 @@ function spreadAttributes(values = {}, _name, { class: scopedClassName } = {}) {
   return markHTMLString(output);
 }
 
-export { addAttribute as a, createAstro as b, createComponent as c, decodeKey as d, maybeRenderHead as m, renderTemplate as r, spreadAttributes as s };
+export { addAttribute as a, createAstro as b, createComponent as c, renderHead as d, decodeKey as e, maybeRenderHead as m, renderTemplate as r, spreadAttributes as s, unescapeHTML as u };
