@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+
+const skills = ["html", "css", "js", "react", "jest", "vitest", "astro", "tailwind"]
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>LCG-Blog</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+<a href="/about/">About</a>
+    <h1>About</h1>
+
+    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    <p>{skills.map((c)=>(<strong class={`${c==='astro'?"text-purple-600":"text-amber-400"}`}> {c}, </strong>))}</p>
+  </body>
+</html>
