@@ -1,5 +1,31 @@
 ---
+import Navigation from "./Navigation.astro";
+
 ---
-<div class="p-5 cursor-pointer hidden md:visible">
-  <span class="w-10 h-1 bg-[#ff9776] mb-2"></span>
+<div class="p-5 cursor-pointer" id="hamburger">
+  <span class="w-10 h-1 bg-[#ff9776] mb-2 block"></span>
+  <span class="w-10 h-1 bg-[#ff9776] mb-2 block"></span>
+  <span class="w-10 h-1 bg-[#ff9776] mb-2 block"></span>
 </div>
+<Navigation />
+<div class="p-5 cursor-pointer hidden" id="hamburger-close">
+  <span class="w-10 h-1 bg-[#ff9776] mb-2 block rotate-45"></span>
+  <span class="w-10 h-1 bg-[#ff9776] mb-2 block -rotate-45 -translate-y-5"></span>
+</div>
+
+<script>
+  const hamburger=document.getElementById("hamburger")
+  const navigation=document.getElementById("navigation")
+  const hamburgerClose = document.getElementById("hamburger-close")
+
+  const toggle = ()=>{
+    if(!hamburger || !hamburgerClose || !navigation)return
+    hamburger.classList.toggle('hidden')
+    navigation.classList.toggle('hidden')
+    hamburgerClose.classList.toggle('hidden')
+  }
+
+  hamburger?.addEventListener("click", toggle)
+  navigation?.addEventListener("click", toggle)
+  hamburgerClose?.addEventListener("click", toggle)
+</script>

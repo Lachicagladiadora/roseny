@@ -1,5 +1,6 @@
 ---
 import Footer from '../components/Footer.astro';
+import Hamburger from '../components/Hamburger.astro';
 import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 
@@ -16,8 +17,11 @@ const pageTitle = 'Blogui'
     <title>LCG-Blog</title>
   </head>
   <body>
-    <Navigation/>
-    <h1>{pageTitle}</h1>
+    <!-- <Navigation/> -->
+     <header class="flex justify-evenly items-center gap-5 relative">
+      <Hamburger/>
+      <h1>{pageTitle}</h1>
+     </header>
     <Footer/>
   </body>
 </html>
