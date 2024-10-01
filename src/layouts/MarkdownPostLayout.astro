@@ -1,21 +1,23 @@
 ---
 import Footer from "../components/Footer.astro"
+import BaseLayout from "./BaseLayout.astro"
 
 const {frontmatter}=Astro.props
 ---
 
-<div class="flex flex-col items-center">
-  <header class="w-[800px] text-justify">
-    <h1 class="text-3xl text-center py-8">{frontmatter.title}</h1>
-    <p class="italic">"{frontmatter.description}"</p>
-    <p class="w-full text-neutral-800/50 text-justify py-4">by <span class="text-neutral-500 italic">{frontmatter.author}</span> on <span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
-  </header>
-<div class="w-[800px]">
-  <img src="https://images.pexels.com/photos/26836559/pexels-photo-26836559/free-photo-of-mar-agua-saludar-despedirse.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-full">
-</div>
-
-<article class="w-[800px]">
-<slot/>
-</article>
-</div>
-<Footer/>
+<BaseLayout pageTitle={frontmatter.title}>
+  <div class="flex flex-col items-center">
+    <header class="w-[800px] text-justify">
+      <!-- <h1 class="text-3xl text-center py-8">{frontmatter.title}</h1> -->
+      <p class="italic">"{frontmatter.description}"</p>
+      <p class="w-full text-neutral-800/50 text-justify py-4">by <span class="text-neutral-500 italic">{frontmatter.author}</span> on <span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
+    </header>
+  <div class="w-[800px]">
+    <img src="https://images.pexels.com/photos/26836559/pexels-photo-26836559/free-photo-of-mar-agua-saludar-despedirse.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-full">
+  </div>
+  
+  <article class="w-[800px]">
+  <slot/>
+  </article>
+  </div>
+</BaseLayout>
