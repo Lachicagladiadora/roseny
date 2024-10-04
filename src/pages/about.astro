@@ -1,9 +1,9 @@
 ---
-import Footer from '../components/Footer.astro';
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 
 const skills = ["html", "css", "js", "react", "jest", "vitest", "astro", "tailwind"]
+const pageTitle = "LCG-Blog"
 
 ---
 
@@ -16,12 +16,12 @@ const skills = ["html", "css", "js", "react", "jest", "vitest", "astro", "tailwi
     <title>LCG-Blog</title>
   </head>
   <body>
-    <Navigation/>
-
-    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+    <BaseLayout pageTitle={pageTitle}>
+      
+      <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
     <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
     <p>{skills.map((c)=>(<strong class={`${c==='astro'?"text-purple-600":"text-amber-400"}`}> {c}, </strong>))}</p>
-
-    <Footer/>
+    
+  </BaseLayout>
   </body>
 </html>
