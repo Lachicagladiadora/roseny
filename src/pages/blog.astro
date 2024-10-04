@@ -1,8 +1,7 @@
 ---
-import Footer from "../components/Footer.astro";
-import Navigation from "../components/Navigation.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+const allPosts = await Astro.glob("./posts/*.md")
 const pageTitle = "My Astro Learning Blog"
 ---
 
@@ -10,10 +9,8 @@ const pageTitle = "My Astro Learning Blog"
   <BaseLayout pageTitle={pageTitle}>
     
     <p>This is where I will post about my journey learning Astro.</p>
-    <ul>
-      <li><a href="/posts/post-1/">Post 1</a></li>
-      <li><a href="/posts/post-2/">Post 2</a></li>
-      <li><a href="/posts/post-3/">Post 3</a></li>
+    <ul class="list-decimal p-5">
+      {allPosts.map((c)=>(<li><a href={c.url}>{c.frontmatter.title}</a></li>))}
     </ul>
   </BaseLayout>
 
