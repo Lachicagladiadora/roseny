@@ -1,6 +1,5 @@
 ---
 import Footer from '../components/Footer.astro';
-// import Hamburger from '../components/Hamburger.astro';
 import {MenuHamburger} from '../components/MenuHamburger';
 import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
@@ -22,7 +21,6 @@ const {pageTitle} = Astro.props
     <Navigation/>
      <header class="flex flex-col justify-evenly items-center gap-5 relative">
       <MenuHamburger client:idle/>
-      <!-- <Hamburger /> -->
       <h1 class="text-3xl text-center py-8">{pageTitle}</h1>
      </header>
      <slot/>
