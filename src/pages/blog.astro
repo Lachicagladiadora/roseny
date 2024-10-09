@@ -1,17 +1,17 @@
 ---
+import BlogPost from "../components/BlogPost.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const allPosts = await Astro.glob("./posts/*.md")
-const pageTitle = "My Astro Learning Blog"
+const pageTitle = "Blogüi"
 ---
 
-<body>
+<div>
   <BaseLayout pageTitle={pageTitle}>
     
     <p>This is where I will post about my journey learning Astro.</p>
-    <ul class="list-decimal p-5">
-      {allPosts.map((c)=>(<li><a href={c.url}>{c.frontmatter.title}</a></li>))}
+    <ul class="flex gap-4">
+      {allPosts.map((c)=>(<BlogPost urlPost={c.url??""} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)}/>))}
     </ul>
   </BaseLayout>
-
-</body>
+</div>

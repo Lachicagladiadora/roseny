@@ -24,6 +24,6 @@ const { posts } = Astro.props;
 <BaseLayout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul class="h-[600px] w-[800px] bg-gray-100">
-    {posts?.map((post) => <BlogPost url={post.url??'/blog/'} title={post.frontmatter.title}/>)}
+    {posts?.map((post) => <BlogPost urlPost={post.url??'/blog/'} title={post.frontmatter.title}/>)}
   </ul>
 </BaseLayout>
