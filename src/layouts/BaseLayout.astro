@@ -1,11 +1,15 @@
 ---
 import Footer from '../components/Footer.astro';
-import {MenuHamburger} from '../components/MenuHamburger';
-import Navigation from '../components/Navigation.astro';
+import { Header } from '../components/Header';
+// import { Sun } from '../components/icons/Sun';
+// import {MenuHamburger} from '../components/MenuHamburger';
+// import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 
+// import {onChageTheme} from '../scripts/baseLayout'
+
 interface Props {pageTitle: string}
-const {pageTitle} = Astro.props
+// const {pageTitle} = Astro.props
 
 ---
 
@@ -17,15 +21,22 @@ const {pageTitle} = Astro.props
     <meta name="generator" content={Astro.generator} >
     <title>Blogüi</title>
   </head>
-  <body class="w-full bg-zinc-50 text-zinc-950 flex flex-col  dark:bg-zinc-900 dark:text-zinc-50">
-    <header class="flex justify-evenly items-center relative">
+  <body id="body-element" class="w-full bg-zinc-50 text-zinc-950 flex flex-col  dark:bg-zinc-900 dark:text-zinc-50">
+    <!-- <header class="flex justify-evenly items-center relative">
       <MenuHamburger client:idle/>
-      <h1 class="text-3xl text-center py-8">{pageTitle}</h1>
+      <h1 class="text-3xl text-center py-6">{pageTitle}</h1>
       <Navigation/>
-     </header>
+      <button id="theme-button" class='h-6 w-6 rounded-full text-2xl hover:text-yellow-300 hover:bg-yellow-950' onclick="onChangeTheme()">
+        <Sun />
+      </button>
+     </header> -->
+     <Header client:idle/>
      <main class="w-full max-w-[900px] mx-auto flex flex-col p-5">
      <slot/>
      </main>
     <Footer/>
   </body>
+  <script>
+  //  import "../scripts/baseLayout"
+  </script>
 </html>
