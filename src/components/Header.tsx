@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <>
       <div className="w-full flex items-center justify-center py-6 border-b-2 border-b-black dark:border-b-white">
-        <header className="w-full max-w-[900px] px-2 flex items-center justify-between relative">
+        <header className="w-full max-w-[900px] px-4 flex items-center justify-between relative">
           <button
             className="h-8 w-8 text-3xl p-[1px] text-black dark:text-zinc-50"
             onClick={() => setIsOpenMenu((p) => !p)}
@@ -28,10 +28,10 @@ export const Header = () => {
           </button>
           <h1 className="flex-1 text-center text-3xl">Blogüi</h1>
           <button
-            className={`h-8 w-8 text-3xl p-[1px] rounded-full text-black dark:text-zinc-50 ${
+            className={`h-8 w-8 text-3xl p-[1px] rounded-full md:text-black md:dark:text-zinc-50 transition ${
               isDarkTheme
-                ? "hover:bg-blue-950 hover:text-sky-300"
-                : "hover:bg-yellow-50 hover:text-yellow-500"
+                ? "text-sky-300 hover:bg-blue-950 hover:text-sky-300"
+                : "text-yellow-500 hover:bg-yellow-50 hover:text-yellow-500"
             }`}
             onClick={() => setIsDarkTheme((p) => !p)}
           >
