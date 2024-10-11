@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-// import { MenuHamburger } from "./MenuHamburger";
 import { Sun } from "./icons/Sun";
 import { Moon } from "./icons/Moon";
 import { Close } from "./icons/Close";
 import { Hamburger } from "./icons/Hamburger";
-import { MenuHamburger } from "./MenuHamburger";
 
 export const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -14,10 +12,7 @@ export const Header = () => {
   useEffect(() => {
     const bodyElement = document.querySelector("#body-element");
     if (!bodyElement) return;
-    if (isDarkTheme) {
-      bodyElement.classList.add("dark");
-    }
-    bodyElement.classList.remove("dark");
+    bodyElement.classList.toggle("dark");
   }, [isDarkTheme]);
 
   return (
@@ -34,7 +29,7 @@ export const Header = () => {
           className={`h-8 w-8 text-3xl p-[1px] rounded-full text-black dark:text-zinc-50 ${
             isDarkTheme
               ? "hover:bg-blue-950 hover:text-sky-300"
-              : "hover:bg-yellow-950 hover:text-yellow-300"
+              : "hover:bg-yellow-50 hover:text-yellow-500"
           }`}
           onClick={() => setIsDarkTheme((p) => !p)}
         >
