@@ -7,7 +7,7 @@ const {frontmatter}=Astro.props
 <BaseLayout pageTitle={frontmatter.title}>
   <div class="flex flex-col items-center">
     <header class="w-[800px] text-justify">
-      <!-- <h1 class="text-3xl text-center py-8">{frontmatter.title}</h1> -->
+      <h1 class="text-3xl text-center py-8">{frontmatter.title}</h1>
       <p class="italic">"{frontmatter.description}"</p>
       <p class="w-full text-neutral-800/50 text-justify py-4">by <span class="text-neutral-500 italic">{frontmatter.author}</span> on <span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
       <div class="flex gap-6 items-center">
