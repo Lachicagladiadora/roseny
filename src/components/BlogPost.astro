@@ -4,15 +4,17 @@ interface Props{urlPost:string, title: string, author: string, description:strin
 const {urlPost, title, author,description, date}= Astro.props
 ---
 
-<li class="h-[290px] w-[290px] border-2 border-obscure shadow-md rounded-lg p-4 flex flex-col items-center justify-center dark:border-blank"><a href={urlPost}>
+<li class="h-[260px] w-[260px] border-2 border-first shadow-sm shadow-first rounded-lg p-4 flex flex-col items-center justify-center text-obscure 
+dark:border-second dark:text-blank dark:shadow-second md:h-[290px] md:w-[290px] lg:h-[380px] lg:w-[380px] xl:w-[422px] xl:h-[422px]
+"><a href={urlPost}>
   <header class="flex flex-col">
-    <h2 class="text-xl font-bold">{title}</h3>
-    <div class="w-full h-[160px] overflow-hidden">
-      <img src="https://images.pexels.com/photos/28838325/pexels-photo-28838325/free-photo-of-el-rey-leon-dormido.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt={title} class="">
+    <h2 class="text-xl font-bold text-first dark:text-second">{title}</h3>
+    <div class="w-full h-[128px] overflow-hidden my-2 rounded-lg shadow-sm shadow-first dark:shadow-blank md:h-[160px] lg:h-[206px] xl:h-[260px] fill">
+      <img src="https://images.pexels.com/photos/28838325/pexels-photo-28838325/free-photo-of-el-rey-leon-dormido.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt={title} class="object-cover">
     </div>
   </header>
-  <main class="w-full h-16 text-sm italic">
-    <p class="text-gray-400 mb-3 flex items-center justify-between"><span>{author}</span> <span>{date}</span></p>
-    <p class="first-line:indent-5 line-clamp-2 leading-tight">{description}</p>
+  <main class="w-full h-16 text-sm">
+    <p class="text-first/80 mb-3 italic flex items-center justify-between text-xs dark:text-second/60"><span>{author}</span> <span>{date}</span></p>
+    <p class="first-line:indent-5 line-clamp-2 leading-tight text-obscure dark:text-blank">{description}</p>
   </main>
 </a></li>

@@ -10,7 +10,7 @@ const pageTitle = "Blogüi"
   <BaseLayout pageTitle={pageTitle}>
     
     <p>This is where I will post about my journey learning Astro.</p>
-    <ul class="flex flex-wrap gap-4 items-center justify-center">
+    <ul class="flex flex-wrap gap-4 items-center justify-center my-4">
       {allPosts.map((c)=>(<BlogPost urlPost={c.url??""} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)}/>))}
     </ul>
   </BaseLayout>
