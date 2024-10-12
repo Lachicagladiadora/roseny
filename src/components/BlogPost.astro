@@ -1,13 +1,12 @@
 ---
-interface Props {urlPost:string, title: string}
-
 interface Props{urlPost:string, title: string, author: string, description:string, date:string}
+
 const {urlPost, title, author,description, date}= Astro.props
 ---
 
-<li class="h-[290px] w-[290px] border-2 border-black shadow-md rounded-lg p-4 flex flex-col items-center justify-center dark:border-white"><a href={urlPost}>
+<li class="h-[290px] w-[290px] border-2 border-obscure shadow-md rounded-lg p-4 flex flex-col items-center justify-center dark:border-blank"><a href={urlPost}>
   <header class="flex flex-col">
-    <h3 class="text-xl font-bold">{title}</h3>
+    <h2 class="text-xl font-bold">{title}</h3>
     <div class="w-full h-[160px] overflow-hidden">
       <img src="https://images.pexels.com/photos/28838325/pexels-photo-28838325/free-photo-of-el-rey-leon-dormido.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt={title} class="">
     </div>

@@ -5,14 +5,14 @@ const {frontmatter}=Astro.props
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center gap-4">
     <header class="w-[800px] text-justify">
-      <h1 class="text-3xl text-center py-8">{frontmatter.title}</h1>
-      <p class="italic">"{frontmatter.description}"</p>
-      <p class="w-full text-neutral-800/50 text-justify py-4">by <span class="text-neutral-500 italic">{frontmatter.author}</span> on <span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
+      <h1 class="text-3xl text-center py-8 text-first dark:text-second">{frontmatter.title}</h1>
+      <p class="italic text-center text-second dark:text-first">"{frontmatter.description}"</p>
+      <p class="w-full text-obscure/50 text-right py-4 dark:text-blank/50">by <span class="text-neutral-500 italic">{frontmatter.author}</span> on <span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
       <div class="flex gap-6 items-center">
         {frontmatter.tags.map((c: string)=>(
-          <a href={`/tags/${c}/`} class="bg-violet-900 text-yellow-200 px-2 py-1 rounded-md">{c}</a>
+          <a href={`/tags/${c}/`} class="bg-first text-blank px-2 py-1 rounded-md dark:bg-second dark:text-first">{c}</a>
         ))}
       </div>
     </header>

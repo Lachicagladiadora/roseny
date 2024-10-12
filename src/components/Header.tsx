@@ -9,7 +9,6 @@ export const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-  console.log({ isOpenMenu, isDarkTheme });
   useEffect(() => {
     const bodyElement = document.querySelector("#body-element");
     if (!bodyElement) return;
@@ -18,17 +17,19 @@ export const Header = () => {
 
   return (
     <>
-      <div className="w-full flex items-center justify-center py-6 border-b-2 border-b-black dark:border-b-white">
+      <div className="w-full flex items-center justify-center py-6 border-b-2 border-b-first dark:border-b-second">
         <header className="w-full max-w-[900px] px-4 flex items-center justify-between relative">
           <button
-            className="h-8 w-8 text-3xl p-[1px] text-black dark:text-zinc-50"
+            className="h-8 w-8 text-3xl p-[1px] text-first dark:text-second"
             onClick={() => setIsOpenMenu((p) => !p)}
           >
             {isOpenMenu ? <Close /> : <Hamburger />}
           </button>
-          <h1 className="flex-1 text-center text-3xl">Blogüi</h1>
+          <h1 className="flex-1 text-center text-3xl font-bold text-obscure dark:text-blank">
+            Blogüi
+          </h1>
           <button
-            className={`h-8 w-8 text-3xl p-[1px] rounded-full md:text-black md:dark:text-zinc-50 transition ${
+            className={`h-8 w-8 text-3xl p-[1px] rounded-full md:text-first md:dark:text-second transition ${
               isDarkTheme
                 ? "text-sky-300 hover:bg-blue-950 hover:text-sky-300"
                 : "text-yellow-500 hover:bg-yellow-50 hover:text-yellow-500"
