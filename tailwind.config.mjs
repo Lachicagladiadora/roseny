@@ -4,25 +4,21 @@ export default {
 	theme: {
 		extend: {},
 		colors: {
-			'obscure': '#212121',
-			// 'obscure': '#1F1717',
-			// 'obscure-dark': '#0c0a09',
-			// 'obscure-light': '#292524',
+			'obscure': '#1D5D9B',
+			// 'obscure-dark': '#0A1931',
+			// 'obscure-light': '#0F67B1',
 
-			'blank': '#F6F6F6',
-			// 'blank': '#FCF5ED',
-			// 'blank-dark': '#e7e5e4',
-			// 'blank-light': '#ffffff',
+			'blank': '#FBEEAC',
+			// 'blank-dark': '#F4F27E',
+			// 'blank-light': '#FEFFD2',
 
-			'first': '#6D9886',
-			// 'first': '#CE5A67',
-			// 'first-dark': '',
-			// 'first-light': '',
+			'first': '#75C2F6',
+			// 'first-dark': '#3081D0',
+			// 'first-light': '#77CDFF',
 
-			'second': '#D9CAB3',
-			// 'second': '#F4BF96',
-			// 'second-dark': '',
-			// 'second-light': '',
+			'second': '#F4D160',
+			// 'second-dark': '#FFCF4C',
+			// 'second-light': '#FAE458,
 		}
 	},
 	darkMode: ['selector'],
