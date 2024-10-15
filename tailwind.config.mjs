@@ -5,20 +5,20 @@ export default {
 		extend: {},
 		colors: {
 			'obscure': '#1D5D9B',
-			// 'obscure-dark': '#0A1931',
-			// 'obscure-light': '#0F67B1',
+			'obscure-dark': '#0A1931',
+			'obscure-light': '#0F67B1',
 
 			'blank': '#FBEEAC',
-			// 'blank-dark': '#F4F27E',
-			// 'blank-light': '#FEFFD2',
+			'blank-dark': '#F4F27E',
+			'blank-light': '#FEFFD2',
 
 			'first': '#75C2F6',
-			// 'first-dark': '#3081D0',
-			// 'first-light': '#77CDFF',
+			'first-dark': '#3081D0',
+			'first-light': '#77CDFF',
 
 			'second': '#F4D160',
-			// 'second-dark': '#FFCF4C',
-			// 'second-light': '#FAE458,
+			'second-dark': '#FFCF4C',
+			'second-light': '#FAE458'
 		}
 	},
 	darkMode: ['selector'],
