@@ -5,20 +5,21 @@ const {frontmatter}=Astro.props
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <div class="pt-20 pb-32 flex flex-col items-center gap-10">
-    <header class="w-[800px] flex flex-col text-justify gap-10">
+  <div class="w-full pt-20 pb-32 flex flex-col items-center gap-10">
+    <header class="w-full flex flex-col text-justify gap-10">
+      <p class="w-full  text-obscure/50 text-left dark:text-blank/50"><span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
       <h1 class="text-4xl text-center font-bold text-first-dark dark:text-second-light">{frontmatter.title}</h1>
       <p class="italic text-center text-second-dark dark:text-first-light">"{frontmatter.description}"</p>
-      <div class="flex gap-6 items-center justify-center">
+      <div class="flex flex-wrap gap-6 items-center justify-center">
         {frontmatter.tags.map((c: string)=>(
           <a href={`/tags/${c}/`} class="bg-violet-900 border-2 text-first-dark border-first-dark  dark:text-second dark:border-second px-2 py-1 rounded-md hover:text-second-light hover:bg-first-dark dark:hover:text-first-dark dark:hover:bg-second">{c}</a>
         ))}
       </div>
     </header>
 
-      <article class="w-[800px]">
+      <article class="w-full">
         <slot/>
       </article>
-      <p class="w-full py-10 text-obscure/50 text-right dark:text-blank/50">by <span class="text-neutral-500 italic">{frontmatter.author}</span> on <span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
+        <p class="w-full  text-obscure/50 text-right dark:text-blank/50">by <span class="text-neutral-500 italic">{frontmatter.author}</span></p>
   </div>
 </BaseLayout>
