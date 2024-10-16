@@ -17,22 +17,22 @@ export const Header = () => {
 
   return (
     <>
-      <div className="w-full flex items-center justify-center py-6 border-b-2 border-b-first dark:border-b-second">
+      <div className="w-full flex items-center justify-center py-4 border-b-2 bg-obscure-dark dark:bg-blank-dark border-b-obscure dark:border-b-blank">
         <header className="w-full max-w-[900px] px-4 flex items-center justify-between relative">
           <button
-            className="h-8 w-8 text-3xl p-[1px] text-first dark:text-second"
+            className="h-8 w-8 text-3xl p-[1px] text-blank-light dark:text-obscure-dark"
             onClick={() => setIsOpenMenu((p) => !p)}
           >
             {isOpenMenu ? <Close /> : <Hamburger />}
           </button>
-          <h1 className="flex-1 text-center text-3xl font-bold text-obscure dark:text-blank">
+          <h1 className="flex-1 text-center text-[30px] font-bold text-blank-dark dark:text-obscure">
             Blogüi
           </h1>
           <button
-            className={`h-8 w-8 text-3xl p-[1px] rounded-full md:text-first md:dark:text-second transition ${
+            className={`h-[36px] w-[36px] text-3xl p-[2px] rounded-full flex items-center justify-center transition text-blank-light dark:text-obscure-dark ${
               isDarkTheme
-                ? "text-sky-300 hover:bg-blue-950 hover:text-sky-300"
-                : "text-yellow-500 hover:bg-yellow-50 hover:text-yellow-500"
+                ? "hover:bg-first-light hover:text-obscure-dark"
+                : "hover:bg-second-dark hover:text-blank-light"
             }`}
             onClick={() => setIsDarkTheme((p) => !p)}
           >

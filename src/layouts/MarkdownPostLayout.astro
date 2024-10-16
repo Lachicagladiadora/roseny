@@ -5,23 +5,20 @@ const {frontmatter}=Astro.props
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <div class="flex flex-col items-center gap-4">
-    <header class="w-[800px] text-justify">
-      <h1 class="text-3xl text-center py-8 text-first dark:text-second">{frontmatter.title}</h1>
-      <p class="italic text-center text-second dark:text-first">"{frontmatter.description}"</p>
-      <p class="w-full text-obscure/50 text-right py-4 dark:text-blank/50">by <span class="text-neutral-500 italic">{frontmatter.author}</span> on <span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
-      <div class="flex gap-6 items-center">
+  <div class="pt-20 pb-32 flex flex-col items-center gap-10">
+    <header class="w-[800px] flex flex-col text-justify gap-10">
+      <h1 class="text-4xl text-center font-bold text-first-dark dark:text-second-light">{frontmatter.title}</h1>
+      <p class="italic text-center text-second-dark dark:text-first-light">"{frontmatter.description}"</p>
+      <div class="flex gap-6 items-center justify-center">
         {frontmatter.tags.map((c: string)=>(
-          <a href={`/tags/${c}/`} class="bg-first text-blank px-2 py-1 rounded-md dark:bg-second dark:text-first">{c}</a>
+          <a href={`/tags/${c}/`} class="bg-violet-900 border-2 text-first-dark border-first-dark  dark:text-second dark:border-second px-2 py-1 rounded-md hover:text-second-light hover:bg-first-dark dark:hover:text-first-dark dark:hover:bg-second">{c}</a>
         ))}
       </div>
     </header>
-  <div class="w-[800px]">
-    <img src="https://images.pexels.com/photos/26836559/pexels-photo-26836559/free-photo-of-mar-agua-saludar-despedirse.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-full">
-  </div>
-  
-  <article class="w-[800px]">
-  <slot/>
-  </article>
+
+      <article class="w-[800px]">
+        <slot/>
+      </article>
+      <p class="w-full py-10 text-obscure/50 text-right dark:text-blank/50">by <span class="text-neutral-500 italic">{frontmatter.author}</span> on <span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
   </div>
 </BaseLayout>
