@@ -29,6 +29,13 @@ export const Menu = () => {
         hover:bg-first/80 hover:text-blank-light
         dark:border-first dark:hover:bg-blank dark:hover:text-first dark:hover:border-second"
         >
+          <a href="/tags">Tags</a>
+        </li>
+        <li
+          className="py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 border-second 
+        hover:bg-first/80 hover:text-blank-light
+        dark:border-first dark:hover:bg-blank dark:hover:text-first dark:hover:border-second"
+        >
           <a href="/blog">Blog</a>
         </li>
         <li
