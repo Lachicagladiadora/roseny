@@ -20,7 +20,11 @@ export const Header = () => {
       <div className="w-full flex items-center justify-center py-4 border-b-2 bg-obscure-dark dark:bg-blank-dark border-b-obscure dark:border-b-blank">
         <header className="w-full max-w-[900px] px-4 flex items-center justify-between relative">
           <button
-            className="h-8 w-8 text-3xl p-[1px] text-blank-light dark:text-obscure-dark"
+            className={`h-8 w-8 text-3xl p-[1px] ${
+              isOpenMenu
+                ? "text-second-light dark:text-obscure-light"
+                : "text-blank-light dark:text-obscure-dark"
+            }`}
             onClick={() => setIsOpenMenu((p) => !p)}
           >
             {isOpenMenu ? <Close /> : <Hamburger />}

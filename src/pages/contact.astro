@@ -1,4 +1,6 @@
 ---
+import { GithubIcon } from '../components/icons/GithubIcon';
+import { LinkedinIcon } from '../components/icons/LinkedinIcon';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 
@@ -15,9 +17,18 @@ const pageTitle = "Blogüi"
   </head>
   <body>
     <BaseLayout pageTitle={pageTitle}>
-      <h2 class="text-3xl text-center py-8 text-first dark:text-second">Contact</h2>
-      <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
-      <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+      <div class="flex-1 flex flex-col gap-6 items-center justify-center">
+        <h2 class="text-3xl text-center py-2 text-first dark:text-second">Contact</h2>
+      <p>I'd love to hear from you! If you enjoy my explanations and have suggestions for topics we haven't covered yet, feel free to reach out to me through any of the options below. Whether you want to connect because you liked my code or have questions, I'm here to share my knowledge!</p>
+      <div class="w-full flex flex-col gap-4 items-center justify-center">
+        <a href="https://github.com/Lachicagladiadora" class="flex items-center justify-center gap-2">
+          <GithubIcon className="h-8 w-8 text-obscure-dark dark:text-blank-light"/> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/dev-roseny-quintanilla/" class="flex items-center justify-center gap-2">
+          <LinkedinIcon className="h-8 w-8 text-obscure-dark dark:text-blank-light"/> Linkedin
+        </a>
+      </div>
+      </div>
   </BaseLayout>
   </body>
 </html>
