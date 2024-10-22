@@ -13,35 +13,35 @@ export const Menu = () => {
         <li
           className="py-4 px-2 text-center border-t-4 border-b-2 last:border-b-0 border-second 
         hover:bg-first/80 hover:text-blank-light
-        dark:border-first dark:hover:bg-blank dark:hover:text-first dark:hover:border-second"
+        dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
         >
           <a href="/">Home</a>
         </li>
         <li
           className="py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 border-second 
         hover:bg-first/80 hover:text-blank-light
-        dark:border-first dark:hover:bg-blank dark:hover:text-first dark:hover:border-second"
+        dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
         >
           <a href="/about">About</a>
         </li>
         <li
           className="py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 border-second 
         hover:bg-first/80 hover:text-blank-light
-        dark:border-first dark:hover:bg-blank dark:hover:text-first dark:hover:border-second"
+        dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
         >
           <a href="/tags">Tags</a>
         </li>
         <li
           className="py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 border-second 
         hover:bg-first/80 hover:text-blank-light
-        dark:border-first dark:hover:bg-blank dark:hover:text-first dark:hover:border-second"
+        dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
         >
           <a href="/blog">Blog</a>
         </li>
         <li
           className="py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 last:rounded-b-xl border-second 
         hover:bg-first/80 hover:text-blank-light
-        dark:border-first dark:hover:bg-blank dark:hover:text-first dark:hover:border-second"
+        dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
         >
           <a href="/contact">Contact</a>
         </li>
