@@ -9,7 +9,7 @@ const pageTitle = "Blogüi"
 <div>
   <BaseLayout pageTitle={pageTitle}>
     <ul class="flex flex-wrap gap-4 items-center justify-center my-4">
-      {allPosts.map((c)=>(<BlogPost urlPost={c.url??""} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)}/>))}
+      {allPosts.map((c)=>(<BlogPost urlPost={c.url??""} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url}/>))}
     </ul>
   </BaseLayout>
 </div>
