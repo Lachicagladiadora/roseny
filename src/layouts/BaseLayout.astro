@@ -1,6 +1,7 @@
 ---
 import Footer from '../components/Footer.astro';
 import { Header } from '../components/Header';
+import { BLOG_NAME } from '../constants';
 import '../styles/global.css';
 
 interface Props {pageTitle: string}
@@ -13,7 +14,7 @@ interface Props {pageTitle: string}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>Blogüi</title>
+    <title>{BLOG_NAME}</title>
   </head>
   <body id="body-element" class="w-full h-full min-h-[100vh] transition-colors bg-blank-light text-obscure flex flex-col  dark:bg-obscure-dark dark:text-blank-light">
 

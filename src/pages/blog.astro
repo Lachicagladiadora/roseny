@@ -1,9 +1,10 @@
 ---
 import BlogPost from "../components/BlogPost.astro";
+import { BLOG_NAME } from "../constants";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const allPosts = await Astro.glob("./posts/*.md")
-const pageTitle = "Blogüi"
+const pageTitle = BLOG_NAME
 ---
 
 <div>

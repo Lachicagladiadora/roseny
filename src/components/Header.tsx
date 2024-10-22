@@ -4,6 +4,7 @@ import { Moon } from "./icons/Moon";
 import { Close } from "./icons/Close";
 import { Hamburger } from "./icons/Hamburger";
 import { Menu } from "./Menu";
+import { BLOG_NAME } from "../constants";
 
 export const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -30,7 +31,7 @@ export const Header = () => {
             {isOpenMenu ? <Close /> : <Hamburger />}
           </button>
           <h1 className="flex-1 text-center text-[30px] font-bold text-blank-dark dark:text-obscure">
-            Blogüi
+            {BLOG_NAME}
           </h1>
           <button
             className={`h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-blank-light dark:text-obscure-dark ${
