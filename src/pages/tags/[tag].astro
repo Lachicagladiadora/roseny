@@ -4,42 +4,33 @@ import BlogPost from '../../components/BlogPost.astro';
 import type { MarkdownInstance } from 'astro';
 interface Props {posts:MarkdownInstance<Record<string, any>>[]}
 
-export async function getStaticPaths() {
-// const allPosts = await Astro.glob("./posts/*.md")
+export const prerender = true
 
+export async function getStaticPaths() {
   const allPosts:MarkdownInstance<Record<string, any>>[] = await Astro.glob('../posts/*.md');
 
   const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
-
-  console.log({allPosts:allPosts, uniqueTags:uniqueTags})
-  return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts?.filter((post) => post.frontmatter.tags.includes(tag));
-    console.log({filteredPosts:filteredPosts, allPosts:allPosts})
-    return {
-      params: { tag },
-      props: { posts: filteredPosts },
-    };
-  });
+return uniqueTags.map((tag) => {
+  const filteredPosts = allPosts?.filter((post) => post.frontmatter.tags.includes(tag));
+  return {
+    params: { tag },
+    props: { posts: filteredPosts },
+  };
+});
 }
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
-console.log("{posts}")
-console.log({posts:posts, tag:tag})
-// console.log({posts: posts.filter(c=>c.frontmatter.tags.include(tag))})
-// console.log({posts: posts.map(c=>c.frontmatter.tags.include(tag))})
 ---
 <BaseLayout pageTitle={tag}>
   <div class="flex-1 flex flex-col items-center justify-center gap-4">
     <p class="w-full flex items-center gap-2">Posts tagged with <span class="text-2xl font-bold text-first dark:text-second">{tag}</span></p>
-  <ul class="h-[600px] w-[800px]">
-
     <div class="h-full w-full flex flex-col items-center justify-center">
-      {!posts ? <p>Not posts found</p>: <p>post</p>}
+      {!posts && <p>Not posts found</p>}
     </div>
-    <!-- {posts.length >0 &&
-      posts.map((post) => <BlogPost urlPost={post.url??'/blog/'} title={post.frontmatter.title} author={post.frontmatter.author} date={post.frontmatter.pubDate} description={post.frontmatter.description} coverImage={post.frontmatter.image.url} client:visible/>)} -->
-     <!-- {posts.filter(c=>c.frontmatter.tags.include(tag)).map(post=><BlogPost urlPost={post.url??'/blog/'} title={post.frontmatter.title} author={post.frontmatter.author} date={post.frontmatter.pubDate} description={post.frontmatter.description} coverImage={post.frontmatter.image.url}/>)} -->
+  <ul class="flex flex-wrap gap-4 items-center justify-center my-4">
+
+    {posts.length > 0 &&  posts.map((post) => <BlogPost urlPost={post.url??'/blog/'} title={post.frontmatter.title} author={post.frontmatter.author} date={post.frontmatter.pubDate} description={post.frontmatter.description} coverImage={post.frontmatter.image.url} client:visible/>)}
   </ul>
   </div>
 </BaseLayout>
