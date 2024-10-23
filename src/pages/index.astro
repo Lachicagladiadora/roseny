@@ -5,15 +5,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = BLOG_NAME
 
 const allPosts = await Astro.glob("./posts/*.md")
-const randomPost = Math.random()*(allPosts.length*10)
-// console.log({allPosts:allPosts,randomPost:randomPost})
-const posts = allPosts.slice(randomPost,randomPost>1 || randomPost<allPosts.length-2 ? randomPost+2  : randomPost-2)
+const randomPost = Math.floor(Math.random() * (allPosts.length))
+
+const posts = allPosts.slice(randomPost,randomPost > 2 || randomPost < allPosts.length - 3 ? randomPost + 2  : randomPost - 2)
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h1 class="text-3xl text-center py-8 text-first dark:text-second">Home</h1>
   <p>Complement your learning with articles.</p>
-    <ul class="flex flex-wrap gap-4 items-center justify-center my-4">
-      {posts.map((c)=>(<BlogPost urlPost={c.url??""} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url}/>))}
-    </ul>
-
+  <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
+    {posts.map((c)=>(<BlogPost urlPost={c.url ?? "/blog"} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url}/>))}
+  </ul>
 </BaseLayout>
