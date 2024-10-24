@@ -48,7 +48,7 @@ export const Header = () => {
       <div className="w-full h-0 flex items-center justify-center">
         <div className="w-full max-w-[900px] flex items-center justify-center relative">
           {isOpenMenu && (
-            <div className="w-[100vw] h-[100vh] absolute top-[0px] left-0  md:top-[0px] md:w-96 md:h-[600px] drop-shadow-md">
+            <div className="w-[100vw] h-[100vh] absolute top-[0px] left-0  md:top-[0px] md:w-96 md:h-[600px] drop-shadow-md z-10">
               <Menu />
             </div>
           )}
