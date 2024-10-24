@@ -1,38 +1,87 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "Lorem Ipsum"
-pubDate: 2022-07-01
-description: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text"
+title: "Learn about Git"
+pubDate: 2022-10-23
+description: "It’s not like git got everything right, but it got all the really basic issues right in a way that no other SCM had ever done before. -Linus Torvalds-"
 author: "Lachicagladiadora"
 image:
-  url: "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  url: "https://images.pexels.com/photos/11035539/pexels-photo-11035539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   alt: "The Astro logo on a dark background with a pink glow."
-tags: ["astro", "blogging", "learning in public"]
+tags: ["git", "dev", "learn", "basic concepts"]
 ---
 
-<!-- ## What is Lorem Ipsum? -->
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Main characteristics</h2>
+- Does not require internet
+- Is fast
+- GIT create copies from original project
+- DATA INTEGRITY: Clones created from data; therefore the data is the equal, clean and not corrupted.
+<div class='w-full flex items-center justify-center'>
+<img src='https://img.icons8.com/color/300/git.png'>
+</div>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Basic concepts</h2>
+1. GIT(VCS- Version Control System) ->  Software which save changes history
+2. REPOSITORY ->  Project followed for GIT, project which have history in GIT
+3. COMMIT ->  Change registered in GIT, the change have a message
+4. BRANCH -> New alternative trail for project
+5. CLONE ->  Project copied in local PC
+6. FORK -> Different project from once project
+7. MERGE ->
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>What is Lorem Ipsum?</h2>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Workflow</h2>
+<!-- ![Descripción de la imagen](https://git-scm.com/book/en/v2/images/lifecycle.png) -->
+<img src='https://git-scm.com/book/en/v2/images/lifecycle.png'>
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Tools</h2>
 
-<!-- ## Why do we use it? -->
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Why do we use it?</h2>
+<h3 class='pt-6 pb-2 text-2xl text-first dark:text-second'>Terminal</h3>
+- Command line
+<h3 class='pt-6 pb-2 text-xl text-first dark:text-second'>Graphic clients</h3>
+  1.  Gitkraken
+  2.  Sourcetree
+  3.  GithubDesktop
+<h3 class='pt-6 pb-2 text-xl text-first dark:text-second'>Cloud repositories</h3>
+  1.  Github
+  2.  Bitbucket
+  3.  GitLab
+<h3 class='pt-6 pb-2 text-xl text-first dark:text-second'>In visual studio code (Extensions for VScode)</h3>
+1.  Git Graph
+  2.  Git Lents
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-![Descripción de la imagen](https://images.pexels.com/photos/6576802/pexels-photo-6576802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
-
-<!-- ## Where does it come from? -->
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Where does it come from?</h2>
-
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-![Descripción de la imagen](https://images.pexels.com/photos/13032608/pexels-photo-13032608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
-
-<!-- ## Where can I get some? -->
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Where can I get some?</h2>
-
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Commands</h2>
+1. ```git init```
+2. `git add` 
+	1. `git add -A`
+	2. `git add .` -> add all changes at stage
+3. `git commit` or `git commit -m '<message>'`
+4. `git status` 
+5. `git diff` -> changes that are not in the stage
+7. `git diff --staged` -> compare the changes with the last commit 
+8. `git log` -> committed history
+	1. `git log --oneline` -> shows each commit with its "hash" in list format
+	2. `git log --online --decorate --all` -> view all commits
+	3. `git log --online --decorate --all --graph` -> view graphically all commits
+9. `git pull origin dev` -> brings changes from "dev" branch
+10. `git commit --amend`  -> for change message from last commit
+11. `git reset HEAD <file>` -> remove the `<file>` from staging area
+12. `git checkout --<file>` -> undo the last local changes to the `<file>` 
+13. `git reset <commitHash>` -> the mentioned commit is removed
+14. `git diff <commitHash-1> <commitHash-2>` -> comparison
+15. `git branch` -> show the branches
+	1. `git branch <feature>` -> create a new branch
+	2. `git checkout <feature>` -> change of branch with pointer
+	3. `git checkout -b <feature>` -> create a branch, move local changes and move the pointer to that branch
+	4. `git branch -m <actualBranchName> <newBranchName>` 
+	5. `git branch -d <branchName>` -> delete branch
+	6. `git branch -D <branchName>` -> force delete branch
+16. `git tag <tagName | v0.2.0>` -> create tag from last commit
+	1. `git tag <tagName | v0.2.0> <hashCommit>` -> create tag from mentioned commit
+	2. `git tag -a <tagName | v0.2.0>` -> create a note in the mentioned tag
+	3. `git tag -d <tagName | v0.2.0>` -> delete tag
+	4. `git tag -l` -> list the tags
+	5. `git tag -l <v0.*.0>` -> list the tags which contain `<v0.*.0>`
+17. `git stash` -> save work in the stage
+	1. `git stash list` -> show all files saved in the stage
+	2. `git stash apply` -> open the last file from stage
+	3. `git stash drop` -> delete stage contain
+	4. `git stash pop` -> take out the last thing that was saved
+18. `rm -rf .git` -> remove git tracing from a project
