@@ -3,6 +3,8 @@ import { Sun } from "./icons/Sun";
 import { Moon } from "./icons/Moon";
 import { Close } from "./icons/Close";
 import { Hamburger } from "./icons/Hamburger";
+import { Knowbud } from "./icons/Knowbud";
+
 import { Menu } from "./Menu";
 import { BLOG_NAME } from "../constants";
 
@@ -30,7 +32,8 @@ export const Header = () => {
           >
             {isOpenMenu ? <Close /> : <Hamburger />}
           </button>
-          <h1 className="flex-1 text-center text-[30px] font-bold text-blank-dark dark:text-obscure">
+          <h1 className="flex-1 flex items-center justify-center gap-4 text-[30px] font-bold text-blank-dark dark:text-obscure">
+            <Knowbud />
             {BLOG_NAME}
           </h1>
           <button

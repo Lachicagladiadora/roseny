@@ -1,1 +1,1 @@
-export const BLOG_NAME = "Blogüi";
+export const BLOG_NAME = "Knowbud";
