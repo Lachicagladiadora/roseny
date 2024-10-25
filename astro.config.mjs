@@ -9,5 +9,5 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   integrations: [tailwind(), react(), icon()],
   output: "server",
-  adapter: netlify({ edgeMiddleware: true })
+  adapter: netlify({ edgeMiddleware: true, imageCDN: false })
 });
