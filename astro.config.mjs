@@ -7,6 +7,7 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://lcg-knowbud.netlify.app",
   integrations: [tailwind(), react(), icon()],
   output: "server",
   adapter: netlify({ edgeMiddleware: true, imageCDN: false })
