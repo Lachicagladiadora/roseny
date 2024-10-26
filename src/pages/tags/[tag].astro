@@ -31,7 +31,7 @@ const { posts } = Astro.props;
     </div>
   <ul class="flex flex-wrap gap-4 items-center justify-center my-4">
 
-    {posts.length > 0 &&  posts.map((post) => <BlogPost urlPost={post.url??'/blog/'} title={post.frontmatter.title} author={post.frontmatter.author} date={post.frontmatter.pubDate} description={post.frontmatter.description} coverImage={post.frontmatter.image.url} client:visible/>)}
+    {posts.length > 0 &&  posts.map((post) => <BlogPost urlPost={post.url??'/blog'} title={post.frontmatter.title} author={post.frontmatter.author} date={post.frontmatter.pubDate} description={post.frontmatter.description} coverImage={post.frontmatter.image.url} client:visible/>)}
   </ul>
   </div>
 </BaseLayout>

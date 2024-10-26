@@ -11,7 +11,7 @@ const pageTitle = BLOG_NAME
   <BaseLayout pageTitle={pageTitle}>
     <h2 class="text-3xl text-center py-8 text-first dark:text-second">Blog</h2>
     <ul class="flex flex-wrap gap-4 items-center justify-center my-4">
-      {allPosts.map((c)=>(<BlogPost urlPost={c.url??""} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url}/>))}
+      {allPosts.map((c)=>(<BlogPost urlPost={c.url??"/blog"} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url}/>))}
     </ul>
   </BaseLayout>
 </div>
