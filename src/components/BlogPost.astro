@@ -1,9 +1,9 @@
 ---
-// interface Props{urlPost:string, title: string, author: string, description:string, date:string, coverImage:string}
+interface Props{urlPost:string, title: string, author: string, description:string, date:string, coverImage:string}
 
-// const {urlPost, title, author,description, date, coverImage}= Astro.props
+const {urlPost, title, author,description, date, coverImage}= Astro.props
 ---
-<!-- 
+
 <li class="h-[260px] w-[260px] border-2 rounded-lg p-4 flex flex-col items-center justify-center border-first-dark text-obscure bg-second-light/40  
 group/title group/image hover:border-first hover:bg-blank-dark dark:hover:border-blank dark:hover:bg-first/40
 dark:border-second-dark dark:text-blank dark:bg-first-dark/50 md:h-[290px] md:w-[290px] lg:h-[380px] lg:w-[380px] xl:w-[422px] xl:h-[422px]
@@ -22,4 +22,4 @@ dark:border-second-dark dark:text-blank dark:bg-first-dark/50 md:h-[290px] md:w-
       <p class="first-line:indent-5 line-clamp-2 leading-tight text-obscure dark:text-blank">{description}</p>
     </main>
   </a>
-</li> -->
+</li>

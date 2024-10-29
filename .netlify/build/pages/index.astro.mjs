@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { c as createAstro, a as createComponent, r as renderTemplate, e as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_DcQTzJrz.mjs';
 import 'kleur/colors';
-import { $ as $$BlogPost } from '../chunks/BlogPost_DAWsVMBb.mjs';
+import { $ as $$BlogPost } from '../chunks/BlogPost_9coRPA9x.mjs';
 import { B as BLOG_NAME } from '../chunks/constants_yUSyhBmQ.mjs';
 import { $ as $$BaseLayout } from '../chunks/BaseLayout_CmgW7Ktw.mjs';
 export { renderers } from '../renderers.mjs';
