@@ -11,7 +11,6 @@ const posts = allPosts.slice(randomPost,randomPost > 2 || randomPost < allPosts.
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h1 class="text-3xl text-center py-8 text-first dark:text-second">Home</h1>
-  <!-- <p>Complement your learning with articles.</p> -->
   <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
     {posts.map((c)=>(<BlogPost urlPost={c.frontmatter.url ?? "/blog"} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url}/>))}
   </ul>
