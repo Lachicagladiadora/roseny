@@ -1,7 +1,6 @@
 import React from "react";
-import type { SVGProps } from "react";
 
-export function Knowbud(props: SVGProps<SVGSVGElement>) {
+export function Knowbud() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

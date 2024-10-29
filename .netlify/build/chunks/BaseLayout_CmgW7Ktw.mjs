@@ -27,7 +27,7 @@ function GithubIcon(props) {
 
 const $$Footer = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<footer class="w-full flex gap-2 items-center justify-center p-2 text-xs bg-obscure-dark text-blank-light dark:bg-blank-dark dark:text-obscure-dark md:text-sm"> <div class="flex gap-3 items-center justify-center"> <a href="https://github.com/Lachicagladiadora" target="_blank"> ${renderComponent($$result, "GithubIcon", GithubIcon, { "className": "h-5 w-5 text-blank-light dark:text-obscure-dark md:h-6 md:w-6 lg:h-7 lg:w-7" })} </a> </div> <p class="flex items-center gap-3 text-blank-light dark:text-obscure-dark">Lachicagladiadora</p> </footer>`;
-}, "/home/el_descendiente_del_mal/dev/me/blog/src/components/Footer.astro", void 0);
+}, "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/components/Footer.astro", void 0);
 
 function Sun(props) {
   return /* @__PURE__ */ jsx(
@@ -119,7 +119,7 @@ function Hamburger(props) {
   );
 }
 
-function Knowbud(props) {
+function Knowbud() {
   return /* @__PURE__ */ jsxs(
     "svg",
     {
@@ -263,7 +263,7 @@ const $$Astro = createAstro("https://lcg-knowbud.netlify.app");
 const $$BaseLayout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$BaseLayout;
-  return renderTemplate`<html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/src/images/Knowbud.svg"><meta name="viewport" content="width=device-width"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${BLOG_NAME}</title>${renderHead()}</head> <body id="body-element" class="w-full h-full min-h-[100vh] transition-colors bg-blank-light text-obscure flex flex-col  dark:bg-obscure-dark dark:text-blank-light"> ${renderComponent($$result, "Header", Header, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "/home/el_descendiente_del_mal/dev/me/blog/src/components/Header", "client:component-export": "Header" })} <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]"> ${renderSlot($$result, $$slots["default"])} </main> ${renderComponent($$result, "Footer", $$Footer, {})} </body></html>`;
-}, "/home/el_descendiente_del_mal/dev/me/blog/src/layouts/BaseLayout.astro", void 0);
+  return renderTemplate`<html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/src/images/Knowbud.svg"><meta name="viewport" content="width=device-width"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${BLOG_NAME}</title>${renderHead()}</head> <body id="body-element" class="w-full h-full min-h-[100vh] transition-colors bg-blank-light text-obscure flex flex-col  dark:bg-obscure-dark dark:text-blank-light"> ${renderComponent($$result, "Header", Header, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/components/Header", "client:component-export": "Header" })} <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]"> ${renderSlot($$result, $$slots["default"])} </main> ${renderComponent($$result, "Footer", $$Footer, {})} </body></html>`;
+}, "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/layouts/BaseLayout.astro", void 0);
 
 export { $$BaseLayout as $, GithubIcon as G };
