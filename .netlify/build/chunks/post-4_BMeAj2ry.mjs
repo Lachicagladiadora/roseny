@@ -1,13 +1,13 @@
 /* empty css                         */
 import { a as createComponent, r as renderTemplate, e as renderComponent, u as unescapeHTML } from './astro/server_DcQTzJrz.mjs';
 import 'kleur/colors';
-import { $ as $$MarkdownPostLayout } from './MarkdownPostLayout_DD5zgEJD.mjs';
+import { $ as $$MarkdownPostLayout } from './MarkdownPostLayout_DkAWIWZX.mjs';
 
 const html = "<p>It wasn’t always smooth sailing, but I’m enjoying building with Astro. And, the <a href=\"https://astro.build/chat\">Discord community</a> is really friendly and helpful!</p>";
 
-				const frontmatter = {"title":"My Third Blog Post","layout":"../../layouts/MarkdownPostLayout.astro","author":"Astro Learner","description":"I had some challenges, but asking in the community really helped!","image":{"url":"https://images.pexels.com/photos/28178918/pexels-photo-28178918/free-photo-of-comida-madera-ligero-naturaleza.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","alt":"The Astro logo on a dark background with rainbow rays."},"pubDate":"2022-07-15T00:00:00.000Z","tags":["astro","learning in public","setbacks","community"]};
-				const file = "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/pages/posts/post-5.md";
-				const url = "/posts/post-5";
+				const frontmatter = {"title":"My Third Blog Post","layout":"../../layouts/MarkdownPostLayout.astro","author":"Astro Learner","description":"I had some challenges, but asking in the community really helped!","image":{"url":"https://images.pexels.com/photos/28888567/pexels-photo-28888567/free-photo-of-retrato-de-mujer-joven-con-camara-en-estudio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","alt":"The Astro logo on a dark background with rainbow rays."},"pubDate":"2022-07-15T00:00:00.000Z","tags":["astro","learning in public","setbacks","community"]};
+				const file = "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/pages/posts/post-4.md";
+				const url = "/posts/post-4";
 				function rawContent() {
 					return "\nIt wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!\n";
 				}
