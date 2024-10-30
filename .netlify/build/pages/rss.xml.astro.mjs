@@ -7,7 +7,7 @@ async function GET(context) {
     title: BLOG_NAME,
     description: 'Important knowledge and here we share it',
     site: context.site,
-    items: await pagesGlobToRssItems(/* #__PURE__ */ Object.assign({"./posts/post-1.md": () => import('../chunks/post-1_ARTufYvg.mjs').then(n => n._),"./posts/post-10.md": () => import('../chunks/post-10_C1n3XA7i.mjs').then(n => n._),"./posts/post-3.md": () => import('../chunks/post-3_CQrdNI1N.mjs').then(n => n._),"./posts/post-4.md": () => import('../chunks/post-4_z2vjg7L6.mjs').then(n => n._),"./posts/post-5.md": () => import('../chunks/post-5_Bh1xGhxw.mjs').then(n => n._),"./posts/post-6.md": () => import('../chunks/post-6_DOvTZpVd.mjs').then(n => n._)})),
+    items: await pagesGlobToRssItems(/* #__PURE__ */ Object.assign({"./posts/post-1.md": () => import('../chunks/post-1_CtwurPr3.mjs').then(n => n._),"./posts/post-10.md": () => import('../chunks/post-10_CkUkysSW.mjs').then(n => n._),"./posts/post-3.md": () => import('../chunks/post-3_ipg21WSg.mjs').then(n => n._),"./posts/post-4.md": () => import('../chunks/post-4_BxVKX0La.mjs').then(n => n._),"./posts/post-5.md": () => import('../chunks/post-5_CaXFGYQg.mjs').then(n => n._),"./posts/post-6.md": () => import('../chunks/post-6_DoNyL1gv.mjs').then(n => n._)})),
     customData: `<language>en-us</language>`,
   });
 }
