@@ -7,7 +7,7 @@ const allPosts = await Astro.glob("./posts/*.md")
 const pageTitle = BLOG_NAME
 ---
 
-<div>
+<!-- <div> -->
   <BaseLayout pageTitle={pageTitle}>
     <h2 class="text-3xl text-center py-8 text-first dark:text-second">Blog</h2>
     <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
@@ -16,4 +16,4 @@ const pageTitle = BLOG_NAME
       ))}
     </ul>
   </BaseLayout>
-</div>
+<!-- </div> -->
