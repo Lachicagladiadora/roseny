@@ -32,8 +32,22 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 
 <!-- ![Descripción de la imagen]('') -->
 
+in posts
+
 <img src='/src/pages/posts/workflow.svg'>
-<img src='//public/post-1/workflow.png'>
+
+in public
+
+<img src='/public/post-1/workflow.png'>
+
+in assets png
+
+<img src='/src/assets/workflow.png'>
+
+in assets svg
+
+<img src='/src/assets/workflow.svg'>
+<!-- <img src='//public/post-1/workflow.png'> -->
 <!-- <Image src={workflow.svg} alt="workflow in git"/> -->
 
 <!-- ![alt text](image.png) -->
