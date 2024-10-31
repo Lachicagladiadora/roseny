@@ -31,6 +31,8 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 <!-- ![Descripción de la imagen](https://git-scm.com/book/en/v2/images/lifecycle.png) -->
 
 <!-- ![Descripción de la imagen]('') -->
+<img src='workflow.png'>
+<img src='workflow.svg'>
 
 in posts
 
@@ -38,7 +40,8 @@ in posts
 
 in public
 
-<img src='/public/post-1/workflow.png'>
+<img src='/public/workflow.png'>
+<img src='workflow.png'>
 
 in assets png
 
