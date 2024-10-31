@@ -1,13 +1,13 @@
 /* empty css                         */
 import { a as createComponent, r as renderTemplate, d as renderComponent, u as unescapeHTML } from './astro/server_D7lyRi_1.mjs';
 import 'kleur/colors';
-import { $ as $$MarkdownPostLayout } from './MarkdownPostLayout_DJvU4JLw.mjs';
+import { $ as $$MarkdownPostLayout } from './MarkdownPostLayout_CuCWpxcH.mjs';
 
 const html = "<p>It wasn’t always smooth sailing, but I’m enjoying building with Astro. And, the <a href=\"https://astro.build/chat\">Discord community</a> is really friendly and helpful!</p>";
 
-				const frontmatter = {"title":"My Third Blog Post","layout":"../../layouts/MarkdownPostLayout.astro","author":"Astro Learner","description":"I had some challenges, but asking in the community really helped!","image":{"url":"https://images.pexels.com/photos/28888567/pexels-photo-28888567/free-photo-of-retrato-de-mujer-joven-con-camara-en-estudio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","alt":"The Astro logo on a dark background with rainbow rays."},"pubDate":"2022-07-15T00:00:00.000Z","tags":["astro","learning in public","setbacks","community"]};
-				const file = "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/pages/posts/post-4.md";
-				const url = "/posts/post-4";
+				const frontmatter = {"title":"My Third Blog Post","layout":"../../layouts/MarkdownPostLayout.astro","author":"Astro Learner","description":"I had some challenges, but asking in the community really helped!","image":{"url":"https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","alt":"The Astro logo on a dark background with rainbow rays."},"pubDate":"2022-07-15T00:00:00.000Z","tags":["astro","learning in public","setbacks","community"]};
+				const file = "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/pages/posts/post-6.md";
+				const url = "/posts/post-6";
 				function rawContent() {
 					return "\nIt wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!\n";
 				}

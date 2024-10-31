@@ -1,14 +1,14 @@
 /* empty css                                 */
 import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead, b as addAttribute } from '../chunks/astro/server_D7lyRi_1.mjs';
 import 'kleur/colors';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_ciRDGYZG.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_BtgYwhL6.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro = createAstro("https://lcg-knowbud.netlify.app");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
-  const allPosts = await Astro2.glob(/* #__PURE__ */ Object.assign({"../posts/post-1.md": () => import('../chunks/post-1_fSZMUKUq.mjs').then(n => n._),"../posts/post-10.md": () => import('../chunks/post-10_DH_M5opg.mjs').then(n => n._),"../posts/post-3.md": () => import('../chunks/post-3_BzneClgf.mjs').then(n => n._),"../posts/post-4.md": () => import('../chunks/post-4_DI3IaeFG.mjs').then(n => n._),"../posts/post-5.md": () => import('../chunks/post-5_B-VDDA_k.mjs').then(n => n._),"../posts/post-6.md": () => import('../chunks/post-6_TuIjvKbN.mjs').then(n => n._)}), () => "../posts/*.md");
+  const allPosts = await Astro2.glob(/* #__PURE__ */ Object.assign({"../posts/post-1.md": () => import('../chunks/post-1_CR03A7rj.mjs').then(n => n._),"../posts/post-10.md": () => import('../chunks/post-10_8mCMk2sr.mjs').then(n => n._),"../posts/post-3.md": () => import('../chunks/post-3_BG3HDRSF.mjs').then(n => n._),"../posts/post-4.md": () => import('../chunks/post-4_Bk98IcvV.mjs').then(n => n._),"../posts/post-5.md": () => import('../chunks/post-5_CJqty98_.mjs').then(n => n._),"../posts/post-6.md": () => import('../chunks/post-6_CBjA9PPR.mjs').then(n => n._)}), () => "../posts/*.md");
   const tags = [...new Set(allPosts.map((c) => c.frontmatter.tags).flat())];
   const pageTitle = "Tags";
   return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "pageTitle": pageTitle }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="flex flex-col gap-6 items-center justify-center"> <h2 class="text-3xl text-center py-8 text-first dark:text-second">Tags</h2> <p>Selec a tag for show relation posts</p> ${tags.map((c) => renderTemplate`<a${addAttribute(`/tags/${c}/`, "href")} class="bg-violet-900 border-2 text-first-dark border-first-dark  dark:text-second dark:border-second px-2 py-1 rounded-md hover:text-second-light hover:bg-first-dark dark:hover:text-first-dark dark:hover:bg-second">${c}</a>`)} </div> ` })}`;

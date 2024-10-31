@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_D7lyRi_1.mjs';
 import 'kleur/colors';
-import { G as GithubIcon, $ as $$BaseLayout } from '../chunks/BaseLayout_ciRDGYZG.mjs';
+import { G as GithubIcon, $ as $$BaseLayout } from '../chunks/BaseLayout_BtgYwhL6.mjs';
 import { jsx } from 'react/jsx-runtime';
 import 'react';
 import { B as BLOG_NAME } from '../chunks/constants_yUSyhBmQ.mjs';
