@@ -30,9 +30,11 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Workflow</h2>
 <!-- ![Descripción de la imagen](https://git-scm.com/book/en/v2/images/lifecycle.png) -->
 
-<!-- ![Descripción de la imagen](https://git-scm.com/book/en/v2/images/workflow.png) -->
+<!-- ![Descripción de la imagen]('') -->
 
-<img src='/public/post-1/workflow.svg'>
+<img src='/src/pages/posts/workflow.svg'>
+<img src='//public/post-1/workflow.png'>
+<!-- <Image src={workflow.svg} alt="workflow in git"/> -->
 
 <!-- ![alt text](image.png) -->
 
