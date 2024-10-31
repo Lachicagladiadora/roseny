@@ -1,4 +1,4 @@
-import { _ as _page } from '../../chunks/post-6_CBjA9PPR.mjs';
+import { _ as _page } from '../../chunks/post-6_BfUW0tVA.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const page = () => _page;

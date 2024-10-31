@@ -4,7 +4,7 @@ import 'kleur/colors';
 import { jsx } from 'react/jsx-runtime';
 import 'react';
 import { B as BLOG_NAME } from '../chunks/constants_yUSyhBmQ.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_BtgYwhL6.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_BZQqrMxS.mjs';
 /* empty css                                  */
 export { renderers } from '../renderers.mjs';
 
