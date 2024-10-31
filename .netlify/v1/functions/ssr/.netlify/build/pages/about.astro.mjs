@@ -1,10 +1,10 @@
 /* empty css                                 */
-import { c as createAstro, a as createComponent, r as renderTemplate, b as addAttribute, d as renderHead, e as renderComponent } from '../chunks/astro/server_DcQTzJrz.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_D7lyRi_1.mjs';
 import 'kleur/colors';
 import { jsx } from 'react/jsx-runtime';
 import 'react';
 import { B as BLOG_NAME } from '../chunks/constants_yUSyhBmQ.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_BgZbV4kc.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_ciRDGYZG.mjs';
 /* empty css                                  */
 export { renderers } from '../renderers.mjs';
 
@@ -33,10 +33,16 @@ const $$About = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$About;
   const pageTitle = BLOG_NAME;
-  return renderTemplate`<html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>Blogüi-about</title>${renderHead()}</head> <body> ${renderComponent($$result, "BaseLayout", $$BaseLayout, { "pageTitle": pageTitle }, { "default": ($$result2) => renderTemplate` <div class="flex-1 flex flex-col items-center justify-center gap-4"> <h2 class="text-3xl text-center py-8 text-first dark:text-second">About</h2> <div class="flex flex-col gap-4 items-center justify-center md:px-20 md:flex-row"> <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" height="300" width="300"> <div class="flex flex-col gap-5"> <p>This blog was created to share the little knowledge I have acquired studying, I hope it will be useful and help to clarify some topics of your interest.
+  return renderTemplate`<!-- <html lang="en"> --><!-- <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>Blogüi-about</title>
+  </head> --><!-- <body> -->${renderComponent($$result, "BaseLayout", $$BaseLayout, { "pageTitle": pageTitle }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="flex-1 flex flex-col items-center justify-center gap-4"> <h2 class="text-3xl text-center py-8 text-first dark:text-second">About</h2> <div class="flex flex-col gap-4 items-center justify-center md:px-20 md:flex-row"> <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" height="300" width="300"> <div class="flex flex-col gap-5"> <p>This blog was created to share the little knowledge I have acquired studying, I hope it will be useful and help to clarify some topics of your interest.
 </p> <p class="text-obscure dark:text-blank-light flex gap-3 items-center justify-center">
 Happy reading!
-${renderComponent($$result2, "SomeoneRead", SomeoneRead, { "className": "h-8 w-8" })} </p> </div> </div> </div> ` })} </body></html>`;
+${renderComponent($$result2, "SomeoneRead", SomeoneRead, { "className": "h-8 w-8" })} </p> </div> </div> </div> ` })} <!-- </body> --> <!-- </html> -->`;
 }, "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/pages/about.astro", void 0);
 
 const $$file = "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/pages/about.astro";

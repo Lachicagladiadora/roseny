@@ -1474,4 +1474,4 @@ function spreadAttributes(values = {}, _name, { class: scopedClassName } = {}) {
   return markHTMLString(output);
 }
 
-export { createComponent as a, addAttribute as b, createAstro as c, renderHead as d, renderComponent as e, decodeKey as f, renderSlot as g, maybeRenderHead as m, renderTemplate as r, spreadAttributes as s, unescapeHTML as u };
+export { createComponent as a, addAttribute as b, createAstro as c, renderComponent as d, decodeKey as e, renderSlot as f, renderHead as g, maybeRenderHead as m, renderTemplate as r, spreadAttributes as s, unescapeHTML as u };

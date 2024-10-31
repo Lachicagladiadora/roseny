@@ -1,8 +1,8 @@
-import { c as createAstro, a as createComponent, r as renderTemplate, e as renderComponent, m as maybeRenderHead, b as addAttribute, g as renderSlot } from './astro/server_DcQTzJrz.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead, b as addAttribute, f as renderSlot } from './astro/server_D7lyRi_1.mjs';
 import 'kleur/colors';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import 'react';
-import { $ as $$BaseLayout } from './BaseLayout_BgZbV4kc.mjs';
+import { $ as $$BaseLayout } from './BaseLayout_ciRDGYZG.mjs';
 
 function LeftArrow(props) {
   return /* @__PURE__ */ jsx(

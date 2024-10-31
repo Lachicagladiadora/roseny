@@ -1,4 +1,4 @@
-import { a as createComponent, r as renderTemplate, m as maybeRenderHead, e as renderComponent, c as createAstro, b as addAttribute, d as renderHead, g as renderSlot } from './astro/server_DcQTzJrz.mjs';
+import { a as createComponent, r as renderTemplate, m as maybeRenderHead, d as renderComponent, c as createAstro, b as addAttribute, g as renderHead, f as renderSlot } from './astro/server_D7lyRi_1.mjs';
 import 'kleur/colors';
 import { jsx, jsxs, Fragment } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
@@ -263,7 +263,7 @@ const $$Astro = createAstro("https://lcg-knowbud.netlify.app");
 const $$BaseLayout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$BaseLayout;
-  return renderTemplate`<html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" sizes="48x48" href="/src/images/knowbud-512x512.svg"><meta name="viewport" content="width=device-width"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${BLOG_NAME}</title>${renderHead()}</head> <body id="body-element" class="w-full h-full min-h-[100vh] transition-colors bg-blank-light text-obscure flex flex-col  dark:bg-obscure-dark dark:text-blank-light"> ${renderComponent($$result, "Header", Header, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/components/Header", "client:component-export": "Header" })} <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]"> ${renderSlot($$result, $$slots["default"])} </main> ${renderComponent($$result, "Footer", $$Footer, {})} </body></html>`;
+  return renderTemplate`<html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/src/images/knowbud-512x512.svg"><meta name="viewport" content="width=device-width"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${BLOG_NAME}</title>${renderHead()}</head> <body id="body-element" class="w-full h-full min-h-[100vh] transition-colors bg-blank-light text-obscure flex flex-col  dark:bg-obscure-dark dark:text-blank-light"> ${renderComponent($$result, "Header", Header, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/components/Header", "client:component-export": "Header" })} <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]"> ${renderSlot($$result, $$slots["default"])} </main> ${renderComponent($$result, "Footer", $$Footer, {})} </body></html>`;
 }, "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/layouts/BaseLayout.astro", void 0);
 
 export { $$BaseLayout as $, GithubIcon as G };
