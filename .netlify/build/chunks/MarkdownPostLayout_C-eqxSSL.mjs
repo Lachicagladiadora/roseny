@@ -2,7 +2,7 @@ import { c as createAstro, a as createComponent, r as renderTemplate, d as rende
 import 'kleur/colors';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import 'react';
-import { $ as $$BaseLayout } from './BaseLayout_BZQqrMxS.mjs';
+import { $ as $$BaseLayout } from './BaseLayout_D5dOfSwo.mjs';
 
 function LeftArrow(props) {
   return /* @__PURE__ */ jsx(
