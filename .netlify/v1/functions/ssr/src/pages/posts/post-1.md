@@ -32,7 +32,7 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 
 <!-- ![Descripción de la imagen](https://git-scm.com/book/en/v2/images/workflow.png) -->
 
-<img src='/src/images/post-1/workflow.svg'>
+<img src='/public/post-1/workflow.svg'>
 
 <!-- ![alt text](image.png) -->
 
