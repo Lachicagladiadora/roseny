@@ -8,15 +8,18 @@ const {frontmatter}=Astro.props
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <div class="w-full flex flex-col items-center gap-10">
+  <div class="w-full flex flex-col items-center gap-10 ">
     <header class="w-full flex flex-col text-justify gap-2">
       <div class="w-full py-6 flex items-center justify-between gap-4">
         <a href="/blog" class="p-2 flex gap-2 items-center rounded-lg font-bold text-first-dark hover:text-blank hover:bg-obscure-dark dark:text-second dark:hover:text-obscure-dark dark:hover:bg-second-dark" title="More blog posts">
           <LeftArrow/>More posts</a>
       </div>
-      <p class="w-full ps-4 text-obscure/50 text-left dark:text-blank/50"><span class="text-neutral-500 italic">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
-      <h1 class="text-4xl text-center font-bold text-first-dark dark:text-second-light">{frontmatter.title}</h1>
-      <p class="py-8 italic text-center text-second-dark stroke-obscure-dark stroke-2 dark:text-first-light">"{frontmatter.description}"</p>
+      <p class="w-full ps-4 text-left text-obscure-dark/50 italic dark:text-blank-light/80">{frontmatter.pubDate.toString().slice(0,10)}</p>
+      <!-- <h1 class="text-4xl text-center font-bold text-first-dark dark:text-second-light">{frontmatter.title}</h1> -->
+      <p class="py-8 italic text-center text-first-dark stroke-obscure-dark stroke-2 
+      bg-blank/40 rounded-lg shadow-blank-dark/40 shadow-inner
+      dark:text-second-light dark:bg-obscure/20 dark:shadow-obscure/20">
+      "{frontmatter.description}"</p>
       <div class="flex flex-wrap gap-6 items-center justify-center">
         {frontmatter.tags.map((c: string)=>(
           <a href={`/tags/${c}/`} class="bg-violet-900 border-2 text-first-dark border-first-dark  dark:text-second dark:border-second px-2 py-1 rounded-md hover:text-second-light hover:bg-first-dark dark:hover:text-first-dark dark:hover:bg-second">{c}</a>
@@ -24,7 +27,7 @@ const {frontmatter}=Astro.props
       </div>
     </header>
 
-      <article class="w-full relative">
+      <article class="w-full relative text-obscure-dark dark:text-blank-light">
         <slot/>
         <p class="w-full py-6 text-obscure/50 text-right dark:text-blank/50">by <span class="text-neutral-500 italic">{frontmatter.author}</span></p>
         <div class="w-full py-10 flex items-center justify-between gap-4">
