@@ -1,17 +1,14 @@
 ---
 import BlogPost from "../components/BlogPost.astro";
-import { BLOG_NAME } from "../constants";
 import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = BLOG_NAME
+const pageTitle = 'Home'
 
 const allPosts = await Astro.glob("./posts/*.md")
-const randomPost = Math.floor(Math.random() * (allPosts.length))
 
-const posts = allPosts.slice(randomPost,randomPost > 2 || randomPost < allPosts.length - 3 ? randomPost + 2  : randomPost - 2)
+const post = allPosts[allPosts.length-1]
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h1 class="text-3xl text-center py-8 text-first dark:text-second">Home</h1>
   <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
-    {posts.map((c)=>(<BlogPost urlPost={c.frontmatter.url ?? "/blog"} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url}/>))}
+    <BlogPost urlPost={post.frontmatter.url ?? "/blog"} title={post.frontmatter.title} author={post.frontmatter.author} description={post.frontmatter.description} date={post.frontmatter.pubDate.slice(0,10)} coverImage={post.frontmatter.image.url}/>
   </ul>
 </BaseLayout>

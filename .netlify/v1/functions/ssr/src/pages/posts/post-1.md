@@ -10,14 +10,14 @@ image:
 tags: ["git", "dev", "learn", "basic concepts", "commands"]
 ---
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Main characteristics</h2>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Main characteristics</h2>
 
 - Does not require internet
 - Is fast
 - GIT create copies from original project
 - **DATA INTEGRITY**: Clones created from data; therefore the data is the equal, clean and not corrupted.
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Basic concepts</h2>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Basic concepts</h2>
 
 1. **GIT(VCS- _Version Control System_)**: Software which save changes history
 2. **REPOSITORY**: Project followed for GIT, project which have history in GIT
@@ -27,59 +27,35 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 6. **FORK**: Different project from once project
 7. **MERGE**:
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Workflow</h2>
-<!-- ![Descripción de la imagen](https://git-scm.com/book/en/v2/images/lifecycle.png) -->
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Workflow</h2>
 
-<!-- ![Descripción de la imagen]('') -->
-<img src='workflow.png'>
-<img src='workflow.svg'>
+<img src='/workflow.png' alt='git workflow'>
 
-in posts
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Tools</h2>
 
-<img src='/src/pages/posts/workflow.svg'>
-
-in public
-
-<img src='/public/workflow.png'>
-<img src='workflow.png'>
-
-in assets png
-
-<img src='/src/assets/workflow.png'>
-
-in assets svg
-
-<img src='/src/assets/workflow.svg'>
-<!-- <img src='//public/post-1/workflow.png'> -->
-<!-- <Image src={workflow.svg} alt="workflow in git"/> -->
-
-<!-- ![alt text](image.png) -->
-
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Tools</h2>
-
-<h3 class='pt-6 pb-2 text-2xl text-first dark:text-second'>Terminal</h3>
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Terminal</h3>
 <ol class='list-inside list-disc'>
 	<li>Command line</li>
 	</ol>
-<h3 class='pt-6 pb-2 text-xl text-first dark:text-second'>Graphic clients</h3>
+<h3 class='pt-6 pb-2 text-xl text-first-dark dark:text-second'>Graphic clients</h3>
   <ol class='list-inside list-disc'>
 	<li>Gitkraken</li>
   <li>Sourcetree</li>
   <li>GithubDesktop</li>
 	</ol>
-<h3 class='pt-6 pb-2 text-xl text-first dark:text-second'>Cloud repositories</h3>
+<h3 class='pt-6 pb-2 text-xl text-first-dark dark:text-second'>Cloud repositories</h3>
 	 <ol class='list-inside list-disc'>
 	<li>Github</li>
   <li>Bitbucket</li>
   <li>GitLab</li>
 	</ol>
-<h3 class='pt-6 pb-2 text-xl text-first dark:text-second'>In visual studio code (Extensions for VScode)</h3>
+<h3 class='pt-6 pb-2 text-xl text-first-dark dark:text-second'>In visual studio code (Extensions for VScode)</h3>
 		 <ol class='list-inside list-disc'>
 	<li>Git Graph</li>
   <li>Git Lents</li>
 	</ol>
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first dark:text-second'>Commands</h2>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Commands</h2>
 <div class='w-full flex items-center justify-center'>
 <img src='https://img.icons8.com/color/300/git.png'>
 </div>

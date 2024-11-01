@@ -20,13 +20,13 @@ const {pageTitle} = Astro.props
   </head>
   <body id="body-element" class="w-full h-full min-h-[100vh] transition-colors bg-blank-light flex flex-col  dark:bg-obscure-dark  text-obscure-dark dark:text-blank-light">
 
-     <Header client:idle/>
-     <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]">
-  <h1 class="pt-6 pb-2 text-4xl font-bold text-first-dark dark:text-second">{`${pageTitle}`}</h1>
-  <hr class="text-first-dark dark:text-second">
+    <Header client:idle/>
+    <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]">
+      <h1 class="pt-6 pb-2 text-4xl font-bold text-first-dark dark:text-second">{`${pageTitle}`}</h1>
+      <hr class="text-first-dark dark:text-second">
 
-     <slot/>
-     </main>
+      <slot/>
+    </main>
     <Footer/>
   </body>
 </html>

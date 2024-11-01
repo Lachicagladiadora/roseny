@@ -1,35 +1,22 @@
 ---
 import { GithubIcon } from '../components/icons/GithubIcon';
 import { LinkedinIcon } from '../components/icons/LinkedinIcon';
-import { BLOG_NAME } from '../constants';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 
 const pageTitle = 'Contact'
 ---
 
-<!-- <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>Blogüi-about</title>
-  </head>
-  <body> -->
-    <BaseLayout pageTitle={pageTitle}>
-      <div class="flex-1 flex flex-col gap-6 items-center justify-center text-obscure-dark dark:text-blank-light">
-        <!-- <h2 class="text-3xl text-center py-2 text-first-dark dark:text-second">Contact</h2> -->
-      <p>I'd love to hear from you! If you enjoy my explanations and have suggestions for topics we haven't covered yet, feel free to reach out to me through any of the options below. Whether you want to connect because you liked my code or have questions, I'm here to share my knowledge!</p>
-      <div class="w-full flex flex-col gap-4 items-center justify-center">
-        <a target="_blank" href="https://github.com/Lachicagladiadora" class="flex items-center justify-center gap-2 group/icon dark:hover:text-second hover:text-first-dark">
-          <GithubIcon className="h-8 w-8 text-obscure-dark dark:text-blank-light icon dark:group-hover/icon:text-second group-hover/icon:text-first-dark"/> GitHub
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/dev-roseny-quintanilla/" class="flex items-center justify-center gap-2 group/icon dark:hover:text-second hover:text-first-dark">
-          <LinkedinIcon className="h-8 w-8 text-obscure-dark dark:text-blank-light icon  dark:group-hover/icon:text-second group-hover/icon:text-first-dark"/> Linkedin
-        </a>
-      </div>
-      </div>
-  </BaseLayout>
-  <!-- </body>
-</html> -->
+<BaseLayout pageTitle={pageTitle}>
+  <div class="flex-1 flex flex-col gap-6 items-center justify-center text-obscure-dark dark:text-blank-light">
+  <p>I'd love to hear from you! If you enjoy my explanations and have suggestions for topics we haven't covered yet, feel free to reach out to me through any of the options below. Whether you want to connect because you liked my code or have questions, I'm here to share my knowledge!</p>
+  <div class="w-full flex flex-col gap-4 items-center justify-center">
+    <a target="_blank" href="https://github.com/Lachicagladiadora" class="flex items-center justify-center gap-2 group/icon dark:hover:text-second hover:text-first-dark">
+      <GithubIcon className="h-8 w-8 text-obscure-dark dark:text-blank-light icon dark:group-hover/icon:text-second group-hover/icon:text-first-dark"/> GitHub
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/dev-roseny-quintanilla/" class="flex items-center justify-center gap-2 group/icon dark:hover:text-second hover:text-first-dark">
+      <LinkedinIcon className="h-8 w-8 text-obscure-dark dark:text-blank-light icon  dark:group-hover/icon:text-second group-hover/icon:text-first-dark"/> Linkedin
+    </a>
+  </div>
+  </div>
+</BaseLayout>

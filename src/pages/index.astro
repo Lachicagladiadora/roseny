@@ -1,16 +1,13 @@
 ---
 import BlogPost from "../components/BlogPost.astro";
-import { BLOG_NAME } from "../constants";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = 'Home'
 
 const allPosts = await Astro.glob("./posts/*.md")
 
 const post = allPosts[allPosts.length-1]
-
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <!-- <h1 class="text-3xl text-center py-8 text-first dark:text-second">Home</h1> -->
   <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
     <BlogPost urlPost={post.frontmatter.url ?? "/blog"} title={post.frontmatter.title} author={post.frontmatter.author} description={post.frontmatter.description} date={post.frontmatter.pubDate.slice(0,10)} coverImage={post.frontmatter.image.url}/>
   </ul>

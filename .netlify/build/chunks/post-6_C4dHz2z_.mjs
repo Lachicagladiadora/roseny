@@ -1,7 +1,7 @@
 /* empty css                         */
 import { a as createComponent, r as renderTemplate, d as renderComponent, u as unescapeHTML } from './astro/server_D7lyRi_1.mjs';
 import 'kleur/colors';
-import { $ as $$MarkdownPostLayout } from './MarkdownPostLayout_C-eqxSSL.mjs';
+import { $ as $$MarkdownPostLayout } from './MarkdownPostLayout_CL167nsi.mjs';
 
 const html = "<p>It wasn’t always smooth sailing, but I’m enjoying building with Astro. And, the <a href=\"https://astro.build/chat\">Discord community</a> is really friendly and helpful!</p>";
 

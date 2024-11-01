@@ -1,10 +1,9 @@
 /* empty css                                 */
-import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_D7lyRi_1.mjs';
+import { a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_D7lyRi_1.mjs';
 import 'kleur/colors';
-import { G as GithubIcon, $ as $$BaseLayout } from '../chunks/BaseLayout_D5dOfSwo.mjs';
+import { G as GithubIcon, $ as $$BaseLayout } from '../chunks/BaseLayout_DMnD81T3.mjs';
 import { jsx } from 'react/jsx-runtime';
 import 'react';
-import { B as BLOG_NAME } from '../chunks/constants_yUSyhBmQ.mjs';
 /* empty css                                  */
 export { renderers } from '../renderers.mjs';
 
@@ -28,23 +27,11 @@ function LinkedinIcon(props) {
   );
 }
 
-const $$Astro = createAstro("https://lcg-knowbud.netlify.app");
 const $$Contact = createComponent(($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
-  Astro2.self = $$Contact;
-  const pageTitle = BLOG_NAME;
-  return renderTemplate`<!-- <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>Blogüi-about</title>
-  </head>
-  <body> -->${renderComponent($$result, "BaseLayout", $$BaseLayout, { "pageTitle": pageTitle }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="flex-1 flex flex-col gap-6 items-center justify-center text-obscure-dark dark:text-blank-light"> <h2 class="text-3xl text-center py-2 text-first-dark dark:text-second">Contact</h2> <p>I'd love to hear from you! If you enjoy my explanations and have suggestions for topics we haven't covered yet, feel free to reach out to me through any of the options below. Whether you want to connect because you liked my code or have questions, I'm here to share my knowledge!</p> <div class="w-full flex flex-col gap-4 items-center justify-center"> <a target="_blank" href="https://github.com/Lachicagladiadora" class="flex items-center justify-center gap-2 group/icon dark:hover:text-second hover:text-first-dark"> ${renderComponent($$result2, "GithubIcon", GithubIcon, { "className": "h-8 w-8 text-obscure-dark dark:text-blank-light icon dark:group-hover/icon:text-second group-hover/icon:text-first-dark" })} GitHub
+  const pageTitle = "Contact";
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "pageTitle": pageTitle }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="flex-1 flex flex-col gap-6 items-center justify-center text-obscure-dark dark:text-blank-light"> <p>I'd love to hear from you! If you enjoy my explanations and have suggestions for topics we haven't covered yet, feel free to reach out to me through any of the options below. Whether you want to connect because you liked my code or have questions, I'm here to share my knowledge!</p> <div class="w-full flex flex-col gap-4 items-center justify-center"> <a target="_blank" href="https://github.com/Lachicagladiadora" class="flex items-center justify-center gap-2 group/icon dark:hover:text-second hover:text-first-dark"> ${renderComponent($$result2, "GithubIcon", GithubIcon, { "className": "h-8 w-8 text-obscure-dark dark:text-blank-light icon dark:group-hover/icon:text-second group-hover/icon:text-first-dark" })} GitHub
 </a> <a target="_blank" href="https://www.linkedin.com/in/dev-roseny-quintanilla/" class="flex items-center justify-center gap-2 group/icon dark:hover:text-second hover:text-first-dark"> ${renderComponent($$result2, "LinkedinIcon", LinkedinIcon, { "className": "h-8 w-8 text-obscure-dark dark:text-blank-light icon  dark:group-hover/icon:text-second group-hover/icon:text-first-dark" })} Linkedin
-</a> </div> </div> ` })} <!-- </body>
-</html> -->`;
+</a> </div> </div> ` })}`;
 }, "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/pages/contact.astro", void 0);
 
 const $$file = "/home/el_descendiente_del_mal/dev/me/lcg-knowbud/src/pages/contact.astro";
