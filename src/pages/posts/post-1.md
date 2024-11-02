@@ -11,20 +11,27 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 ---
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Main characteristics</h2>
-
-- Does not require internet
-- Is fast
-- GIT create copies from original project
-- **DATA INTEGRITY**: Clones created from data; therefore the data is the equal, clean and not corrupted.
+<ul class='list-disc list-inside'>
+<li>Does not require internet</li>
+<li>Is fast</li>
+<li>GIT create copies from original project</li>
+<li>Data Integrity: Clones created from data; therefore the data is the equal, clean and not corrupted.</li>
+</ul>
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Basic concepts</h2>
 
-1. **GIT(VCS- _Version Control System_)**: Software which save changes history
-2. **REPOSITORY**: Project followed for GIT, project which have history in GIT
-3. **COMMIT**: Change registered in GIT, the change have a message
-4. **BRANCH**: New alternative trail for project
-5. **CLONE**: Project copied in local PC
-6. **FORK**: Different project from once project
+1. **GIT(VCS- _Version Control System_)**:
+   Software which save changes history
+2. **REPOSITORY**:
+   Project followed for GIT, project which have history in GIT
+3. **COMMIT**:
+   Change registered in GIT, the change have a message
+4. **BRANCH**:
+   New alternative trail for project
+5. **CLONE**:
+   Project copied in local PC
+6. **FORK**:
+   Different project from once project
 7. **MERGE**:
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Workflow</h2>
