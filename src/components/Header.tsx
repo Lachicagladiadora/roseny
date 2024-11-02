@@ -43,12 +43,12 @@ export const Header = () => {
           <button
             className={`h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-obscure dark:text-second-dark ${
               isDarkTheme
-                ? "hover:bg-first-light hover:text-obscure-dark"
-                : "hover:bg-second-dark hover:text-blank-light"
+                ? "hover:bg-second-dark hover:text-blank-light"
+                : "hover:bg-first-light hover:text-obscure-dark"
             }`}
             onClick={() => setIsDarkTheme((p) => !p)}
           >
-            {isDarkTheme ? <Moon /> : <Sun />}
+            {isDarkTheme ? <Sun /> : <Moon />}
           </button>
         </header>
       </div>
