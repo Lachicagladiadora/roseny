@@ -22,26 +22,26 @@ export const Header = () => {
 
   return (
     <>
-      <div className="w-full flex items-center justify-center py-2 bg-obscure-dark dark:bg-blank-dark md:py-4">
+      <div className="w-full flex items-center justify-center py-2 bg-blank-light dark:bg-obscure-dark md:py-4">
         <header className="w-full max-w-[900px] px-4 flex items-center justify-between relative">
           <button
             className={`h-6 w-6 text-2xl lg:3xl p-[2px] md:h-8 md:w-8 rounded-full flex items-center justify-center ${
               isOpenMenu
-                ? "text-second-light dark:text-obscure-light hover:bg-first-dark dark:hover:bg-second"
-                : "text-blank-light dark:text-obscure-dark hover:bg-first-light dark:hover:bg-second"
+                ? "text-obscure-light dark:text-second-light hover:bg-second dark:hover:bg-first-dark"
+                : "text-obscure dark:text-second-dark hover:bg-second dark:hover:bg-first-dark"
             }`}
             onClick={() => setIsOpenMenu((p) => !p)}
           >
             {isOpenMenu ? <Close /> : <Hamburger />}
           </button>
           <a href="/">
-            <h1 className="flex-1 flex items-center justify-center gap-4 text-[30px] font-bold text-blank-dark dark:text-obscure">
+            <h1 className="flex-1 flex items-center justify-center gap-4 text-[30px] font-bold text-obscure dark:text-second-dark">
               <Knowbud />
               {BLOG_NAME}
             </h1>
           </a>
           <button
-            className={`h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-blank-light dark:text-obscure-dark ${
+            className={`h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-obscure dark:text-second-dark ${
               isDarkTheme
                 ? "hover:bg-first-light hover:text-obscure-dark"
                 : "hover:bg-second-dark hover:text-blank-light"
