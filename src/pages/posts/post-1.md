@@ -6,7 +6,7 @@ description: "It’s not like git got everything right, but it got all the reall
 author: "Lachicagladiadora"
 image:
   url: "https://images.pexels.com/photos/11035539/pexels-photo-11035539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  alt: "The Astro logo on a dark background with a pink glow."
+  alt: "Git logo image"
 tags: ["git", "dev", "learn", "basic concepts", "commands"]
 ---
 

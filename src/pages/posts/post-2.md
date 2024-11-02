@@ -6,8 +6,8 @@ description: "Specification is a lightweight convention on top of commit message
 author: "Lachicagladiadora"
 image:
   url: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  alt: "The Astro logo on a dark background with a pink glow."
-tags: ["git", "dev", "learn", "basic concepts", "commands"]
+  alt: "Git messages image"
+tags: ["git", "dev", "learn"]
 ---
 
 - **build** : cambios que afectan el sistema de compilación o las dependencias externas (alcances de ejemplo: gulp, broccoli, npm)
