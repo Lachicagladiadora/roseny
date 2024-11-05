@@ -10,14 +10,6 @@ image:
 tags: ["git", "dev", "learn", "basic concepts", "commands"]
 ---
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Main characteristics</h2>
-<ul class='list-disc list-inside'>
-<li>Does not require internet</li>
-<li>Is fast</li>
-<li>GIT create copies from original project</li>
-<li>Data Integrity: Clones created from data; therefore the data is the equal, clean and not corrupted.</li>
-</ul>
-
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Basic concepts</h2>
 
 1. **GIT(VCS- _Version Control System_)**:
@@ -33,30 +25,38 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 6. **FORK**:
    Different project from once project
 7. **MERGE**:
+   Join changes
+
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Main characteristics</h2>
+<ul class='list-disc list-inside'>
+<li>Does not require internet</li>
+<li>Is fast</li>
+<li>GIT create copies from original project</li>
+<li>Data Integrity: Clones created from data; therefore the data is the equal, clean and not corrupted.</li>
+</ul>
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Workflow</h2>
 
 <img src='/workflow.png' alt='git workflow'>
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Tools</h2>
-
 <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Terminal</h3>
 <ol class='list-inside list-disc'>
 	<li>Command line</li>
 	</ol>
-<h3 class='pt-6 pb-2 text-xl text-first-dark dark:text-second'>Graphic clients</h3>
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Graphic clients</h3>
   <ol class='list-inside list-disc'>
 	<li>Gitkraken</li>
   <li>Sourcetree</li>
   <li>GithubDesktop</li>
 	</ol>
-<h3 class='pt-6 pb-2 text-xl text-first-dark dark:text-second'>Cloud repositories</h3>
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Cloud repositories</h3>
 	 <ol class='list-inside list-disc'>
 	<li>Github</li>
   <li>Bitbucket</li>
   <li>GitLab</li>
 	</ol>
-<h3 class='pt-6 pb-2 text-xl text-first-dark dark:text-second'>In visual studio code (Extensions for VScode)</h3>
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>In visual studio code (Extensions for VScode)</h3>
 		 <ol class='list-inside list-disc'>
 	<li>Git Graph</li>
   <li>Git Lents</li>
@@ -64,47 +64,91 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Commands</h2>
 <div class='w-full flex items-center justify-center'>
-<img src='https://img.icons8.com/color/300/git.png'>
+<img src='/workflow-command.png' alt='git command workflow'>
 </div>
 
-1. `git init`
-2. `git add`
-   1. `git add -A`
-   2. `git add .` -> add all changes at stage
-3. `git commit` or `git commit -m '<message>'`
-4. `git status`
-5. `git diff` -> changes that are not in the stage
-6. `git diff --staged` -> compare the changes with the last commit
-7. `git log` -> committed history
-   1. `git log --oneline` -> shows each commit with its "hash" in list format
-   2. `git log --online --decorate --all` -> view all commits
-   3. `git log --online --decorate --all --graph` -> view graphically all commits
-8. `git log` -> committed history
-   1. `git log --oneline` -> shows each commit with its "hash" in list format
-   2. `git log --online --decorate --all` -> view all commits
-   3. `git log --online --decorate --all --graph` -> view graphically all commits
-9. `git pull origin dev` -> brings changes from "dev" branch
-10. `git commit --amend` -> for change message from last commit
-11. `git reset HEAD <file>` -> remove the `<file>` from staging area
-12. `git checkout --<file>` -> undo the last local changes to the `<file>`
-13. `git reset <commitHash>` -> the mentioned commit is removed
-14. `git diff <commitHash-1> <commitHash-2>` -> comparison
-15. `git branch` -> show the branches
-    1. `git branch <feature>` -> create a new branch
-    2. `git checkout <feature>` -> change of branch with pointer
-    3. `git checkout -b <feature>` -> create a branch, move local changes and move the pointer to that branch
-    4. `git branch -m <actualBranchName> <newBranchName>`
-    5. `git branch -d <branchName>` -> delete branch
-    6. `git branch -D <branchName>` -> force delete branch
-16. `git tag <tagName | v0.2.0>` -> create tag from last commit
-    1. `git tag <tagName | v0.2.0> <hashCommit>` -> create tag from mentioned commit
-    2. `git tag -a <tagName | v0.2.0>` -> create a note in the mentioned tag
-    3. `git tag -d <tagName | v0.2.0>` -> delete tag
-    4. `git tag -l` -> list the tags
-    5. `git tag -l <v0.*.0>` -> list the tags which contain `<v0.*.0>`
-17. `git stash` -> save work in the stage
-    1. `git stash list` -> show all files saved in the stage
-    2. `git stash apply` -> open the last file from stage
-    3. `git stash drop` -> delete stage contain
-    4. `git stash pop` -> take out the last thing that was saved
-18. `rm -rf .git` -> remove git tracing from a project
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Essentials</h3>
+<p>Start tracking in git</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git init</code>
+
+<p>Add changes to stage</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git add</code>
+
+<p>Add to git repository</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git commit</code>
+
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Complementary</h3>
+<p>Add all changes to stage</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git add .</code>
+
+<p>Add all changes to stage and tracking from new and remove files</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git add -A</code>
+
+<p>Add to git repository and write message from commit</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git commit -m "'message'"</code>
+
+<p>Editing the commit message from last commit</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git commit --amend</code>
+
+<p>To see the status of changes that have not been committed</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git status</code>
+
+<p>Compare changes outside the stage</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git diff</code>
+
+<p>Compare changes outside the stage with stage</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git diff --staged</code>
+
+<p>Show all branches</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git branch</code>
+
+<p>Create a new branch</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git branch 'branchName'</code>
+
+<p>Change branch with pointer</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git checkout 'branchName'</code>
+
+<p>Create a new branch and move pointer to this branch</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git checkout -b 'branchName'</code>
+
+<p>Rename a branch</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git branch -m 'currentBranchName' 'newBranchName'</code>
+
+<p>Delete branch</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git branch -d 'branchName'</code>
+
+<p>Force delete branch</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git branch -D 'branchName'</code>
+
+<p>Brings latest changes remotely (can be from collaborators)</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git pull</code>
+
+<p>Brings changes from "dev" branch</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git pull origin dev</code>
+
+<p>Show history commit</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git log</code>
+
+<p>Show history commit in list format with their 'hash'(hash: commit id)</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git log --oneline</code>
+
+<p>Show all history commit</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git log --online --decorate --all</code>
+
+<p>Show history commit in a graph</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git log --online --decorate --all --graph</code>
+
+<p>Save changes in stage, but not add to stage</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git stash</code>
+
+<p>Show all files saved in the stage</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git stash list</code>
+
+<p>Open the last file from stage</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'> git stash apply</code>
+
+<p>Delete stage contain</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'> git stash drop</code>
+
+<p>Take out the last thing that was saved</p>
+<code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'> git stash pop</code>
