@@ -152,3 +152,8 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 
 <p>Take out the last thing that was saved</p>
 <code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'> git stash pop</code>
+
+<hr class='mt-20 mb-4'/>
+
+**For more information:**
+🖇️[Pro-Git book](https://git-scm.com/book/en/v2)
