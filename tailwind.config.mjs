@@ -21,6 +21,6 @@ export default {
 			'second-light': '#FAE458'
 		}
 	},
-	darkMode: ['selector'],
+	darkMode: ['class'],
 	plugins: [],
 }

@@ -14,11 +14,15 @@ export const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-  useEffect(() => {
-    const bodyElement = document.querySelector("#body-element");
-    if (!bodyElement) return;
-    bodyElement.classList.toggle("dark");
-  }, [isDarkTheme]);
+  // console.log({ isDarkTheme });
+
+  // useEffect(() => {
+  // const bodyElement = document.querySelector("html");
+  // if (!bodyElement) return;
+  // // if (!isDarkTheme) bodyElement.classList.add("dark");
+  // // bodyElement.classList.remove("dark");
+  // bodyElement.classList.toggle("dark");
+  // }, [isDarkTheme]);
 
   return (
     <>
@@ -41,12 +45,13 @@ export const Header = () => {
             </h1>
           </a>
           <button
-            className={`h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-obscure dark:text-second-dark ${
-              isDarkTheme
-                ? "hover:bg-second-dark hover:text-blank-light"
-                : "hover:bg-first-light hover:text-obscure-dark"
-            }`}
-            onClick={() => setIsDarkTheme((p) => !p)}
+            className="h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-obscure hover:bg-first-light hover:text-obscure-dark dark:text-second-dark dark:hover:bg-second-dark dark:hover:text-blank-light"
+            onClick={() => {
+              const bodyElement = document.querySelector("html");
+              if (!bodyElement) return;
+              setIsDarkTheme((p) => !p);
+              bodyElement.classList.toggle("dark");
+            }}
           >
             {isDarkTheme ? <Sun /> : <Moon />}
           </button>

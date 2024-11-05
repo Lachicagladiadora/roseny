@@ -12,13 +12,12 @@ const {pageTitle} = Astro.props
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
     <title>{BLOG_NAME}</title>
   </head>
-  <body id="body-element" class="w-full h-full min-h-[100vh] flex flex-col transition-colors bg-blank-light  dark:bg-obscure-dark text-obscure-dark dark:text-blank-light">
+  <body class="w-full h-full min-h-[100vh] flex flex-col transition-colors text-obscure-dark bg-blank-light  dark:bg-obscure-dark dark:text-blank-light">
 
     <Header client:idle/>
     <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]">
