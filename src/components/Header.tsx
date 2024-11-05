@@ -14,16 +14,6 @@ export const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-  // console.log({ isDarkTheme });
-
-  // useEffect(() => {
-  // const bodyElement = document.querySelector("html");
-  // if (!bodyElement) return;
-  // // if (!isDarkTheme) bodyElement.classList.add("dark");
-  // // bodyElement.classList.remove("dark");
-  // bodyElement.classList.toggle("dark");
-  // }, [isDarkTheme]);
-
   return (
     <>
       <div className="w-full flex items-center justify-center py-2 bg-blank-light dark:bg-obscure-dark md:py-4">
@@ -45,7 +35,7 @@ export const Header = () => {
             </h1>
           </a>
           <button
-            className="h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-obscure hover:bg-first-light hover:text-obscure-dark dark:text-second-dark dark:hover:bg-second-dark dark:hover:text-blank-light"
+            className="h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-obscure hover:bg-first-light hover:text-obscure-dark dark:text-second-dark dark:hover:bg-second-dark dark:hover:text-[white]"
             onClick={() => {
               const bodyElement = document.querySelector("html");
               if (!bodyElement) return;

@@ -5,7 +5,7 @@ export const Menu = () => {
     <div
       className="w-full py-2 px-1 border-0  border-obscure-dark text-obscure-dark bg-second-light z-10
       dark:border-blank-light dark:text-blank-light dark:bg-obscure-light 
-        md:rounded-b-2xl md:border-[2px] md:border-t-0
+        md:rounded-2xl md:border-[2px]
       "
     >
       <h3 className="py-6 text-lg font-bold text-center">Menu</h3>
