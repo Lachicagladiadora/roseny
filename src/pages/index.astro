@@ -5,10 +5,10 @@ const pageTitle = 'Home'
 
 const allPosts = await Astro.glob("./posts/*.md")
 
-const post = allPosts[allPosts.length-1]
+const posts = allPosts.filter((c, i)=>((allPosts.length-3) < i))
 ---
 <BaseLayout pageTitle={pageTitle}>
   <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
-    <BlogPost urlPost={post.url ?? "/blog"} title={post.frontmatter.title} author={post.frontmatter.author} description={post.frontmatter.description} date={post.frontmatter.pubDate.slice(0,10)} coverImage={post.frontmatter.image.url}/>
+     {posts.map((c)=><BlogPost urlPost={c.url ?? "/blog"} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url} client:idle/>)}
   </ul>
 </BaseLayout>
