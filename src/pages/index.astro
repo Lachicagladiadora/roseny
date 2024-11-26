@@ -1,5 +1,6 @@
 ---
-import BlogPost from "../components/BlogPost.astro";
+import ProjectPost from "../components/ProjectPost.astro";
+import { MY_PROJECTS } from "../constants";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = 'Home'
 
@@ -9,6 +10,6 @@ const posts = allPosts.filter((c, i)=>((allPosts.length-3) < i) )
 ---
 <BaseLayout pageTitle={pageTitle}>
   <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
-     {posts.map((c)=><BlogPost urlPost={c.url ?? "/blog"} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url} />)}
+     {MY_PROJECTS.map((c)=><ProjectPost labelUrlProject={c.labelUrlProject} nameProject={c.nameProject} description={c.description} coverImage={c.coverImage} urlGitHub={c.urlGitHub} urlProject={c.urlProject}/>)}
   </ul>
 </BaseLayout>
