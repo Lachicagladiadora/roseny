@@ -22,15 +22,15 @@ export const Menu = () => {
         </li>
         <li className="">
           <a
-            href="/about"
+            href="/portfolio"
             className="block py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 border-second 
         hover:bg-first/80 hover:text-blank-light
         dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
           >
-            About
+            Portfolio
           </a>
         </li>
-        <li className="">
+        {/* <li className="">
           <a
             href="/tags"
             className="block py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 border-second 
@@ -39,7 +39,7 @@ export const Menu = () => {
           >
             Tags
           </a>
-        </li>
+        </li> */}
         <li className="">
           <a
             href="/blog"
