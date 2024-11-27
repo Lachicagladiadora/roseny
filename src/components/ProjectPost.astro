@@ -1,0 +1,55 @@
+---
+import { GithubIcon } from "./icons/GithubIcon";
+import { Link } from "./icons/Link";
+
+interface Props {
+  urlProject: string;
+  urlGitHub: string;
+  nameProject: string;
+  description: string;
+  coverImage: string;
+}
+
+const { urlProject, nameProject, description, urlGitHub, coverImage } =
+  Astro.props;
+---
+
+<li
+  class="h-[240px] w-[360px] border-2 rounded-lg flex flex-col items-center justify-center border-first-dark overflow-hidden relative
+group/title group/image hover:border-first text-obscure-dark dark:text-blank-light dark:hover:border-blank
+dark:border-second-dark dark:bg-first-dark/60 md:h-[240px] md:w-[360px] lg:h-[300px] lg:w-[420px]"
+>
+  <div
+    class={`w-full h-full flex-1 rounded-md   grayscale image group-hover/image:grayscale-0 flex overflow-hidden`}
+  >
+    <img
+      src={coverImage ?? "./icons/Image"}
+      alt={`${nameProject} screenshot app`}
+      class="h-full w-full object-cover"
+    />
+  </div>
+  <main
+    class="w-full text-base px-2 py-1 absolute bottom-0 rounded-b-lg hidden z-10 text-first-light dark:text-blank image group-hover/image:block group-hover/image:bg-obscure-dark/80"
+  >
+    <div class="flex items-center justify-between">
+      <h3 class="flex-1 font-bold">{nameProject}</h3>
+      <div class="mb-2 flex items-center justify-center gap-2 text-xl">
+        <a
+          href={urlProject}
+          class="hover:text-second-light dark:hover:text-first"
+        >
+          <Link />
+        </a>
+        <a
+          href={urlGitHub}
+          class="hover:text-second-light dark:hover:text-first"
+        >
+          <GithubIcon />
+        </a>
+      </div>
+    </div>
+    <p class="text-sm line-clamp-2">
+      {description}
+    </p>
+  </main>
+</li>
