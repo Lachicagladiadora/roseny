@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { Sun } from "./icons/Sun";
 import { Moon } from "./icons/Moon";

@@ -1,15 +1,23 @@
 ---
 import BlogPost from "../components/BlogPost.astro";
-import { BLOG_NAME } from "../constants";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const allPosts = await Astro.glob("./posts/*.md")
-const pageTitle = BLOG_NAME
+const allPosts = await Astro.glob("./posts/*.md");
 ---
-<BaseLayout pageTitle={'Blog'}>
+
+<BaseLayout pageTitle={"Blog"}>
   <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
-    {allPosts.map((c)=>(
-      <BlogPost urlPost={c.url??"/blog"} title={c.frontmatter.title} author={c.frontmatter.author} description={c.frontmatter.description} date={c.frontmatter.pubDate.slice(0,10)} coverImage={c.frontmatter.image.url}/>
-    ))}
+    {
+      allPosts.map((c) => (
+        <BlogPost
+          urlPost={c.url ?? "/blog"}
+          title={c.frontmatter.title}
+          author={c.frontmatter.author}
+          description={c.frontmatter.description}
+          date={c.frontmatter.pubDate.slice(0, 10)}
+          coverImage={c.frontmatter.image.url}
+        />
+      ))
+    }
   </ul>
 </BaseLayout>
