@@ -6,7 +6,6 @@ export const MY_PROJECTS = [
     description:
       "Website created with Astro, React and TypeScript with the purpose of sharing development concepts that were useful to me and I hope will be useful to someone.",
     coverImage: "/social-media-dashboard.jpg",
-    labelUrlProject: "knowbud",
     urlProject: "https://c46b5294.lcg-knowbud.pages.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/lcg-knowbud",
   },
@@ -14,8 +13,7 @@ export const MY_PROJECTS = [
     nameProject: "Hacker News",
     description:
       "Hacker News is a web application built using React and TypeScript, powered by the Hacker News API. It offers users two main sections: one for browsing stories across different programming languages, and another to view bookmarked stories. Each story includes a link to read the full article.",
-    coverImage: "/social-media-dashboard.jpg",
-    labelUrlProject: "hacker-news",
+    coverImage: "/hacker-news.png",
     urlProject: "https://hacker-news-delta-wine.vercel.app/",
     urlGitHub: "https://github.com/Lachicagladiadora/hacker-news",
   },
@@ -24,7 +22,6 @@ export const MY_PROJECTS = [
     description:
       "To-do list with react and typescript, styles with react styles. This application allows you to create to-dos to mark them once completed, and you can also delete all completed to-dos. The input is used to create new to-do and also as a search engine as you type.",
     coverImage: "/to-do.jpg",
-    labelUrlProject: "to-do",
     urlProject: "https://to-do-list-pi-wheat-12.vercel.app/",
     urlGitHub: "https://github.com/Lachicagladiadora/to-do-list",
   },
@@ -33,7 +30,6 @@ export const MY_PROJECTS = [
     description:
       "Practice fetch and promises with only javascript and Chuck Norris API. view site. And deploy with GitHub-Pages",
     coverImage: "/chuck-norris-jokes.png",
-    labelUrlProject: "chuck-norris-jokes",
     urlProject: "https://lachicagladiadora.github.io/chuck-norris-jokes/",
     urlGitHub: "https://github.com/Lachicagladiadora/chuck-norris-jokes",
   },
@@ -42,7 +38,6 @@ export const MY_PROJECTS = [
     description:
       "Web project in Vite with HTML, CSS and some lines of JavaScript. Responsive layout and design practice that includes dark mode and light mode with JavaScript logic.",
     coverImage: "/social-media-dashboard.jpg",
-    labelUrlProject: "social-media-dashboard",
     urlProject:
       "https://lachicagladiadora.github.io/dashboard-project-html-css/",
     urlGitHub:
@@ -52,7 +47,6 @@ export const MY_PROJECTS = [
   //   nameProject: "",
   //   description: "",
   //   coverImage: "",
-  //   labelUrlProject: "",
   //   urlProject: "",
   //   urlGitHub: "",
   // },
@@ -60,7 +54,6 @@ export const MY_PROJECTS = [
   //   nameProject: "",
   //   description: "",
   //   coverImage: "",
-  //   labelUrlProject: "",
   //   urlProject: "",
   //   urlGitHub: "",
   // },
