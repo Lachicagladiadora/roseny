@@ -5,7 +5,7 @@ export const MY_PROJECTS = [
     nameProject: "Knowbud",
     description:
       "Website created with Astro, React and TypeScript with the purpose of sharing development concepts that were useful to me and I hope will be useful to someone.",
-    coverImage: "/social-media-dashboard.jpg",
+    coverImage: "/knowbud.png",
     urlProject: "https://c46b5294.lcg-knowbud.pages.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/lcg-knowbud",
   },
@@ -43,13 +43,13 @@ export const MY_PROJECTS = [
     urlGitHub:
       "https://github.com/Lachicagladiadora/dashboard-project-html-css",
   },
-  // {
-  //   nameProject: "",
-  //   description: "",
-  //   coverImage: "",
-  //   urlProject: "",
-  //   urlGitHub: "",
-  // },
+  {
+    nameProject: "Pocket Budget",
+    description: "Web app for manage money",
+    coverImage: "/pocket-budget.png",
+    urlProject: "https://pocket-budget.jimynicanor.com/",
+    urlGitHub: "",
+  },
   // {
   //   nameProject: "",
   //   description: "",

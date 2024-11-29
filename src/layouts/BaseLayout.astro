@@ -1,12 +1,14 @@
 ---
-import Footer from '../components/Footer.astro';
-import { Header } from '../components/Header';
-import { BLOG_NAME } from '../constants';
-import '../styles/global.css';
+import Footer from "../components/Footer.astro";
+import { Header } from "../components/Header";
+import { BLOG_NAME } from "../constants";
+import "../styles/global.css";
 
-interface Props {pageTitle: string}
+interface Props {
+  pageTitle: string;
+}
 
-const {pageTitle} = Astro.props
+const { pageTitle } = Astro.props;
 ---
 
 <html lang="en">
@@ -14,18 +16,22 @@ const {pageTitle} = Astro.props
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
+    <meta name="generator" content={Astro.generator} />
     <title>{BLOG_NAME}</title>
   </head>
-  <body id="body-element" class="w-full h-full min-h-[100vh] flex flex-col transition-colors text-obscure-dark bg-blank-light  dark:bg-obscure-dark dark:text-blank-light">
-
-    <Header client:idle/>
+  <body
+    id="body-element"
+    class="w-full h-full min-h-[100vh] flex flex-col transition-colors text-obscure-dark bg-blank-light dark:bg-obscure-dark dark:text-blank-light"
+  >
+    <Header client:idle />
     <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]">
-      <h1 class="pt-6 pb-2 text-4xl font-bold text-first-dark dark:text-second">{`${pageTitle}`}</h1>
-      <hr class="text-first-dark dark:text-second">
+      <h1 class="pt-6 pb-2 text-3xl font-bold text-first-dark dark:text-second">
+        {`${pageTitle}`}
+      </h1>
+      <hr class="text-first-dark dark:text-second" />
 
-      <slot/>
+      <slot />
     </main>
-    <Footer/>
+    <Footer />
   </body>
 </html>
