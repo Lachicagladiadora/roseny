@@ -14,39 +14,53 @@ tags: ["html", "dev", "learn", "basic"]
 
 <!-- ## HTML Syntax -->
 
-- Basic structure
+<!-- - Basic structure -->
+  <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Basic structure</h3>
 
-  ```html
-  <!DOCTYPE html>
-  <html lang="es">
-    <head>
-      <meta charset="utf-8" />
-      <title>Title</title>
-    </head>
-    <body></body>
-  </html>
-  ```
+<!-- <code
+class="block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark"
 
-- Usual basic structure
-  ```html
-  <!DOCTYPE html>
-  <html lang="es">
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale-1.0" />
-      Visible part on the device (visible part of the device, fits the size)
-      <meta name="description" content="Una genial descripcion de mi pagina" />
-      <title>Title of my web page</title>
-      <!-- rel=raletioship (what type of ratio is it) href: relative url of the document -->
-      <link rel="stylesheet" href="styles.css" />
-      <link rel="shortcut icon" href="favicon.png" />
-    </head>
-    <body>
-      <h1>Title of my web page</h1>
-      <scrip src="scripts.js"></scrip>
-    </body>
-  </html>
-  ```
+> -->
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+  </head>
+  <body></body>
+</html>
+```
+
+<!-- </code> -->
+
+<!-- </code> -->
+<!-- ```` -->
+
+<!-- - Usual basic structure -->
+  <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Usual basic structure</h3>
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    Visible part on the device (visible part of the device, fits the size)
+    <meta name="description" content="Una genial descripcion de mi pagina" />
+    <title>Title of my web page</title>
+    <!-- rel=raletioship (what type of ratio is it) href: relative url of the document -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
+  <body>
+    <h1>Title of my web page</h1>
+    <scrip src="scripts.js"></scrip>
+  </body>
+</html>
+```
+
 - Everything inside **“body”** is content.
 - You can put styles inside the body, but it is not recommended.
 - Everything inside **“head”** is metadata (describing data, content, documents or files)
@@ -89,7 +103,9 @@ tags: ["html", "dev", "learn", "basic"]
   Para poner **notas** en pie de pagina y **creditos**
   ```
 
-## Etiquetas de agrupacion de contenido
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Content grouping labels</h3>
+
+<!-- ## Etiquetas de agrupacion de contenido -->
 
 Agrupar informacion en bloques
 
@@ -125,7 +141,7 @@ Agrupar informacion en bloques
     <pre>
   		<code>
   			funtion hola(){
-  				return "hola"	
+  				return "hola"
   			}
   		</code>
   	</pre>
@@ -166,7 +182,9 @@ Agrupar informacion en bloques
   </div>
   ```
 
-## Elemento de textos y enlaces
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Element of texts and links</h3>
+
+<!-- ## Elemento de textos y enlaces -->
 
 - elemento de linea → hace que los elementos se ubique uno al lado del otro (linealmente)
   ```html
@@ -201,3 +219,7 @@ Los elementos de **linea** estan **dentro** de los elementos de **bloque**
 
 - 🖇️[Article in English](https://www.conventionalcommits.org/en/v1.0.0/)
 - 🖇️[Article in Spanish](https://dev.to/achamorro_dev/conventional-commits-que-es-y-por-que-deberias-empezar-a-utilizarlo-23an)
+
+```
+
+```
