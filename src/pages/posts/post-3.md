@@ -12,15 +12,7 @@ tags: ["html", "dev", "learn", "basic"]
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>HTML Syntax</h2>
 
-<!-- ## HTML Syntax -->
-
-<!-- - Basic structure -->
-  <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Basic structure</h3>
-
-<!-- <code
-class="block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark"
-
-> -->
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Basic structure</h3>
 
 ```html
 <!DOCTYPE html>
@@ -33,13 +25,7 @@ class="block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-
 </html>
 ```
 
-<!-- </code> -->
-
-<!-- </code> -->
-<!-- ```` -->
-
-<!-- - Usual basic structure -->
-  <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Usual basic structure</h3>
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Usual basic structure</h3>
 
 ```html
 <!DOCTYPE html>
@@ -61,26 +47,30 @@ class="block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-
 </html>
 ```
 
-- Everything inside **“body”** is content.
-- You can put styles inside the body, but it is not recommended.
-- Everything inside **“head”** is metadata (describing data, content, documents or files)
-- HTML → que es cada elemento
-- CSS → es diseno
-- JS → le da interaccion, generalmente se vee al final del **“body”**
-  - animacion
-  - formularios
-  - data de una api
-  - pintar contenido en pantalla
-  - mostrar graficos en tiempo real
-- Headers
-  ```html
-  <h1>Header 1</h1>
-  <h2>Header 2</h2>
-  <h3>Header 3</h3>
-  <h4>Header 4</h4>
-  <h5>Header 5</h5>
-  <h6>Header 6</h6>
-  ```
+  <ol class='list-inside list-disc'>
+	  <li>
+    Everything inside **“body”** is content.
+    </li>
+    <li>
+    You can put styles inside the body, but it is not recommended.
+    </li>
+    <li>
+    Everything inside **“head”** is metadata (describing data, content, documents or files)
+    </li>
+	</ol>
+  
+<!-- - Headers -->
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Headers</h3>
+
+```html
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+<h3>Header 3</h3>
+<h4>Header 4</h4>
+<h5>Header 5</h5>
+<h6>Header 6</h6>
+```
+
 - Etiquetas de seccion → Divide la pagina en bloques
   ```html
   <header></header>
@@ -217,8 +207,9 @@ Los elementos de **linea** estan **dentro** de los elementos de **bloque**
 
 **For more information**
 
+<!--
 - 🖇️[Article in English](https://www.conventionalcommits.org/en/v1.0.0/)
-- 🖇️[Article in Spanish](https://dev.to/achamorro_dev/conventional-commits-que-es-y-por-que-deberias-empezar-a-utilizarlo-23an)
+- 🖇️[Article in Spanish](https://dev.to/achamorro_dev/conventional-commits-que-es-y-por-que-deberias-empezar-a-utilizarlo-23an) -->
 
 ```
 
