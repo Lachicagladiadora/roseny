@@ -49,18 +49,19 @@ tags: ["html", "dev", "learn", "basic"]
 
   <ol class='list-inside list-disc'>
 	  <li>
-    Everything inside **“body”** is content.
+    Everything inside <strong>“body”</strong> is content.
     </li>
     <li>
     You can put styles inside the body, but it is not recommended.
     </li>
     <li>
-    Everything inside **“head”** is metadata (describing data, content, documents or files)
+    Everything inside <strong>“head”</strong> is metadata (describing data, content, documents or files)
     </li>
 	</ol>
   
 <!-- - Headers -->
-<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Headers</h3>
+<!-- <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Headers</h3> -->
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Headers</h2>
 
 ```html
 <h1>Header 1</h1>
@@ -71,29 +72,55 @@ tags: ["html", "dev", "learn", "basic"]
 <h6>Header 6</h6>
 ```
 
-- Etiquetas de seccion → Divide la pagina en bloques
-  ```html
-  <header></header>
-  Encabezado
-  <nav></nav>
-  barra de navegacion
-  <article>
-    elemento de contenido unico (articulo de un blog, tutorial)
-    <h1>Titulo</h1>
-    <section>
-      Divisiones de la pagina (ejem: un tutorial. tiene sus secciones, es decir,
-      pasos)
-      <h2>subtitulo</h2>
-    </section>
-  </article>
-  <aside></aside>
-  Contenido que pones y que no esta relacionado con el contenido principal
-  (ejem; publicidad)
-  <footer></footer>
-  Para poner **notas** en pie de pagina y **creditos**
-  ```
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Section Labels</h2>
 
-<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Content grouping labels</h3>
+Divide la pagina en bloques
+
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Headers</h3>
+
+```html
+<header></header>
+```
+
+<!-- barra de navegacion -->
+
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Navigation Bar</h3>
+
+```html
+<nav></nav>
+```
+
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Content</h3>
+
+**Article tag**: elemento de contenido unico (articulo de un blog, tutorial)
+
+```html
+<article>
+  <h1>Titulo</h1>
+  <section>
+    Divisiones de la pagina (ejem: un tutorial. tiene sus secciones, es decir,
+    pasos)
+    <h2>subtitulo</h2>
+  </section>
+</article>
+```
+
+Contenido que pones y que no esta relacionado con el contenido principal (ejem;
+publicidad)
+
+```html
+<aside></aside>
+```
+
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Footer</h3>
+
+Para poner **notas** en pie de pagina y **creditos**
+
+```html
+<footer></footer>
+```
+
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Content grouping labels</h2>
 
 <!-- ## Etiquetas de agrupacion de contenido -->
 
@@ -172,14 +199,18 @@ Agrupar informacion en bloques
   </div>
   ```
 
-<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Element of texts and links</h3>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Element of texts and links</h2>
 
 <!-- ## Elemento de textos y enlaces -->
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Line element</h3>
 
 - elemento de linea → hace que los elementos se ubique uno al lado del otro (linealmente)
   ```html
   <span>Este es un elemento de linea</span>
   ```
+
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Block element</h3>
+
 - elemento de bloque →visualmete ocupa (reserva) todo el espacio disponible en pantalla
   ```html
   <p>Este es un elemento de bloque</p>
