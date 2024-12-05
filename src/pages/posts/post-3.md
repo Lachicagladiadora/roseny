@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "HTML"
 pubDate: 2024-11-29
-description: "Learn HTML syntax and use elements"
+description: "HTML is a Markup language not programming language"
 author: "Lachicagladiadora"
 image:
   url: "https://images.pexels.com/photos/11035371/pexels-photo-11035371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -59,8 +59,6 @@ tags: ["html", "dev", "learn", "basic"]
     </li>
 	</ol>
   
-<!-- - Headers -->
-<!-- <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Headers</h3> -->
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Headers</h2>
 
 ```html
@@ -74,15 +72,13 @@ tags: ["html", "dev", "learn", "basic"]
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Section Labels</h2>
 
-Divide la pagina en bloques
+Divide the page into blocks
 
 <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Headers</h3>
 
 ```html
 <header></header>
 ```
-
-<!-- barra de navegacion -->
 
 <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Navigation Bar</h3>
 
@@ -92,21 +88,19 @@ Divide la pagina en bloques
 
 <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Content</h3>
 
-**Article tag**: elemento de contenido unico (articulo de un blog, tutorial)
+**Article tag**: Single content item (blog post, tutorial)
 
 ```html
 <article>
-  <h1>Titulo</h1>
+  <h1>Title</h1>
   <section>
-    Divisiones de la pagina (ejem: un tutorial. tiene sus secciones, es decir,
-    pasos)
-    <h2>subtitulo</h2>
+    Page divisions (e.g. a tutorial has its sections, i.e. steps)
+    <h2>Caption</h2>
   </section>
 </article>
 ```
 
-Contenido que pones y que no esta relacionado con el contenido principal (ejem;
-publicidad)
+Content you post that is not related to the main content (e.g. advertising)
 
 ```html
 <aside></aside>
@@ -114,7 +108,7 @@ publicidad)
 
 <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Footer</h3>
 
-Para poner **notas** en pie de pagina y **creditos**
+To put **footnotes** and **credits**
 
 ```html
 <footer></footer>
@@ -122,126 +116,141 @@ Para poner **notas** en pie de pagina y **creditos**
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Content grouping labels</h2>
 
-<!-- ## Etiquetas de agrupacion de contenido -->
+Group information into blocks
 
-Agrupar informacion en bloques
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Nested lists</h3>
 
-- Listas anidadas
-  ```html
-  <ul>
-  	<li>Item de lista 1</li>
-  	<li>Item de lista 2</li>
-  		<ol>
-  			<li>Subitem de lista 1</li>
-  			<li>Subitem de lista 2</li>
-  		</ol>
-  	</li>
-  	<li>Item de lista 3</li>
-  </ul>
-  ```
-- Listas de definicion
-  ```html
-  <dl>
-    <dt>Peru</dt>
-    <dd>Lima</dd>
-    <dt>Colombia</dt>
-    <dd>Bogota</dd>
-    <dt>Bolivia</dt>
-    <dd>La Paz</dd>
-  </dl>
-  ```
-- figure y figcaption → contenido relacionado, pero que rompe el flujo (ejem; imagen, video, cita, codigo, )
-  ```html
-  <figure>
-    Pedazo de contenido(imagen, etc) que esta relacionado pero que rompe el
-    flujo
-    <pre>
-  		<code>
-  			funtion hola(){
-  				return "hola"
-  			}
-  		</code>
-  	</pre>
-    <figcaption>Declaracion de una funcion de JavaScript</figcaption>
-    Leyenda del figure (descripcion), es **opcional**
-  </figure>
-  ```
-- Otros elementos
-  ```html
-  <main>
-    Se pone el elemento mas importante de una pagina web (contenido mas
-    importante)
-    <p>Este es un parrafo, es decir, un bloque de texto</p>
-    parrafo
-    <hr />
-    Cambio de seccion, capitulo, un cambio de significado en el texto
-    <pre>
-         preformateado (el navegador toma el texto tal y como se ingresa, con espacios)
-  		Este texto
-  			se representara igual
-  	en el navegador
-  	</pre
-    >
-    <blockquote>
-      resaltar parte del contenido Use un Blockquote para destacar citas
-    </blockquote>
-  </main>
-  ```
-- Divisiones (layout)
-  ```html
-  <div class="user">
-  	<div class="user__name">
-  		<p>Alexys Lozada</p>
-  	</div>
-  	<div class="user__image">
-  		<image src="alexis.jpg" alt="Foto de Alexis Lozada">
-  	</div>
-  </div>
-  ```
+```html
+<ul>
+	<li>List item 1</li>
+	<li>List item 2</li>
+		<ol>
+			<li>List subitem 1</li>
+			<li>List subitem 2</li>
+		</ol>
+	</li>
+	<li>List item 3</li>
+</ul>
+```
+
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Definition lists</h3>
+
+```html
+<dl>
+  <dt>Peru</dt>
+  <dd>Lima</dd>
+  <dt>Colombia</dt>
+  <dd>Bogota</dd>
+  <dt>Bolivia</dt>
+  <dd>La Paz</dd>
+</dl>
+```
+
+  <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Figure & Figcaption</h3>
+
+Related content, but which breaks the flow (e.g.; image, video, quote, code, ...)
+
+```html
+<figure>
+  Piece of content (image, etc.) that is related but breaks the flow
+  <pre>
+		<code>
+      function getGreets(){
+				return "Hi there!"
+			}
+		</code>
+	</pre>
+  <figcaption>Declaring a JavaScript function</figcaption>
+  Figure legend (description), it is **optional**
+</figure>
+```
+
+<h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Other elements</h3>
+
+```html
+<main>
+  Main is the most important element of a web page is placed (most important
+  content)
+  <p>This is a paragraph, that is, a block of text</p>
+  <!-- hr tag: Change of section, chapter, a change of meaning in the text -->
+  <hr />
+  <pre>
+       preformatted (the browser takes the text exactly as it is entered, with spaces)
+    This text
+                    will be displayed the same
+        in the browser
+	</pre
+  >
+  <blockquote>
+    Highlight part of the content Use a Blockquote to highlight quotes
+  </blockquote>
+</main>
+```
+
+  <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Divisions</h3>
+
+```html
+<div class="user">
+	<div class="user__name">
+		<p>J.R. Tolkien</p>
+	</div>
+	<div class="user__image">
+		<image src="https://www.pexels.com/es-es/foto/libro-luz-de-vela-iluminado-candelero-6958119/" alt='Photo from "The Lord of the Rings"'>
+	</div>
+</div>
+```
 
 <h2 class='pt-6 pb-2 text-2xl font-bold text-first-dark dark:text-second'>Element of texts and links</h2>
 
-<!-- ## Elemento de textos y enlaces -->
 <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Line element</h3>
 
-- elemento de linea → hace que los elementos se ubique uno al lado del otro (linealmente)
-  ```html
-  <span>Este es un elemento de linea</span>
-  ```
+Makes elements sit next to each other (linearly)
+
+```html
+<span>This is a line element</span>
+```
 
 <h3 class='pt-6 pb-2 text-2xl text-first-dark dark:text-second'>Block element</h3>
 
-- elemento de bloque →visualmete ocupa (reserva) todo el espacio disponible en pantalla
-  ```html
-  <p>Este es un elemento de bloque</p>
-  ```
-
-Los elementos de **linea** estan **dentro** de los elementos de **bloque**
+Visually occupies (reserves) all available space on the screen
 
 ```html
+<p>This is a block element</p>
+```
+
+**Line** elements are **inside** **block** elements
+
+```html
+<div>
+  <small></small> <strong></strong> important text, text is bolded <em></em> you
+  emphasize the tempo, the text looks tilted <i></i> italic <b></b> bold
+  <u></u> underline <wbr /> word break <mark></mark> highlights
+</div>
+
 <p>
-  <small></small>
-  <strong></strong> texto importante, el texto se pone en negrita
-  <em></em> enfatizas el tento, el texto se ve inclinado <cite></cite> para
-  citar <dfn></dfn> para definir <code></code> para poner fragmentos de codigo
-  <data></data> para poner datos (de programa, etc) <br />
-  saltos de linea <q></q> citas <abbr></abbr> abreviacion <del></del> un texto
-  ha sido eliminado (descuentos, ofertas) <wbr /> word brak, ruptura de palabra
-  <span></span> div=contenedor, no significa nada <i></i> italic <b></b> bold
-  <u></u> underline <sup></sup> superindice, letra pequena arriba
-  <sub></sub> subindice, letra pequena abajo <time></time> cuando quieres poner,
-  hora o fecha <mark></mark> resalta <a href=""></a> enlaces
+  <q></q> quotes <cite></cite> to quote <br />line breaks
+  <span></span>container, means nothing
 </p>
+
+<main>
+  <code></code> to put code snippets <dfn></dfn> to define <data></data> to put
+  data (program,etc.) <abbr></abbr> abbreviation <del></del> a text has been
+  deleted (discounts, offers)
+</main>
+
+<aside>
+  <sup></sup> superscript, fine print above <sub></sub> subscript, small print
+  below
+</aside>
+
+<nav>
+  <time></time> When you want to set the time or date <a href=""></a> links
+</nav>
 ```
 
 <hr class='mt-20 mb-4'/>
 
 **For more information**
 
-<!--
-- 🖇️[Article in English](https://www.conventionalcommits.org/en/v1.0.0/)
-- 🖇️[Article in Spanish](https://dev.to/achamorro_dev/conventional-commits-que-es-y-por-que-deberias-empezar-a-utilizarlo-23an) -->
-
-```
-
-```
+- 🖇️[HTML mdn web docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- 🖇️[HTML basics mdn web docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
