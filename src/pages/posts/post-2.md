@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Conventional Commits"
-pubDate: 2022-11-01
+pubDate: 2024-11-01
 description: "Specification is a lightweight convention on top of commit messages"
 author: "Lachicagladiadora"
 image:

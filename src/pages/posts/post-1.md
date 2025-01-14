@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Learn about Git"
-pubDate: 2022-10-23
+pubDate: 2024-10-23
 description: "It’s not like git got everything right, but it got all the really basic issues right in a way that no other SCM had ever done before. -Linus Torvalds"
 author: "Lachicagladiadora"
 image:

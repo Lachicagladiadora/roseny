@@ -2,6 +2,28 @@ export const BLOG_NAME = "Knowbud";
 
 export const MY_PROJECTS = [
   {
+    nameProject: "Diet Pixie",
+    description:
+      "App to see how your weight is and based on a goal such as 'maintaining your weight', it gives you a diet per day in grams.",
+    coverImage: "/diet-pixie.png",
+    urlProject: "https://b388514b.diet-pixie.pages.dev/",
+    urlGitHub: "https://github.com/Lachicagladiadora/diet-pixie",
+  },
+  {
+    nameProject: "BitSip",
+    description: "App for recipes for food, desserts and drinks.",
+    coverImage: "/bitsip.png",
+    urlProject: "https://recipes-app-95v.pages.dev/",
+    urlGitHub: "https://github.com/Lachicagladiadora/bitsip",
+  },
+  {
+    nameProject: "Pocket Budget",
+    description: "Web app for manage money",
+    coverImage: "/pocket-budget.png",
+    urlProject: "https://pocket-budget.jimynicanor.com/",
+    urlGitHub: "",
+  },
+  {
     nameProject: "Knowbud",
     description:
       "Website created with Astro, React and TypeScript with the purpose of sharing development concepts that were useful to me and I hope will be useful to someone.",
@@ -16,14 +38,6 @@ export const MY_PROJECTS = [
     coverImage: "/hacker-news.png",
     urlProject: "https://hacker-news-delta-wine.vercel.app/",
     urlGitHub: "https://github.com/Lachicagladiadora/hacker-news",
-  },
-  {
-    nameProject: "TO-DO LIST",
-    description:
-      "To-do list with react and typescript, styles with react styles. This application allows you to create to-dos to mark them once completed, and you can also delete all completed to-dos. The input is used to create new to-do and also as a search engine as you type.",
-    coverImage: "/to-do.jpg",
-    urlProject: "https://to-do-list-pi-wheat-12.vercel.app/",
-    urlGitHub: "https://github.com/Lachicagladiadora/to-do-list",
   },
   {
     nameProject: "Chuck Norris Jokes",
@@ -43,13 +57,7 @@ export const MY_PROJECTS = [
     urlGitHub:
       "https://github.com/Lachicagladiadora/dashboard-project-html-css",
   },
-  {
-    nameProject: "Pocket Budget",
-    description: "Web app for manage money",
-    coverImage: "/pocket-budget.png",
-    urlProject: "https://pocket-budget.jimynicanor.com/",
-    urlGitHub: "",
-  },
+
   // {
   //   nameProject: "",
   //   description: "",
