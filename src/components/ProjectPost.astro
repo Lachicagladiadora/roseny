@@ -20,13 +20,15 @@ group/title group/image hover:border-first text-obscure-dark dark:text-blank-lig
 dark:border-second-dark dark:bg-first-dark/60 md:h-[240px] md:w-[360px] lg:h-[300px] lg:w-[420px]"
 >
   <div
-    class={`w-full h-full flex-1 rounded-md   grayscale image group-hover/image:grayscale-0 flex overflow-hidden`}
+    class={`w-full h-full flex-1 rounded-md grayscale image group-hover/image:grayscale-0 flex overflow-hidden`}
   >
-    <img
-      src={coverImage ?? "./icons/Image"}
-      alt={`${nameProject} screenshot app`}
-      class="h-full w-full object-cover"
-    />
+    <a href={urlProject} target="_blank" class="w-full h-full">
+      <img
+        src={coverImage ?? "./icons/Image"}
+        alt={`${nameProject} screenshot app`}
+        class="h-full w-full object-cover"
+      />
+    </a>
   </div>
   <main
     class="w-full text-base px-2 py-1 absolute bottom-0 rounded-b-lg hidden z-10 text-first-light dark:text-blank image group-hover/image:block group-hover/image:bg-obscure-dark/80"
