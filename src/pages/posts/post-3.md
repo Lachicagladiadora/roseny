@@ -36,7 +36,6 @@ tags: ["html", "dev", "learn", "basic"]
     Visible part on the device (visible part of the device, fits the size)
     <meta name="description" content="Una genial descripcion de mi pagina" />
     <title>Title of my web page</title>
-    <!-- rel=raletioship (what type of ratio is it) href: relative url of the document -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="favicon.png" />
   </head>
