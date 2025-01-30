@@ -11,7 +11,7 @@ export default {
 
 			'blank': '#dadada',
 			'blank-dark': '#cacaca',
-			'blank-light': '#fffdf3',
+			'blank-light': '#fffefa',
 
 			'first': '#dff2ff',
 			'first-dark': '#c1dfff',
