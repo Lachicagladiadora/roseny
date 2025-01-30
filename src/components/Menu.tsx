@@ -14,7 +14,7 @@ export const Menu = () => {
           <a
             href="/"
             className="block py-4 px-2 text-center border-t-4 border-b-2 last:border-b-0 border-second 
-        hover:bg-first/80 hover:text-blank-light
+        hover:bg-first/80 
         dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
           >
             Home
@@ -24,7 +24,7 @@ export const Menu = () => {
           <a
             href="/portfolio"
             className="block py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 border-second 
-        hover:bg-first/80 hover:text-blank-light
+        hover:bg-first/80 
         dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
           >
             Portfolio
@@ -44,7 +44,7 @@ export const Menu = () => {
           <a
             href="/blog"
             className="block py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 border-second 
-        hover:bg-first/80 hover:text-blank-light
+        hover:bg-first/80
         dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
           >
             Blog
@@ -54,7 +54,7 @@ export const Menu = () => {
           <a
             href="/contact"
             className="block py-4 px-2 text-center border-t-2 border-b-2 last:border-b-0 last:rounded-b-xl border-second 
-        hover:bg-first/80 hover:text-blank-light
+        hover:bg-first/80
         dark:border-first dark:hover:bg-blank dark:hover:text-obscure-dark dark:hover:border-second"
           >
             Contact
