@@ -3,12 +3,6 @@ import Footer from "../components/Footer.astro";
 import { Header } from "../components/Header";
 import { BLOG_NAME } from "../constants";
 import "../styles/global.css";
-
-// interface Props {
-//   pageTitle: string;
-// }
-
-// const { pageTitle } = Astro.props;
 ---
 
 <html lang="en">
@@ -25,11 +19,6 @@ import "../styles/global.css";
   >
     <Header client:idle />
     <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]">
-      <!-- <h1 class="pt-6 pb-2 text-3xl font-bold text-first-dark dark:text-second">
-        {`${pageTitle}`}
-      </h1>
-      <hr class="text-first-dark dark:text-second" /> -->
-
       <slot />
     </main>
     <Footer />
