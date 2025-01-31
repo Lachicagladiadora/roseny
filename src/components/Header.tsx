@@ -35,7 +35,7 @@ export const Header = () => {
             </h1>
           </a>
           <button
-            className="h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-obscure hover:bg-first-light hover:text-obscure-dark dark:text-second-dark dark:hover:bg-second-dark dark:hover:text-[white]"
+            className="h-[36px] w-[36px] text-xl md:text-2xl lg:3xl p-[2px] rounded-full flex items-center justify-center transition text-obscure hover:bg-first-light hover:text-blank-light dark:text-second-dark dark:hover:bg-blank dark:hover:text-obscure-light"
             onClick={() => {
               const bodyElement = document.querySelector("html");
               if (!bodyElement) return;

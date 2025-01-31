@@ -13,13 +13,13 @@ export default {
 			'blank-dark': '#cacaca',
 			'blank-light': '#fffefa',
 
-			'first': '#dff2ff',
-			'first-dark': '#c1dfff',
-			'first-light': '#eff9ff',
+			'first': '#202020',
+			'first-dark': '#000000',
+			'first-light': '#464646',
 
-			'second': '#fff4d7',
-			'second-dark': '#fff1be',
-			'second-light': '#fffbdf'
+			'second': '#dadada',
+			'second-dark': '#cacaca',
+			'second-light': '#fffefa'
 
 			// 'obscure': '#1D5D9B',
 			// 'obscure-dark': '#0A1931',
