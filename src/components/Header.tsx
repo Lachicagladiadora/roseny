@@ -7,9 +7,17 @@ import { Menu } from "./Menu";
 export const Header = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-  useEffect(() => {
+  const updatedTheme = () => {
     const theme = localStorage.getItem("theme");
     setIsDarkTheme(Boolean(theme));
+  };
+
+  useEffect(() => {
+    const htmlElement = document.querySelector("html");
+    const theme = localStorage.getItem("theme");
+
+    setIsDarkTheme(Boolean(theme));
+    htmlElement?.classList.toggle("dark");
   }, []);
 
   return (
@@ -27,6 +35,7 @@ export const Header = () => {
                 localStorage.setItem("theme", `${!p}`);
                 return !p;
               });
+              updatedTheme();
             }}
           >
             {isDarkTheme ? <Sun /> : <Moon />}
