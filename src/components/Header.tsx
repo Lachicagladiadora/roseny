@@ -24,12 +24,8 @@ export const Header = () => {
   }, []);
 
   useEffect(() => {
-    // const htmlElement = document.querySelector("html");
     const page = localStorage.getItem("page") ?? "Home";
     setCurrentPage(page as Page);
-
-    // setIsDarkTheme(Boolean(theme));
-    // htmlElement?.classList.toggle("dark");
   }, []);
 
   return (

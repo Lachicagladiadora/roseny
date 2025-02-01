@@ -7,9 +7,9 @@ type MenuProps = { currentPage: Page; fnChangePage: (_p: Page) => void };
 export const Menu = ({ currentPage, fnChangePage }: MenuProps) => {
   return (
     <div className="w-full">
-      <ul className="w-full flex items-center gap-6">
+      <ul className="w-full flex items-center gap-8">
         <li
-          className={` hover:text-obscure-light dark:hover:text-blank-dark
+          className={`hover:font-bold hover:text-obscure-light dark:hover:text-blank-dark
               ${currentPage === "Home" ? "font-bold" : ""}
               `}
           onClick={() => {
@@ -21,7 +21,7 @@ export const Menu = ({ currentPage, fnChangePage }: MenuProps) => {
           Home
         </li>
         <li
-          className={` hover:text-obscure-light dark:hover:text-blank-dark
+          className={`hover:font-bold hover:text-obscure-light dark:hover:text-blank-dark
               ${currentPage === "Portfolio" ? "font-bold" : ""}
               `}
           onClick={() => {
@@ -33,7 +33,7 @@ export const Menu = ({ currentPage, fnChangePage }: MenuProps) => {
           Portfolio
         </li>
         <li
-          className={` hover:text-obscure-light dark:hover:text-blank-dark
+          className={`hover:font-bold hover:text-obscure-light dark:hover:text-blank-dark
               ${currentPage === "Blog" ? "font-bold" : ""}
               `}
           onClick={() => {
@@ -45,7 +45,7 @@ export const Menu = ({ currentPage, fnChangePage }: MenuProps) => {
           Blog
         </li>
         <li
-          className={` hover:text-obscure-light dark:hover:text-blank-dark
+          className={`hover:font-bold hover:text-obscure-light dark:hover:text-blank-dark
               ${currentPage === "Contact" ? "font-bold" : ""}
               `}
           onClick={() => {
