@@ -1,6 +1,6 @@
 ---
 import { GithubIcon } from "./icons/GithubIcon";
-import { Link } from "./icons/Link";
+import { ArrowTopRightOnSquare } from "./icons/ArrowTopRightOnSquare";
 
 interface Props {
   urlProject: string;
@@ -15,7 +15,7 @@ const { urlProject, nameProject, description, urlGitHub, coverImage } =
 ---
 
 <li
-  class="h-[240px] w-[360px] rounded-lg flex flex-col items-center justify-center overflow-hidden relative shadow-md
+  class="h-[240px] w-[360px] rounded-lg flex flex-col items-center justify-center overflow-hidden relative shadow-md dark:shadow-obscure-light
 group/title group/image text-obscure-dark dark:text-blank-light dark:bg-first-dark/60 md:h-[240px] md:w-[360px] lg:h-[300px] lg:w-[420px]"
 >
   <div
@@ -39,7 +39,7 @@ group/title group/image text-obscure-dark dark:text-blank-light dark:bg-first-da
           href={urlProject}
           class="p-1 hover:text-obscure hover:bg-blank rounded-full"
         >
-          <Link />
+          <ArrowTopRightOnSquare />
         </a>
         <a
           href={urlGitHub}
