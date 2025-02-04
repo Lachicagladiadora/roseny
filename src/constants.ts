@@ -6,14 +6,14 @@ export const MY_PROJECTS = [
     description:
       "App to see how your weight is and based on a goal such as 'maintaining your weight', it gives you a diet per day in grams.",
     coverImage: "/diet-pixie.png",
-    urlProject: "https://b388514b.diet-pixie.pages.dev/",
+    urlProject: "https://diet-pixie.roseny.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/diet-pixie",
   },
   {
     nameProject: "BitSip",
     description: "App for recipes for food, desserts and drinks.",
     coverImage: "/bitsip.png",
-    urlProject: "https://recipes-app-95v.pages.dev/",
+    urlProject: "https://bitsip.roseny.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/bitsip",
   },
   {
