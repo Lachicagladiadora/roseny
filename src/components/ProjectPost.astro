@@ -1,5 +1,6 @@
 ---
 import { GithubIcon } from "./icons/GithubIcon";
+import { PuzzlePice } from "./icons/PuzzlePice";
 import { ArrowTopRightOnSquare } from "./icons/ArrowTopRightOnSquare";
 
 interface Props {
@@ -8,10 +9,17 @@ interface Props {
   nameProject: string;
   description: string;
   coverImage: string;
+  collaboration: boolean;
 }
 
-const { urlProject, nameProject, description, urlGitHub, coverImage } =
-  Astro.props;
+const {
+  urlProject,
+  nameProject,
+  description,
+  urlGitHub,
+  coverImage,
+  collaboration,
+} = Astro.props;
 ---
 
 <li
@@ -35,15 +43,24 @@ group/title group/image text-obscure-dark dark:text-blank-light dark:bg-first-da
     <div class="flex items-center justify-between">
       <h3 class="flex-1 font-bold">{nameProject}</h3>
       <div class="mb-2 flex items-center justify-center gap-2 text-xl">
+        {
+          collaboration && (
+            <span title="Project collaborative">
+              <PuzzlePice />
+            </span>
+          )
+        }
         <a
           href={urlProject}
           class="p-1 hover:text-obscure hover:bg-blank rounded-full"
+          title="Preview in another tab"
         >
           <ArrowTopRightOnSquare />
         </a>
         <a
           href={urlGitHub}
           class="p-1 hover:text-obscure hover:bg-blank rounded-full"
+          title="Go to the project repository"
         >
           <GithubIcon />
         </a>

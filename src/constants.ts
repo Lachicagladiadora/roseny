@@ -8,6 +8,7 @@ export const MY_PROJECTS = [
     coverImage: "/diet-pixie.png",
     urlProject: "https://diet-pixie.roseny.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/diet-pixie",
+    collaboration: false,
   },
   {
     nameProject: "BitSip",
@@ -15,6 +16,7 @@ export const MY_PROJECTS = [
     coverImage: "/bitsip.png",
     urlProject: "https://bitsip.roseny.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/bitsip",
+    collaboration: false,
   },
   {
     nameProject: "Pocket Budget",
@@ -22,6 +24,7 @@ export const MY_PROJECTS = [
     coverImage: "/pocket-budget.png",
     urlProject: "https://pocket-budget.jimynicanor.com/",
     urlGitHub: "",
+    collaboration: true,
   },
   {
     nameProject: "Knowbud",
@@ -30,6 +33,7 @@ export const MY_PROJECTS = [
     coverImage: "/knowbud.png",
     urlProject: "https://c46b5294.lcg-knowbud.pages.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/lcg-knowbud",
+    collaboration: false,
   },
   {
     nameProject: "Hacker News",
@@ -38,6 +42,7 @@ export const MY_PROJECTS = [
     coverImage: "/hacker-news.png",
     urlProject: "https://hacker-news-delta-wine.vercel.app/",
     urlGitHub: "https://github.com/Lachicagladiadora/hacker-news",
+    collaboration: false,
   },
   {
     nameProject: "Chuck Norris Jokes",
@@ -46,6 +51,7 @@ export const MY_PROJECTS = [
     coverImage: "/chuck-norris-jokes.png",
     urlProject: "https://lachicagladiadora.github.io/chuck-norris-jokes/",
     urlGitHub: "https://github.com/Lachicagladiadora/chuck-norris-jokes",
+    collaboration: false,
   },
   {
     nameProject: "Social Media Dashboard",
@@ -56,6 +62,7 @@ export const MY_PROJECTS = [
       "https://lachicagladiadora.github.io/dashboard-project-html-css/",
     urlGitHub:
       "https://github.com/Lachicagladiadora/dashboard-project-html-css",
+    collaboration: false,
   },
 
   // {
