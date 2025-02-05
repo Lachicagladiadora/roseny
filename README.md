@@ -2,7 +2,7 @@
 
 Website created with Astro, React and TypeScript with the purpose of sharing development concepts and projects mine.
 
-![knowbud](./public/knowbud.png)
+![knowbud](./public/roseny-website.png)
 
 ## Features
 

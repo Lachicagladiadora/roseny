@@ -12,6 +12,6 @@ export default defineConfig({
   site: "https://lcg-knowbud.netlify.app",
   integrations: [tailwind(), react(), icon()],
   output: "server",
-  // adapter: netlify()
   adapter: cloudflare(),
+  devToolbar: { enabled: false }
 });
