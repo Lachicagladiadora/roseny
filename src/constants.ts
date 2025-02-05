@@ -27,12 +27,12 @@ export const MY_PROJECTS = [
     collaboration: true,
   },
   {
-    nameProject: "Knowbud",
+    nameProject: "Personal website",
     description:
       "Website created with Astro, React and TypeScript with the purpose of sharing development concepts that were useful to me and I hope will be useful to someone.",
-    coverImage: "/knowbud.png",
-    urlProject: "https://c46b5294.lcg-knowbud.pages.dev/",
-    urlGitHub: "https://github.com/Lachicagladiadora/lcg-knowbud",
+    coverImage: "/roseny-website.png",
+    urlProject: "https://roseny.dev/",
+    urlGitHub: "https://github.com/Lachicagladiadora/personal-website",
     collaboration: false,
   },
   {
