@@ -1,8 +1,10 @@
-# Knowbud
+# Personal website
 
-Website created with Astro, React and TypeScript with the purpose of sharing development concepts and projects mine.
+This website created with Astro, React and TypeScript with the purpose of sharing development concepts and projects mine.
 
-![knowbud](./public/roseny-website.png)
+![screenshot-website](./public/roseny-website.png)
+
+[🔗 Website preview](https://roseny.dev/)
 
 ## Features
 
@@ -17,9 +19,9 @@ To get started, clone the repository and install dependencies:
 1. Clone this repository.
 
 ```bash
-git clone git@github.com:Lachicagladiadora/lcg-knowbud.git
-cd lcg-knowbud
-code lcg-knowbud
+git clone git@github.com:Lachicagladiadora/personal-website.git
+cd personal-website
+code personal-website
 ```
 
 2. Run `bun install` to install the dependencies.
