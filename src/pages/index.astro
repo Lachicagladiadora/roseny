@@ -1,54 +1,13 @@
 ---
-import { SomeoneRead } from "../components/icons/SomeoneRead";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 
 const pageTitle = "About me";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <div class="flex-1 flex flex-col items-center justify-center gap-4">
-    <div
-      class="flex flex-col gap-4 items-center justify-center md:px-20 md:flex-row"
-    >
-      <div class="flex flex-col gap-5">
-        <div class="flex items-center justify-center gap-5">
-          <div class="text-6xl flex flex-col items-center justify-center gap-8">
-            <p>Hi, I'm <span class="font-bold">Roseny</span>.</p>
-            <p>and I'm <span class="font-bold">frontend developer</span> ...</p>
-          </div>
-          <section
-            class="min-w-[300px] flex flex-col items-center justify-center gap-4"
-          >
-            <p>
-              ... with focus in <span>React</span>, approximately 2 years ago I
-              decided learn web developer. And started that journey with the
-              basic; HTML, CSS and JavaScript.
-            </p>
-            <p>
-              After this I can make simple projects with tacky code, but I was
-              very exited of view results in the browser.
-            </p>
-            <p>
-              More later I was can fix, but I know insufficient, I want learn
-              more, I want make other things, I want use other technologies.
-              Then I learned React and love it.
-            </p>
-          </section>
-          <!-- <p class="whitespace-pre-line">
-          I am a frontend developer and this is where I share my knowledge. It
-          has a blog section where you can find some concepts for beginner
-          developers. And in the portfolio section you can find my projects,
-          which you can check out on the website and the code.
-        </p> -->
-        </div>
-        <p
-          class="text-obscure dark:text-blank-light flex gap-3 items-center justify-center"
-        >
-          <!-- Happy reading! -->
-          <!-- <SomeoneRead className="h-8 w-8" /> -->
-        </p>
-      </div>
-    </div>
-  </div>
+<BaseLayout>
+  <>
+    <h1 class="text-7xl font-bold">Roseny</h1>
+    <h2 class="text-6xl">Front-end Developer</h2>
+  </>
 </BaseLayout>

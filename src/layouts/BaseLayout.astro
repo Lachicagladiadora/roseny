@@ -1,8 +1,10 @@
 ---
 import Footer from "../components/Footer.astro";
 import { Header } from "../components/Header";
-import { BLOG_NAME } from "../constants";
 import "../styles/global.css";
+
+const { frontmatter } = Astro.props;
+const childrenHeader = frontmatter.children;
 ---
 
 <html lang="en">
@@ -49,10 +51,13 @@ import "../styles/global.css";
   </head>
   <body
     id="body-element"
-    class="w-full h-full min-h-[100vh] flex flex-col transition-colors text-obscure-dark bg-blank-light dark:bg-obscure-dark dark:text-blank-light"
+    class="w-full h-full min-h-[100vh] flex flex-col transition-colors bg-obscure-dark text-blank-light"
   >
-    <Header client:idle />
-    <main class="w-full flex-1 mx-auto flex flex-col p-5 md:max-w-[900px]">
+    <Header client:idle>{childrenHeader}</Header>
+
+    <main
+      class="w-full max-w-[900px] h-full min-h-[96dvh] mx-auto p-5 flex-1 flex flex-col"
+    >
       <slot />
     </main>
     <Footer />
