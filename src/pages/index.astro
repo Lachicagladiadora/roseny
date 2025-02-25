@@ -3,6 +3,9 @@ import { ChevronDown } from "../components/icons/ChevronDown";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 import { Contact } from "../components/Contact";
+import { Projects } from "../components/Projects";
+import ProjectPost from "../components/ProjectPost.astro";
+import { MY_PROJECTS } from "../constants";
 ---
 
 <BaseLayout>
@@ -22,6 +25,22 @@ import { Contact } from "../components/Contact";
   </div>
   <div class="min-h-dvh flex flex-col justify-center gap-4">
     <h2 class="text-4xl md:text-5xl font-nova">Projects</h2>
+    <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
+      {
+        MY_PROJECTS.map((c) => (
+          <ProjectPost
+            client:idle
+            nameProject={c.nameProject}
+            description={c.description}
+            coverImage={c.coverImage}
+            urlGitHub={c.urlGitHub}
+            urlProject={c.urlProject}
+            collaboration={c.collaboration}
+          />
+        ))
+      }
+    </ul>
+    <!-- <Projects /> -->
   </div>
   <div class="min-h-dvh flex flex-col justify-center items-center gap-20">
     <h2 class="w-full text-start text-4xl md:text-5xl font-nova">Contact</h2>

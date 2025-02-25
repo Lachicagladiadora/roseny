@@ -5,7 +5,7 @@ import { LinkedinIcon } from "./icons/LinkedinIcon";
 
 export const Contact = () => {
   return (
-    <section className="max-w-[600px] font-alegreya flex flex-col items-center justify-center gap-10 md:flex-row md:gap-20 font-thin text-lg">
+    <section className="max-w-[600px] font-alegreya flex flex-col items-center justify-center gap-20 md:flex-row md:gap-20 font-thin text-lg">
       <p className="text-[#fff]">
         I'd love to hear from you! If you enjoy my explanations and have
         suggestions for topics we haven't covered yet, feel free to reach out to
