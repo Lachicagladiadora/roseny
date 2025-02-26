@@ -22,8 +22,8 @@ export const Project = ({
   return (
     // <section className="max-w-[600px] font-alegreya flex flex-col items-center justify-center gap-10 md:flex-row md:gap-20 font-thin text-lg">
     <li
-      className="h-[360px] w-[360px] p-4 rounded-lg flex flex-col items-center justify-center overflow-hidden shadow-md 
-group/title group/image text-blank-light bg-obscure-light md:h-[400px] md:w-[360px] lg:h-[500px] lg:w-[420px]"
+      className="h-[400px] w-[290px] p-4 rounded-lg flex flex-col items-center justify-center overflow-hidden shadow-md 
+group/title group/image text-blank-light bg-obscure-light md:h-[520px] md:w-[360px] lg:h-[580px] lg:w-[420px]"
     >
       <div
         className={`relative w-full h-full flex-1 rounded-md grayscale image group-hover/image:grayscale-0 flex overflow-hidden`}
@@ -35,7 +35,7 @@ group/title group/image text-blank-light bg-obscure-light md:h-[400px] md:w-[360
             className="h-full w-full object-cover"
           />
         </a>
-        <div className="absolute bottom-0 right-0 flex items-center justify-center gap-2 text-xl bg-obscure-light rounded-ss-2xl p-2 ">
+        <div className="absolute bottom-0 right-0 flex items-center justify-center gap-2 text-xl bg-blank/15 rounded-ss-2xl p-2 ">
           {collaboration && (
             <span title="Project collaborative">
               <PuzzlePice className="size-6" />
