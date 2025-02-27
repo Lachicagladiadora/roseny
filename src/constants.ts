@@ -3,6 +3,8 @@ export const BLOG_NAME = "Knowbud";
 export const MY_PROJECTS = [
   {
     nameProject: "Diet Pixie",
+    about: "",
+    motivation: "",
     description:
       "App to see how your weight is and based on a goal such as 'maintaining your weight', it gives you a diet per day in grams.",
     coverImage: "/diet-pixie.png",
@@ -12,6 +14,8 @@ export const MY_PROJECTS = [
   },
   {
     nameProject: "BitSip",
+    about: "",
+    motivation: "",
     description: "App for recipes for food, desserts and drinks.",
     coverImage: "/bitsip.png",
     urlProject: "https://bitsip.roseny.dev/",
@@ -20,6 +24,8 @@ export const MY_PROJECTS = [
   },
   {
     nameProject: "Pocket Budget",
+    about: "",
+    motivation: "",
     description: "Web app for manage money",
     coverImage: "/pocket-budget.png",
     urlProject: "https://pocket-budget.jimynicanor.com/",
@@ -28,6 +34,8 @@ export const MY_PROJECTS = [
   },
   {
     nameProject: "Personal website",
+    about: "",
+    motivation: "",
     description:
       "Website created with Astro, React and TypeScript with the purpose of sharing development concepts that were useful to me and I hope will be useful to someone.",
     coverImage: "/roseny-website.png",
@@ -37,6 +45,8 @@ export const MY_PROJECTS = [
   },
   {
     nameProject: "Hacker News",
+    about: "",
+    motivation: "",
     description:
       "Hacker News is a web application built using React and TypeScript, powered by the Hacker News API. It offers users two main sections: one for browsing stories across different programming languages, and another to view bookmarked stories. Each story includes a link to read the full article.",
     coverImage: "/hacker-news.png",
@@ -46,6 +56,8 @@ export const MY_PROJECTS = [
   },
   {
     nameProject: "Chuck Norris Jokes",
+    about: "",
+    motivation: "",
     description:
       "Practice fetch and promises with only javascript and Chuck Norris API. view site. And deploy with GitHub-Pages",
     coverImage: "/chuck-norris-jokes.png",
@@ -55,6 +67,8 @@ export const MY_PROJECTS = [
   },
   {
     nameProject: "Social Media Dashboard",
+    about: "",
+    motivation: "",
     description:
       "Web project in Vite with HTML, CSS and some lines of JavaScript. Responsive layout and design practice that includes dark mode and light mode with JavaScript logic.",
     coverImage: "/social-media-dashboard.jpg",

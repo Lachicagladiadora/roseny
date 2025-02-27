@@ -23,23 +23,49 @@ import { MY_PROJECTS } from "../constants";
       <ChevronDown />
     </div>
   </div>
-  <div class="min-h-dvh flex flex-col justify-center gap-4">
+  <div class="min-h-dvh flex flex-col justify-center py-52 gap-20">
     <h2 class="text-4xl md:text-5xl font-nova">Projects</h2>
-    <ul class="flex-1 flex flex-wrap gap-4 items-center justify-center my-4">
-      {
-        MY_PROJECTS.map((c) => (
-          <Project
-            client:idle
-            nameProject={c.nameProject}
-            description={c.description}
-            coverImage={c.coverImage}
-            urlGitHub={c.urlGitHub}
-            urlProject={c.urlProject}
-            collaboration={c.collaboration}
-          />
-        ))
-      }
-    </ul>
+    <div class="w-full flex">
+      <div class="w-1/2 flex flex-col gap-4">
+        <!-- <div class="w-1/2 overflow-hidden"> -->
+        {
+          MY_PROJECTS.map((c) => (
+            <section
+              class="h-[400px] w-[290px] p-4 rounded-lg flex flex-col items-center justify-center overflow-hidden shadow-md 
+            group/title group/image text-blank-light bg-obscure-light md:h-[520px] md:w-[360px] lg:h-[580px] lg:w-[420px]"
+            >
+              <h3 class="capitalize">{c.nameProject}</h3>
+              <p>{c.description}</p>
+              <h4>Motivation</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                omnis, aliquid harum nemo rerum dolor id consequatur numquam
+                quasi cumque perferendis, sunt deleniti libero sint sed dolorem
+                blanditiis dolore! Laborum?
+              </p>
+            </section>
+          ))
+        }
+        <!-- </div> -->
+      </div>
+      <div class="w-1/2 flex flex-col gap-4">
+        <!-- <div class="w-1/2 overflow-hidden"> -->
+        {
+          MY_PROJECTS.map((c) => (
+            <Project
+              client:idle
+              nameProject={c.nameProject}
+              description={c.description}
+              coverImage={c.coverImage}
+              urlGitHub={c.urlGitHub}
+              urlProject={c.urlProject}
+              collaboration={c.collaboration}
+            />
+          ))
+        }
+        <!-- </div> -->
+      </div>
+    </div>
   </div>
   <div class="min-h-dvh flex flex-col justify-center items-center gap-20">
     <h2 class="w-full text-start text-4xl md:text-5xl font-nova">Contact</h2>
