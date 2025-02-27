@@ -59,7 +59,7 @@ export const MY_PROJECTS = [
     about: "",
     motivation: "",
     description:
-      "Practice fetch and promises with only javascript and Chuck Norris API. view site. And deploy with GitHub-Pages",
+      "Practice DOM management, fetch and promises with only javascript and Chuck Norris API. view site. And deploy with GitHub-Pages",
     coverImage: "/chuck-norris-jokes.png",
     urlProject: "https://lachicagladiadora.github.io/chuck-norris-jokes/",
     urlGitHub: "https://github.com/Lachicagladiadora/chuck-norris-jokes",
@@ -70,7 +70,7 @@ export const MY_PROJECTS = [
     about: "",
     motivation: "",
     description:
-      "Web project in Vite with HTML, CSS and some lines of JavaScript. Responsive layout and design practice that includes dark mode and light mode with JavaScript logic.",
+      "Web project for practice with HTML, CSS and some lines of JavaScript. Responsive layout and design practice that includes dark mode and light mode with JavaScript logic.",
     coverImage: "/social-media-dashboard.jpg",
     urlProject:
       "https://lachicagladiadora.github.io/dashboard-project-html-css/",
