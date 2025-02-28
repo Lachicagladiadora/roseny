@@ -4,7 +4,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 import { Contact } from "../components/Contact";
 import { Project } from "../components/Project";
-import ProjectPost from "../components/ProjectPost.astro";
 import { MY_PROJECTS } from "../constants";
 ---
 
@@ -13,12 +12,13 @@ import { MY_PROJECTS } from "../constants";
     class="min-h-dvh relative flex flex-col justify-center gap-4 text-[#afafaf]"
     onscroll="()=>console.log('hi')"
   >
+    <!-- <WordAnimated client:idle bold size={"md"} children="Hello world" /> -->
     <h1 class="animated-header text-6xl md:text-7xl font-nova">Roseny</h1>
     <h2 class="text-3xl md:text-4xl font-overpass-mono font-extralight">
       Frontend Developer
     </h2>
     <div
-      class="rounded-full border border-blank p-2 size-12 absolute bottom-8 left-[50%] -translate-x-[50%] animate-bounce hover:border-obscure-dark hover:bg-blank-light hover:text-obscure-dark"
+      class="arrow-chevron rounded-full border border-blank p-2 size-12 absolute bottom-8 left-[50%] -translate-x-[50%] animate-bounce hover:border-obscure-dark hover:bg-blank-light hover:text-obscure-dark"
     >
       <ChevronDown />
     </div>

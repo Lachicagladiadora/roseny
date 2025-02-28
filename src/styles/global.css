@@ -179,17 +179,45 @@ code {
 .animated-header {
   /* color: burlywood; */
   /* transition: 0.1ms; */
-  animation: name 3s alternate linear;
+  /* animation: name 3s alternate linear; */
   transition: all 1s ease-out;
   &:hover {
-    background: yellowgreen;
+    /* background: yellowgreen; */
+    animation: name-hover 2s alternate linear infinite;
     /* transform: skewY(10deg); */
-    &::part {
+    /* &::part {
       content: "123456";
-    }
+    } */
     /* &::content {
       content: "Roseny";
     } */
+  }
+}
+
+.arrow-chevron {
+  font-size: 8rem;
+  transition: all 1s ease-out;
+  animation: change-color linear forwards;
+  animation-timeline: scroll(root block);
+  & body {
+    overflow: hidden scroll;
+  }
+}
+
+@keyframes change-color {
+  0% {
+    /* visibility: visible; */
+    opacity: 1;
+  }
+  10% {
+    /* visibility: hidden; */
+    opacity: 0.33;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -252,5 +280,25 @@ code {
     &:hover {
       background: #411c5f;
     }
+  }
+}
+
+@keyframes name-hover {
+  0% {
+    color: rgb(231, 237, 64);
+    /* color: ; */
+    /* background-image: conic-gradient(at 50% 0%, blue, black); */
+  }
+  25% {
+    color: rgb(8, 216, 29);
+  }
+  50% {
+    color: rgb(26, 13, 200);
+  }
+  75% {
+    color: rgb(205, 18, 18);
+  }
+  100% {
+    color: #ffffff;
   }
 }
