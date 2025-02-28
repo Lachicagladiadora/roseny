@@ -23,14 +23,6 @@ code {
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-/* .montserrat {
-  font-family: "Montserrat";
-}
-
-.nova {
-  font-family: "Nova Flat";
-} */
-
 .nova-regular {
   font-family: "Nova Flat", serif;
   font-weight: 400;
@@ -186,14 +178,73 @@ code {
 .arrow-chevron {
   font-size: 8rem;
   transition: all 1s ease-out;
-  animation: change-color linear forwards;
+  animation: hide-arrow linear forwards;
   animation-timeline: scroll(root block);
   & body {
     overflow: hidden scroll;
   }
 }
 
-@keyframes change-color {
+.project-title {
+  /* font-size: 8rem; */
+  transition: all 1s ease-out;
+  animation: show-projects-title linear forwards;
+  animation-timeline: scroll(root block);
+  & body {
+    overflow: hidden scroll;
+  }
+}
+
+.projects {
+  /* font-size: 8rem; */
+
+  transition: all 1s ease-out;
+  animation: show-projects linear forwards;
+  animation-timeline: scroll(root block);
+  & body {
+    overflow: hidden scroll;
+  }
+}
+
+@keyframes show-projects {
+  0% {
+    opacity: 0;
+    transform: translateX(160px);
+    width: 300px;
+  }
+  28% {
+    opacity: 0;
+    transform: translateX(80px);
+    width: 500px;
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(20px);
+    width: 700px;
+  }
+  36% {
+    opacity: 1;
+    transform: translateX(0px);
+    width: 100%;
+  }
+}
+
+@keyframes show-projects-title {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.33;
+  }
+  35% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide-arrow {
   0% {
     opacity: 1;
   }

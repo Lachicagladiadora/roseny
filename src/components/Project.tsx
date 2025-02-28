@@ -68,7 +68,7 @@ export const Project = ({
     //     </li>
     <li
       className="h-[240px] w-[360px] rounded-lg flex flex-col items-center justify-center overflow-hidden relative shadow-md dark:shadow-obscure-light
-  group/title group/image text-obscure-dark dark:text-blank-light dark:bg-first-dark/60 md:h-[240px] md:w-[360px] lg:h-[300px] lg:w-[420px]"
+  group/title group/image text-obscure-dark dark:text-blank-light dark:bg-first-dark/60 md:h-[280px] md:w-[420px] lg:h-[320px] lg:w-[480px]"
     >
       <div
         className={`w-full h-full flex-1 rounded-md grayscale image group-hover/image:grayscale-0 flex overflow-hidden`}

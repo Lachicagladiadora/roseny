@@ -12,8 +12,8 @@ import { MY_PROJECTS } from "../constants";
     class="min-h-dvh relative flex flex-col justify-center gap-4 text-[#afafaf]"
     onscroll="()=>console.log('hi')"
   >
-    <h1 class="animated-header text-6xl md:text-7xl font-nova">Roseny</h1>
-    <h2 class="text-3xl md:text-4xl font-overpass-mono font-extralight">
+    <h1 class="animated-header text-6xl md:text-8xl font-nova">Roseny</h1>
+    <h2 class="text-3xl md:text-5xl font-overpass-mono font-extralight">
       Frontend Developer
     </h2>
     <div
@@ -23,9 +23,9 @@ import { MY_PROJECTS } from "../constants";
     </div>
   </div>
   <div class="min-h-dvh flex flex-col justify-center py-80 gap-20">
-    <h2 class="text-4xl md:text-5xl font-nova">Projects</h2>
+    <h2 class="project-title text-4xl md:text-5xl font-nova">Projects</h2>
     <div class="w-full flex">
-      <div class="flex flex-wrap items-center justify-center gap-10">
+      <div class="projects flex flex-wrap items-center justify-center gap-4">
         {
           MY_PROJECTS.map((c) => (
             <Project
