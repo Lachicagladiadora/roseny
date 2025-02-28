@@ -177,20 +177,9 @@ code {
 }
 
 .animated-header {
-  /* color: burlywood; */
-  /* transition: 0.1ms; */
-  /* animation: name 3s alternate linear; */
   transition: all 1s ease-out;
   &:hover {
-    /* background: yellowgreen; */
     animation: name-hover 2s alternate linear infinite;
-    /* transform: skewY(10deg); */
-    /* &::part {
-      content: "123456";
-    } */
-    /* &::content {
-      content: "Roseny";
-    } */
   }
 }
 
@@ -206,11 +195,9 @@ code {
 
 @keyframes change-color {
   0% {
-    /* visibility: visible; */
     opacity: 1;
   }
   10% {
-    /* visibility: hidden; */
     opacity: 0.33;
   }
   20% {
@@ -221,73 +208,9 @@ code {
   }
 }
 
-@keyframes name {
-  0% {
-    /* background-color: ; */
-    font-size: 5px;
-    color: rgb(234, 234, 234);
-    /* transform: skewY(100deg); */
-    /* transform: tar("0deg"); */
-    translate: (0deg, 0deg);
-
-    &:hover {
-      background: #000;
-    }
-  }
-  25% {
-    /* background-color: black; */
-    font-size: 10px;
-    color: rgb(255, 255, 255);
-    /* transform: skewY(40deg); */
-    /* transform: tar("40deg"); */
-    translate: (40deg, 0deg);
-
-    &:hover {
-      background: #3d0202;
-    }
-  }
-  50% {
-    /* background-color: black; */
-    font-size: 45px;
-    color: rgb(216, 216, 216);
-    /* transform: skewY(0deg); */
-    /* transform: tar("0deg"); */
-    translate: (0deg, 0deg);
-
-    &:hover {
-      background: #5d4307;
-    }
-  }
-  75% {
-    /* background-color: black; */
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    /* transform: skewY(20deg); */
-    /* transform: tar("30deg"); */
-    translate: (30deg, 0deg);
-
-    &:hover {
-      background: #083811;
-    }
-  }
-  100% {
-    /* background-color: black; */
-    font-size: 4.5rem;
-    color: #afafaf;
-    /* transform: skewY(0deg); */
-    /* transform: tar("0deg"); */
-    translate: (0deg, 0deg);
-    &:hover {
-      background: #411c5f;
-    }
-  }
-}
-
 @keyframes name-hover {
   0% {
     color: rgb(231, 237, 64);
-    /* color: ; */
-    /* background-image: conic-gradient(at 50% 0%, blue, black); */
   }
   25% {
     color: rgb(8, 216, 29);

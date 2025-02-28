@@ -12,7 +12,6 @@ import { MY_PROJECTS } from "../constants";
     class="min-h-dvh relative flex flex-col justify-center gap-4 text-[#afafaf]"
     onscroll="()=>console.log('hi')"
   >
-    <!-- <WordAnimated client:idle bold size={"md"} children="Hello world" /> -->
     <h1 class="animated-header text-6xl md:text-7xl font-nova">Roseny</h1>
     <h2 class="text-3xl md:text-4xl font-overpass-mono font-extralight">
       Frontend Developer
@@ -26,26 +25,6 @@ import { MY_PROJECTS } from "../constants";
   <div class="min-h-dvh flex flex-col justify-center py-80 gap-20">
     <h2 class="text-4xl md:text-5xl font-nova">Projects</h2>
     <div class="w-full flex">
-      <!-- <div class="w-1/2 flex flex-col gap-4">
-        {
-          MY_PROJECTS.map((c) => (
-            <section
-              class="h-[400px] w-[290px] p-4 rounded-lg flex flex-col items-center justify-center overflow-hidden shadow-md 
-            group/title group/image text-blank-light bg-obscure-light md:h-[520px] md:w-[360px] lg:h-[580px] lg:w-[420px]"
-            >
-              <h3 class="capitalize">{c.nameProject}</h3>
-              <p>{c.description}</p>
-              <h4>Motivation</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                omnis, aliquid harum nemo rerum dolor id consequatur numquam
-                quasi cumque perferendis, sunt deleniti libero sint sed dolorem
-                blanditiis dolore! Laborum?
-              </p>
-            </section>
-          ))
-        }
-      </div> -->
       <div class="flex flex-wrap items-center justify-center gap-10">
         {
           MY_PROJECTS.map((c) => (
