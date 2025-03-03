@@ -18,17 +18,17 @@ export default {
 			'obscure-dark': '#222',
 			'obscure-light': '#464646',
 
-			'blank': '#dadada',
-			'blank-dark': '#cacaca',
-			'blank-light': '#aaa',
+			'blank': '#D9D9D9',
+			'blank-dark': '#9CA2C3',
+			'blank-light': '#FFFFFF',
 
-			'first': '#202020',
-			'first-dark': '#000000',
-			'first-light': '#464646',
+			'first': '#252238',
+			// 'first-dark': '#000000',
+			// 'first-light': '#464646',
 
-			'second': '#dadada',
-			'second-dark': '#cacaca',
-			'second-light': '#fffefa'
+			'second': '#CF9065',
+			// 'second-dark': '#cacaca',
+			// 'second-light': '#fffefa'
 
 			// 'obscure': '#1D5D9B',
 			// 'obscure-dark': '#0A1931',

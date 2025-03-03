@@ -10,40 +10,31 @@ import { MY_PROJECTS } from "../constants";
 <BaseLayout>
   <div
     class="min-h-dvh relative flex flex-col justify-center gap-4 text-[#afafaf]"
-    onscroll="()=>console.log('hi')"
   >
-    <h1 class="animated-header text-6xl md:text-8xl font-nova">Roseny</h1>
-    <h2 class="text-3xl md:text-5xl font-overpass-mono font-extralight">
-      Frontend Developer
+    <h1 class="text-center animated-header text-4xl md:text-8xl font-nova">
+      Roseny
+    </h1>
+    <h2 class="text-center font-bold font-overpass-mono">
+      a Frontend Developer
     </h2>
-    <div
-      class="arrow-chevron rounded-full border border-blank p-2 size-12 absolute bottom-8 left-[50%] -translate-x-[50%] animate-bounce hover:border-obscure-dark hover:bg-blank-light hover:text-obscure-dark"
-    >
-      <ChevronDown />
-    </div>
+    <p>
+      <!-- I am a Frontend Developer  -->
+      In constant growth, with a <span class="font-bold text-second"
+        >strong foundation</span
+      > in HTML, CSS, and JavaScript. This knowledge has provided me with a solid
+      base for <span>continuous learning</span> of new trends, and I apply what I
+      learn by developing projects with modern tools such as React, NextJs, and TailwindCSS,
+      among others. Each project is an opportunity to keep improving and expanding
+      my experience in the world of frontend development.
+    </p>
   </div>
   <div class="min-h-dvh flex flex-col justify-center py-80 gap-20">
-    <h2 class="project-title text-4xl md:text-5xl font-nova">Projects</h2>
-    <div class="w-full flex">
-      <div class="projects flex flex-wrap items-center justify-center gap-4">
-        {
-          MY_PROJECTS.map((c) => (
-            <Project
-              client:idle
-              nameProject={c.nameProject}
-              description={c.description}
-              coverImage={c.coverImage}
-              urlGitHub={c.urlGitHub}
-              urlProject={c.urlProject}
-              collaboration={c.collaboration}
-            />
-          ))
-        }
-      </div>
-    </div>
+    <h2 class="project-title text-4xl md:text-5xl font-nova">My experience</h2>
   </div>
   <div class="min-h-dvh flex flex-col justify-center items-center gap-20">
-    <h2 class="w-full text-start text-4xl md:text-5xl font-nova">Contact</h2>
+    <h2 class="text-start text-4xl md:text-5xl font-nova">
+      I am looking for new opportunities
+    </h2>
     <Contact />
   </div>
 </BaseLayout>
