@@ -1,6 +1,8 @@
 // export const BLOG_NAME = "Knowbud";
 
-export const MY_PROJECTS = [
+import type { Project } from "./types";
+
+export const PROJECTS: Project[] = [
   {
     name: "Diet Pixie",
     collaboration: false,
