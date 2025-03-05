@@ -4,14 +4,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 import { Contact } from "../components/Contact";
 import { Projects } from "../components/Projects";
-// import { MY_PROJECTS } from "../constants";
 ---
 
 <BaseLayout>
   <div
-    class="min-h-dvh relative flex flex-col justify-center gap-8 pb-[140px] md:pb-[180px]"
+    class="min-h-dvh relative flex flex-col justify-center gap-12 pb-[140px] md:pb-[180px]"
   >
-    <div class="text-blank-light flex flex-col gap-4">
+    <div class="text-blank-light flex flex-col gap-6 font-montserrat">
       <h1 class="text-center text-[40px] md:text-[45px] font-extrabold">
         Roseny
       </h1>
@@ -44,16 +43,17 @@ import { Projects } from "../components/Projects";
   </div>
   <div class="min-h-dvh flex flex-col justify-center py-5 gap-20">
     <h2
-      class="text-center text-blank-light font-bold text-[20px] md:text-[24px]"
+      class="font-montserrat text-center text-blank-light font-bold text-[20px] md:text-[24px]"
     >
       My experience
     </h2>
-    <ul class="w-full flex flex-col gap-20"><Projects client:idle /></ul>
-    <!-- <section></section> -->
+    <ul class="w-full flex flex-col gap-20 font-sans">
+      <Projects client:idle />
+    </ul>
   </div>
   <!-- <div class="min-h-dvh flex flex-col justify-center py-5 gap-20">
     <h2
-      class="text-center text-blank-light font-bold text-[20px] md:text-[24px]"
+      class="font-montserrat text-center text-blank-light font-bold text-[20px] md:text-[24px]"
     >
       My skills
     </h2>
@@ -63,7 +63,7 @@ import { Projects } from "../components/Projects";
     class="min-h-dvh flex flex-col justify-center items-center gap-16 pt-[96px] md:pt-[106px]"
   >
     <h2
-      class="text-center text-blank-light font-bold text-[20px] md:text-[24px]"
+      class="font-montserrat text-center text-blank-light font-bold text-[20px] md:text-[24px]"
     >
       I am looking for new opportunities
     </h2>

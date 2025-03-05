@@ -7,9 +7,9 @@ export default {
 			'sans': ['ui-sans-serif', 'system-ui'],
 			'serif': ['ui-serif', 'Georgia'],
 			'mono': ['ui-monospace', 'SFMono-Regular'],
-			"nova": ["Nova Flat"],
+			// "nova": ["Nova Flat"],
 			"overpass-mono": ["Overpass Mono"],
-			"alegreya": ["Alegreya Sans"],
+			// "alegreya": ["Alegreya Sans"],
 			"montserrat": ["Montserrat Alternates"],
 		},
 		colors: {
@@ -28,7 +28,7 @@ export default {
 
 			'second': '#CF9065',
 			'second-dark': '#63815E',
-			'second-light': '#CA8589'
+			'second-light': '#C37376'
 
 			// 'obscure': '#1D5D9B',
 			// 'obscure-dark': '#0A1931',
