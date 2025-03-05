@@ -1,10 +1,10 @@
 ---
-import { ChevronDown } from "../components/icons/ChevronDown";
+// import { ChevronDown } from "../components/icons/ChevronDown";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 import { Contact } from "../components/Contact";
-import { Project } from "../components/Project";
-import { MY_PROJECTS } from "../constants";
+import { Projects } from "../components/Projects";
+// import { MY_PROJECTS } from "../constants";
 ---
 
 <BaseLayout>
@@ -15,7 +15,7 @@ import { MY_PROJECTS } from "../constants";
       <h1 class="text-center text-[40px] md:text-[45px] font-extrabold">
         Roseny
       </h1>
-      <h2 class="text-center font-bold text-[20px] md:text-[24px]">
+      <h2 class="text-center font-semibold text-[20px] md:text-[24px]">
         a Frontend Developer
       </h2>
     </div>
@@ -25,11 +25,8 @@ import { MY_PROJECTS } from "../constants";
           >strong foundation</span
         > in <span class="font-bold">HTML</span>, <span class="font-bold"
           >CSS</span
-        >, and <span class="font-bold">JavaScript</span>.
-      </p>
-      <p>
-        <!-- I am a Frontend Developer  -->
-        This knowledge has provided me with a solid base for continuous <span
+        >, and <span class="font-bold">JavaScript</span>. This knowledge has
+        provided me with a solid base for continuous <span
           class="font-bold text-second"
         >
           learning</span
@@ -38,35 +35,32 @@ import { MY_PROJECTS } from "../constants";
           class="font-bold">React</span
         >, <span class="font-bold">NextJs</span>, and <span class="font-bold"
           >TailwindCSS</span
-        >, among others.
-      </p>
-      <p>
-        Each project is an opportunity to keep <span
+        >, among others. Each project is an opportunity to keep <span
           class="font-bold text-second">improving</span
         > and <span class="font-bold text-second">expanding my experience</span
         >.
       </p>
     </section>
   </div>
-  <div class="min-h-dvh flex flex-col justify-center py-80 gap-20">
+  <div class="min-h-dvh flex flex-col justify-center py-5 gap-20">
     <h2
       class="text-center text-blank-light font-bold text-[20px] md:text-[24px]"
     >
       My experience
     </h2>
-    <ul class="flex flex-col gap-20"><Project client:idle /></ul>
+    <ul class="w-full flex flex-col gap-20"><Projects client:idle /></ul>
     <!-- <section></section> -->
   </div>
-  <div class="min-h-dvh flex flex-col justify-center py-80 gap-20">
+  <!-- <div class="min-h-dvh flex flex-col justify-center py-5 gap-20">
     <h2
       class="text-center text-blank-light font-bold text-[20px] md:text-[24px]"
     >
       My skills
     </h2>
     <section></section>
-  </div>
+  </div> -->
   <div
-    class="min-h-dvh flex flex-col justify-center items-center gap-10 pt-[96px] md:pt-[106px]"
+    class="min-h-dvh flex flex-col justify-center items-center gap-16 pt-[96px] md:pt-[106px]"
   >
     <h2
       class="text-center text-blank-light font-bold text-[20px] md:text-[24px]"

@@ -20,15 +20,15 @@ export default {
 
 			'blank': '#D9D9D9',
 			'blank-dark': '#9CA2C3',
-			'blank-light': '#FFFFFF',
+			'blank-light': '#CFDCE7',
 
 			'first': '#252238',
 			// 'first-dark': '#000000',
 			// 'first-light': '#464646',
 
 			'second': '#CF9065',
-			// 'second-dark': '#cacaca',
-			// 'second-light': '#fffefa'
+			'second-dark': '#63815E',
+			'second-light': '#CA8589'
 
 			// 'obscure': '#1D5D9B',
 			// 'obscure-dark': '#0A1931',

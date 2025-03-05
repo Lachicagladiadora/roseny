@@ -5,23 +5,29 @@ import { LinkedinIcon } from "./icons/LinkedinIcon";
 
 export const Contact = () => {
   return (
-    <section className="flex flex-col gap-4 items-center justify-center">
-      <a href="https://github.com/Lachicagladiadora" className="size-8">
+    <section className="flex flex-col gap-8 items-center justify-center">
+      <a
+        href="https://github.com/Lachicagladiadora"
+        className="flex flex-col items-center justify-center gap-1  hover:text-second-dark"
+      >
+        <MailIcon />
         email
       </a>
-      <div className="flex gap-12">
-        <div className="flex flex-col items-center justify-center gap-1">
-          <a href="https://github.com/Lachicagladiadora" className="size-8">
-            <LinkedinIcon />
-          </a>
+      <div className="flex gap-16">
+        <a
+          href="https://github.com/Lachicagladiadora"
+          className="flex flex-col items-center justify-center gap-1  hover:text-second-dark"
+        >
+          <LinkedinIcon className="size-8" />
           Linkedin
-        </div>
-        <div className="flex flex-col items-center justify-center gap-1">
-          <a href="https://github.com/Lachicagladiadora" className="size-8">
-            <GithubIcon />
-          </a>
+        </a>
+        <a
+          href="https://github.com/Lachicagladiadora"
+          className="flex flex-col items-center justify-center gap-1  hover:text-second-dark"
+        >
+          <GithubIcon className="size-8" />
           GitHub
-        </div>
+        </a>
       </div>
     </section>
   );
