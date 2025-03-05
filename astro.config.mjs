@@ -9,7 +9,7 @@ import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://lcg-knowbud.netlify.app",
+  // site: "https://lcg-knowbud.netlify.app",
   integrations: [tailwind(), react(), icon()],
   output: "server",
   adapter: cloudflare(),
