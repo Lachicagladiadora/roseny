@@ -39,7 +39,13 @@ export const Projects = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2">
-            <img src={c.coverImage} alt={`${c.name} image demo`} className="" />
+            <a href={c.urlProject} target="_blank">
+              <img
+                src={c.coverImage}
+                alt={`${c.name} image demo`}
+                className=""
+              />
+            </a>
           </div>
         </li>
       ))}

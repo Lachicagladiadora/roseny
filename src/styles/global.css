@@ -18,6 +18,14 @@
   );
 }
 
+html {
+  transition: all 1s ease-out;
+  overflow-y: scroll;
+  scroll-snap-align: center;
+  scrollbar-width: thin;
+  scrollbar-color: #252238 #54586b;
+}
+
 code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
@@ -35,42 +43,6 @@ code {
   font-weight: 300;
   font-style: normal;
 }
-
-/* .alegreya-sans-thin {
-  font-family: "Alegreya Sans", serif;
-  font-weight: 100;
-  font-style: normal;
-} */
-
-/* .alegreya-sans-regular {
-  font-family: "Alegreya Sans", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.alegreya-sans-bold {
-  font-family: "Alegreya Sans", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.alegreya-sans-light-italic {
-  font-family: "Alegreya Sans", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.montserrat-thin {
-  font-family: "Montserrat Alternates", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.montserrat-extralight {
-  font-family: "Montserrat Alternates", serif;
-  font-weight: 200;
-  font-style: normal;
-} */
 
 .montserrat-light {
   font-family: "Montserrat Alternates", serif;
@@ -168,7 +140,7 @@ code {
   font-style: italic;
 }
 
-.animated-header {
+/* .animated-header {
   transition: all 1s ease-out;
   &:hover {
     animation: name-hover 2s alternate linear infinite;
@@ -186,7 +158,6 @@ code {
 }
 
 .project-title {
-  /* font-size: 8rem; */
   transition: all 1s ease-out;
   animation: show-projects-title linear forwards;
   animation-timeline: scroll(root block);
@@ -196,8 +167,6 @@ code {
 }
 
 .projects {
-  /* font-size: 8rem; */
-
   transition: all 1s ease-out;
   animation: show-projects linear forwards;
   animation-timeline: scroll(root block);
@@ -275,4 +244,4 @@ code {
   100% {
     color: #ffffff;
   }
-}
+} */
