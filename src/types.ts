@@ -5,5 +5,4 @@ export type Project = {
   urlProject: string;
   urlGitHub: string;
   about: string;
-  description: string;
 };
