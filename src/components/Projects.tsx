@@ -6,8 +6,11 @@ import { PROJECTS } from "../constants";
 export const Projects = () => {
   return (
     <>
-      {PROJECTS.map((c) => (
-        <li className="w-full flex flex-col gap-4 items-center justify-center md:flex-row md:gap-12">
+      {PROJECTS.map((c, i) => (
+        <li
+          key={i}
+          className="w-full flex flex-col gap-4 items-center justify-center md:flex-row md:gap-12"
+        >
           <div className="w-full md:w-1/2">
             <div className=" font-bold text-blank-light">
               <span className="capitalize">{c.name}</span>{" "}
@@ -24,12 +27,14 @@ export const Projects = () => {
                 >
                   Website <ArrowTopRightOnSquare className="size-4 md:size-7" />
                 </a>
-                <a
-                  href={c.urlGitHub}
-                  className="font-semibold flex gap-2 items-center justify-center hover:text-second"
-                >
-                  Repository <GithubIcon className="size-4 md:size-7" />
-                </a>
+                {c.urlGitHub && (
+                  <a
+                    href={c.urlGitHub}
+                    className="font-semibold flex gap-2 items-center justify-center hover:text-second"
+                  >
+                    Repository <GithubIcon className="size-4 md:size-7" />
+                  </a>
+                )}
               </div>
             </div>
           </div>

@@ -8,8 +8,9 @@ export const PROJECTS: Project[] = [
     collaboration: false,
     coverImage: "/diet-pixie.png",
     urlProject: "https://diet-pixie.roseny.dev/",
-    urlGitHub: "https://github.com/Lachicagladiadora/diet-pixie",
-    about: "",
+    urlGitHub: "",
+    about:
+      "Web application designed to quickly and efficiently calculate personalized diets without manual calculations. Developed using ElVengador Dev's template and the ev-component-library, it stores data in IndexedDB to keep a record of previous calculations. Users can set a goal based on their physical activity level and generate a plan according to what their body needs. Additionally, it provides access to a diet history, useful for personal tracking or monitoring a family member's or patient's nutrition.",
     description:
       "App to see how your weight is and based on a goal such as 'maintaining your weight', it gives you a diet per day in grams.",
   },
@@ -19,8 +20,9 @@ export const PROJECTS: Project[] = [
     coverImage: "/workout-tracker.png",
     urlProject: "https://pocket-budget.jimynicanor.com/",
     urlGitHub: "",
-    about: "",
-    description: "Web app for manage money",
+    about:
+      "Web application designed to log and track physical exercise in an organized way. Developed using ElVengador Dev's template and the ev-component-library, it stores data in IndexedDB to preserve workout history. It allows detailed tracking of exercises according to the followed routine, with the option to add new exercises to existing routines or create new ones. A versatile tool for those who train with multiple routines and want to maintain precise progress tracking.",
+    description: "",
   },
   {
     name: "BitSip",
@@ -28,17 +30,18 @@ export const PROJECTS: Project[] = [
     coverImage: "/bitsip.png",
     urlProject: "https://bitsip.roseny.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/bitsip",
-    about: "",
+    about:
+      "Web application developed to simplify access to recipes for meals, desserts, and drinks. Two APIs were integrated to fetch data, along with a function to extract and render ingredients efficiently. Built with React Router for routing management, it follows Clean Architecture principles and includes unit tests to ensure stability. Users can choose between dishes and drinks, receive suggestions, and access complete recipes with all necessary details for preparation.",
     description: "App for recipes for food, desserts and drinks.",
   },
   {
     name: "Pocket Budget",
     collaboration: true,
-    //
     coverImage: "/pocket-budget.png",
     urlProject: "https://pocket-budget.jimynicanor.com/",
     urlGitHub: "",
-    about: "",
+    about:
+      "Web application developed to record and manage expenses in an organized way. Built with Astro, React, TypeScript, and the ev-component library, it stores data in IndexedDB to ensure persistence. It allows users to log expenses with descriptions and view a detailed history with dates, making it easier to track and analyze monthly spending.",
     description: "Web app for manage money",
   },
   {
@@ -47,8 +50,9 @@ export const PROJECTS: Project[] = [
     coverImage: "/card-quest.png",
     urlProject: "https://card-quest.jimynicanor.com/",
     urlGitHub: "",
-    about: "",
-    description: "Web app for manage money",
+    about:
+      "Web application designed for creating and managing study flashcards easily and efficiently. Built with Astro, React, TypeScript, and the ev-component library, it stores data in localStorage to preserve user progress. It features dark mode, and each card includes a question and an answer, with the option to flip it when studying. A practical tool to enhance vocabulary learning and other subjects.",
+    description: "",
   },
   {
     name: "ev component library",
@@ -59,7 +63,7 @@ export const PROJECTS: Project[] = [
     urlGitHub: "",
     about:
       "Reusable component library designed to optimize web interface creation. Developed with React, TypeScript, and TailwindCSS, it includes detailed documentation in Storybook for easy implementation. Each component features style variants and customization options, ensuring design consistency. Available elements include simple components such as buttons with two variants and five color variations, adaptable to different needs. A solution focused on efficiency and reusability to accelerate web application development.",
-    description: "Web app for manage money",
+    description: "",
   },
   {
     name: "Cartago eCommerce",
@@ -68,8 +72,8 @@ export const PROJECTS: Project[] = [
     urlProject: "https://cartago.vercel.app/",
     urlGitHub: "https://github.com/DevCorvus/cartago",
     about:
-      "Ecommerce.platform developed as a demonstration of collaboration in large-scale projects. Built from scratch with Next.js 14, NextAuth, TailwindCSS, Prisma (PostgreSQL), AWS S3, Zod, and Zustand, its architecture enables the management of products, orders, and differentiated roles. Three user types were defined: customers, who can add products to a wishlist, to the cart, and place orders; sellers, responsible for publishing and managing inventory; and administrators, overseeing category management and overall platform control. Although simplified compared to fully-fledged commercial solutions, this project emphasizes structure, scalability, and teamwork to build a more robust application",
-    description: "Web app for manage money",
+      "Ecommerce platform created to demonstrate skills in more complex projects and learn how to organize large-scale projects. Built with Next.js and TailwindCSS for the frontend, this app manages products, orders, and roles: customers place orders, sellers manage inventory, and admins oversee categories and platform control. Although simplified compared to commercial solutions, the focus is on demonstrating skills in building a robust and scalable application, but on a smaller scale.",
+    description: "",
   },
   {
     name: "Hacker News",
