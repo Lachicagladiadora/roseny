@@ -10,7 +10,7 @@ export const Contact = () => {
         href="https://github.com/Lachicagladiadora"
         className="flex flex-col items-center justify-center gap-1  hover:text-second-dark"
       >
-        <MailIcon />
+        <MailIcon className="size-8" />
         email
       </a>
       <div className="flex gap-16">
