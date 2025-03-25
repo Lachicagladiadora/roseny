@@ -13,7 +13,7 @@ export const Projects = () => {
         >
           <div className="w-full md:w-1/2">
             <div className=" font-bold text-blank-light">
-              <span className="capitalize">{c.name}</span>{" "}
+              <span>{c.name}</span>
               <span>
                 ({c.collaboration ? "collaboration" : "personal project"})
               </span>
