@@ -25,3 +25,181 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #252238 #54586b;
 }
+
+.frontend {
+  /* background-image: linear-gradient(indigo, hotpink); */
+  background: radial-gradient(indigo 50%, hotpink 75%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-animation 10 alternate 5s ease-out;
+  &:hover {
+    background-clip: text;
+    /* background: red; */
+    color: aquamarine;
+    -webkit-text-fill-color: transparent;
+    animation: section-animation 10 alternate 5s ease-out;
+    transition: all;
+  }
+}
+
+@keyframes section-animation {
+  0% {
+    /* background-color: aqua; */
+    /* color: brown; */
+    background: linear-gradient(#cfdce7 20%, #9ca2c3 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  10% {
+    /* background-color: aqua; */
+    /* color: brown; */
+    background: linear-gradient(#9ca2c3 90%, #cbc5b6 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    /* background-color: aqua; */
+    /* color: brown; */
+    background: linear-gradient(#cbc5b6 40%, #c48153 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  30% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#c48153 40%, #c37376 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#c37376 20%, #672130 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#672130 40%, #632f46 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#632f46 40%, #1d1d3a 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#1d1d3a 40%, #1e3f7b 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    /* background-color: slateblue; */
+    /* color: salmon; */
+    background: linear-gradient(#1e3f7b 50deg, #516e56 65deg);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  90% {
+    /* background-color: turquoise; */
+    /* color: tomato; */
+    /* transition: 5s; */
+    background: linear-gradient(#516e56 40%, #94a9c7 55%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    /* background-color: rgb(21, 158, 0); */
+    /* color: rgb(255, 20, 153); */
+    background: linear-gradient(#94a9c7 30%, #cbc5b6 65%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    /* background-color: aqua; */
+    color: #cfdce7;
+    background: linear-gradient(#cfdce7 20%, #9ca2c3 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  10% {
+    /* background-color: aqua; */
+    color: #9ca2c3;
+    background: linear-gradient(#9ca2c3 90%, #cbc5b6 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    /* background-color: aqua; */
+    color: #cbc5b6;
+    background: linear-gradient(#cbc5b6 40%, #c48153 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  30% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#c48153 40%, #c37376 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#c37376 20%, #672130 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#672130 40%, #632f46 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#632f46 40%, #1d1d3a 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    /* background-color: rgb(28, 87, 155); */
+    /* color: tomato; */
+    background: linear-gradient(#1d1d3a 40%, #1e3f7b 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    /* background-color: slateblue; */
+    /* color: salmon; */
+    background: linear-gradient(#1e3f7b 50deg, #516e56 65deg);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  90% {
+    /* background-color: turquoise; */
+    /* color: tomato; */
+    /* transition: 5s; */
+    background: linear-gradient(#516e56 40%, #94a9c7 55%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    /* background-color: rgb(21, 158, 0); */
+    /* color: rgb(255, 20, 153); */
+    background: linear-gradient(#94a9c7 30%, #cbc5b6 65%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
