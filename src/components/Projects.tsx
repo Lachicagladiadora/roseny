@@ -23,6 +23,7 @@ export const Projects = () => {
               <div className="flex gap-6">
                 <a
                   href={c.urlProject}
+                  target="_blank"
                   className="font-semibold flex gap-2 items-center justify-center hover:text-second"
                 >
                   Website <ArrowTopRightOnSquare className="size-4 md:size-7" />
@@ -30,6 +31,7 @@ export const Projects = () => {
                 {c.urlGitHub && (
                   <a
                     href={c.urlGitHub}
+                    target="_blank"
                     className="font-semibold flex gap-2 items-center justify-center hover:text-second"
                   >
                     Repository <GithubIcon className="size-4 md:size-7" />
