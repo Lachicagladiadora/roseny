@@ -10,7 +10,7 @@ export const PROJECTS: Project[] = [
     urlProject: "https://diet-pixie.roseny.dev/",
     urlGitHub: "",
     about:
-      "Web application designed to quickly and efficiently calculate personalized diets without manual calculations. Developed using ElVengador Dev's template and the ev-component-library, it stores data in IndexedDB to keep a record of previous calculations. Users can set a goal based on their physical activity level and generate a plan according to what their body needs. Additionally, it provides access to a diet history, useful for personal tracking or monitoring a family member's or patient's nutrition.",
+      "A web application that allows you to calculate your nutritional values ​​based on your physical activity level to help you achieve your goals. You can also access your history and view your progress.",
   },
   {
     name: "Workout Tracker",
