@@ -17,7 +17,7 @@ export default {
 			// 'first': '#252238',
 			'second': '#CF9065',
 			'second-dark': '#63815E',
-			'second-light': '#C37376'
+			'second-light': '#CA8589'
 		}
 	},
 	darkMode: ['class'],

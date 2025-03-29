@@ -25,3 +25,141 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #252238 #54586b;
 }
+
+.frontend {
+  /* background: linear-gradient(#63815e 30%, #1e3f7b 90%); */
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  animation: subtitle-animation infinite 2.5s ease-out;
+  transition: all;
+  /* &:hover { */
+  /* animation: section-animation 10 alternate 2s ease-out; */
+  /* transition: all; */
+  /* animation: text-animation 10 alternate 5s ease-out; */
+  /* } */
+}
+
+@keyframes subtitle-animation {
+  0% {
+    background: linear-gradient(#cfdce7 20%, #9ca2c3 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  10% {
+    background: linear-gradient(#9ca2c3 90%, #cbc5b6 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    background: linear-gradient(#cbc5b6 40%, #c48153 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  30% {
+    background: linear-gradient(#c48153 40%, #c37376 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    background: linear-gradient(#c37376 20%, #672130 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: linear-gradient(#672130 40%, #632f46 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background: linear-gradient(#632f46 40%, #94a9c7 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    background: linear-gradient(#94a9c7 40%, #1e3f7b 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background: linear-gradient(#1e3f7b 20%, #516e56 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  90% {
+    /* transition: 5s; */
+    background: linear-gradient(#516e56 40%, #94a9c7 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: linear-gradient(#94a9c7 30%, #cbc5b6 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* @keyframes text-animation {
+  0% {
+    color: #cbc5b6;
+  }
+  5% {
+    color: #ca9b81;
+  }
+  10% {
+    color: #cf9065;
+  }
+  15% {
+    color: #c48153;
+  }
+  20% {
+    color: #ca8589;
+  }
+  25% {
+    color: #c37376;
+  }
+  30% {
+    color: #672130;
+  }
+  35% {
+    color: #632f46;
+  }
+  40% {
+    color: #1e3f7b;
+  }
+  45% {
+    color: #3a5a8c;
+  }
+  50% {
+    color: #5677a1;
+  }
+  55% {
+    color: #94a9c7;
+  }
+  60% {
+    color: #54586b;
+  }
+  65% {
+    color: #516e56;
+  }
+  70% {
+    color: #63815e;
+  }
+  75% {
+    color: #1e3f7b;
+  }
+  80% {
+    color: #1e3f7b;
+  }
+  85% {
+    color: #3a5a8c;
+  }
+  90% {
+    color: #5677a1;
+  }
+  90% {
+    color: #94a9c7;
+  }
+  100% {
+    color: #cfdce7;
+  }
+} */
