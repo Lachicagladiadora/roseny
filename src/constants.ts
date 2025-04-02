@@ -84,6 +84,7 @@ export const PROJECTS: Project[] = [
       "https://lachicagladiadora.github.io/dashboard-project-html-css/",
     urlGitHub:
       "https://github.com/Lachicagladiadora/dashboard-project-html-css",
-    about: "",
+    about:
+      "Project to improve interface creation skills. An interface featuring dark mode, responsive design, and well-structured HTML was implemented.",
   },
 ];
