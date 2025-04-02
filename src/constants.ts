@@ -7,6 +7,13 @@ export const PROJECTS: Project[] = [
     name: "Diet Pixie",
     collaboration: false,
     coverImage: "/diet-pixie.png",
+    stack: [
+      "React",
+      "Typescript",
+      "Tailwind ",
+      "Astro",
+      "ev-component-library",
+    ],
     urlProject: "https://diet-pixie.roseny.dev/",
     urlGitHub: "",
     about:
@@ -16,6 +23,13 @@ export const PROJECTS: Project[] = [
     name: "Workout Tracker",
     collaboration: true,
     coverImage: "/workout-tracker.png",
+    stack: [
+      "React",
+      "Typescript",
+      "Tailwind ",
+      "Astro",
+      "ev-component-library",
+    ],
     urlProject: "https://pocket-budget.jimynicanor.com/",
     urlGitHub: "",
     about:
@@ -25,6 +39,7 @@ export const PROJECTS: Project[] = [
     name: "BitSip",
     collaboration: false,
     coverImage: "/bitsip.png",
+    stack: ["React", "Typescript", "Tailwind", "React Router Dom"],
     urlProject: "https://bitsip.roseny.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/bitsip",
     about:
@@ -34,6 +49,13 @@ export const PROJECTS: Project[] = [
     name: "Pocket Budget",
     collaboration: true,
     coverImage: "/pocket-budget.png",
+    stack: [
+      "React",
+      "Typescript",
+      "Tailwind ",
+      "Astro",
+      "ev-component-library",
+    ],
     urlProject: "https://pocket-budget.jimynicanor.com/",
     urlGitHub: "",
     about:
@@ -43,6 +65,13 @@ export const PROJECTS: Project[] = [
     name: "Card Quest",
     collaboration: true,
     coverImage: "/card-quest.png",
+    stack: [
+      "React",
+      "Typescript",
+      "Tailwind ",
+      "Astro",
+      "ev-component-library",
+    ],
     urlProject: "https://card-quest.jimynicanor.com/",
     urlGitHub: "",
     about:
@@ -52,6 +81,7 @@ export const PROJECTS: Project[] = [
     name: "ev-component-library",
     collaboration: true,
     coverImage: "/ev-component-library.png",
+    stack: ["React", "Typescript", "Tailwind ", "Storybook"],
     urlProject:
       "https://ev-component-library.jimynicanor.com/?path=/docs/ev-component-library--docs",
     urlGitHub: "",
@@ -62,6 +92,7 @@ export const PROJECTS: Project[] = [
     name: "Cartago ecommerce",
     collaboration: true,
     coverImage: "/cartago-ecommerce.png",
+    stack: [""],
     urlProject: "https://cartago.vercel.app/",
     urlGitHub: "https://github.com/DevCorvus/cartago",
     about:
@@ -71,6 +102,7 @@ export const PROJECTS: Project[] = [
     name: "Chuck Norris Jokes",
     collaboration: false,
     coverImage: "/chuck-norris-jokes.png",
+    stack: [""],
     urlProject: "https://lachicagladiadora.github.io/chuck-norris-jokes/",
     urlGitHub: "https://github.com/Lachicagladiadora/chuck-norris-jokes",
     about:
@@ -80,6 +112,7 @@ export const PROJECTS: Project[] = [
     name: "Social Media Dashboard",
     collaboration: false,
     coverImage: "/social-media-dashboard.jpg",
+    stack: [""],
     urlProject:
       "https://lachicagladiadora.github.io/dashboard-project-html-css/",
     urlGitHub:
