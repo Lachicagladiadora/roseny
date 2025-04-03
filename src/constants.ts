@@ -92,7 +92,16 @@ export const PROJECTS: Project[] = [
     name: "Cartago ecommerce",
     collaboration: true,
     coverImage: "/cartago-ecommerce.png",
-    stack: [""],
+    stack: [
+      "React",
+      "Typescript",
+      "Nextjs",
+      "Tailwind",
+      "Prisma",
+      "React Form",
+      "Zustand",
+      "Aws",
+    ],
     urlProject: "https://cartago.vercel.app/",
     urlGitHub: "https://github.com/DevCorvus/cartago",
     about:
@@ -102,7 +111,7 @@ export const PROJECTS: Project[] = [
     name: "Chuck Norris Jokes",
     collaboration: false,
     coverImage: "/chuck-norris-jokes.png",
-    stack: [""],
+    stack: ["HTML", "CSS", "JavaScript"],
     urlProject: "https://lachicagladiadora.github.io/chuck-norris-jokes/",
     urlGitHub: "https://github.com/Lachicagladiadora/chuck-norris-jokes",
     about:
@@ -112,7 +121,7 @@ export const PROJECTS: Project[] = [
     name: "Social Media Dashboard",
     collaboration: false,
     coverImage: "/social-media-dashboard.jpg",
-    stack: [""],
+    stack: ["HTML", "CSS", "JavaScript"],
     urlProject:
       "https://lachicagladiadora.github.io/dashboard-project-html-css/",
     urlGitHub:
