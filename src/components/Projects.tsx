@@ -18,6 +18,9 @@ export const Projects = () => {
                 ({c.collaboration ? "collaboration" : "personal project"})
               </span>
             </div>
+<div class"flex flex-wrap gap-4">
+	{c.tech.map((cur)=><div class=”px-4 py-2 border border-second text-second rounded-full ”>{cur}<div/>)}
+<div/>
             <div>
               <p className="py-3 indent-12">{c.about}</p>
               <div className="flex gap-6">
