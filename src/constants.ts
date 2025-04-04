@@ -1,5 +1,3 @@
-// export const BLOG_NAME = "Knowbud";
-
 import type { Project } from "./types";
 
 export const PROJECTS: Project[] = [
@@ -13,6 +11,7 @@ export const PROJECTS: Project[] = [
       "Tailwind ",
       "Astro",
       "ev-component-library",
+			"Playwright",
     ],
     urlProject: "https://diet-pixie.roseny.dev/",
     urlGitHub: "",
@@ -39,7 +38,7 @@ export const PROJECTS: Project[] = [
     name: "BitSip",
     collaboration: false,
     coverImage: "/bitsip.png",
-    stack: ["React", "Typescript", "Tailwind", "React Router Dom"],
+    stack: ["React", "Typescript", "Tailwind", "React Router Dom", "Vitest", "Cypress"],
     urlProject: "https://bitsip.roseny.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/bitsip",
     about:
