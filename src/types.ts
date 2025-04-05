@@ -2,7 +2,7 @@ export type Project = {
   name: string;
   collaboration: boolean;
   coverImage: string;
-  stack: string[];
+  technologies: string[];
   urlProject: string;
   urlGitHub: string;
   about: string;

@@ -5,13 +5,13 @@ export const PROJECTS: Project[] = [
     name: "Diet Pixie",
     collaboration: false,
     coverImage: "/diet-pixie.png",
-    stack: [
+    technologies: [
       "React",
       "Typescript",
       "Tailwind ",
       "Astro",
       "ev-component-library",
-			"Playwright",
+      "Playwright",
     ],
     urlProject: "https://diet-pixie.roseny.dev/",
     urlGitHub: "",
@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     name: "Workout Tracker",
     collaboration: true,
     coverImage: "/workout-tracker.png",
-    stack: [
+    technologies: [
       "React",
       "Typescript",
       "Tailwind ",
@@ -38,7 +38,14 @@ export const PROJECTS: Project[] = [
     name: "BitSip",
     collaboration: false,
     coverImage: "/bitsip.png",
-    stack: ["React", "Typescript", "Tailwind", "React Router Dom", "Vitest", "Cypress"],
+    technologies: [
+      "React",
+      "Typescript",
+      "Tailwind",
+      "React Router Dom",
+      "Vitest",
+      "Cypress",
+    ],
     urlProject: "https://bitsip.roseny.dev/",
     urlGitHub: "https://github.com/Lachicagladiadora/bitsip",
     about:
@@ -48,7 +55,7 @@ export const PROJECTS: Project[] = [
     name: "Pocket Budget",
     collaboration: true,
     coverImage: "/pocket-budget.png",
-    stack: [
+    technologies: [
       "React",
       "Typescript",
       "Tailwind ",
@@ -64,7 +71,7 @@ export const PROJECTS: Project[] = [
     name: "Card Quest",
     collaboration: true,
     coverImage: "/card-quest.png",
-    stack: [
+    technologies: [
       "React",
       "Typescript",
       "Tailwind ",
@@ -80,7 +87,7 @@ export const PROJECTS: Project[] = [
     name: "ev-component-library",
     collaboration: true,
     coverImage: "/ev-component-library.png",
-    stack: ["React", "Typescript", "Tailwind ", "Storybook"],
+    technologies: ["React", "Typescript", "Tailwind ", "Storybook"],
     urlProject:
       "https://ev-component-library.jimynicanor.com/?path=/docs/ev-component-library--docs",
     urlGitHub: "",
@@ -91,7 +98,7 @@ export const PROJECTS: Project[] = [
     name: "Cartago ecommerce",
     collaboration: true,
     coverImage: "/cartago-ecommerce.png",
-    stack: [
+    technologies: [
       "React",
       "Typescript",
       "Nextjs",
@@ -110,7 +117,7 @@ export const PROJECTS: Project[] = [
     name: "Chuck Norris Jokes",
     collaboration: false,
     coverImage: "/chuck-norris-jokes.png",
-    stack: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript"],
     urlProject: "https://lachicagladiadora.github.io/chuck-norris-jokes/",
     urlGitHub: "https://github.com/Lachicagladiadora/chuck-norris-jokes",
     about:
@@ -120,7 +127,7 @@ export const PROJECTS: Project[] = [
     name: "Social Media Dashboard",
     collaboration: false,
     coverImage: "/social-media-dashboard.jpg",
-    stack: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript"],
     urlProject:
       "https://lachicagladiadora.github.io/dashboard-project-html-css/",
     urlGitHub:
