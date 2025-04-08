@@ -18,13 +18,20 @@ export const Projects = () => {
                 ({c.collaboration ? "collaboration" : "personal project"})
               </span>
             </div>
+            <div className="w-full py-4 flex flex-wrap gap-2">
+              {c.technologies.map((current) => (
+                <div className="px-2 py-1 border border-second-light text-second-light text-sm rounded-full">
+                  {current}
+                </div>
+              ))}
+            </div>
             <div>
               <p className="py-3 indent-12">{c.about}</p>
               <div className="flex gap-6">
                 <a
                   href={c.urlProject}
                   target="_blank"
-                  className="font-semibold flex gap-2 items-center justify-center hover:text-second"
+                  className="font-semibold flex gap-2 items-center justify-center hover:text-second-dark"
                 >
                   Website <ArrowTopRightOnSquare className="size-4 md:size-7" />
                 </a>
