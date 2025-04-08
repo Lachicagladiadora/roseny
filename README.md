@@ -1,15 +1,12 @@
-# Personal website
+# Roseny website
 
 This website created with Astro, React and TypeScript with the purpose of sharing development concepts and projects mine.
-
-![screenshot-website](./public/roseny-website.png)
 
 [🔗 Website preview](https://roseny.dev/)
 
 ## Features
 
 - Responsive design
-- Dark mode
 - Immersive
 
 ## How to run
