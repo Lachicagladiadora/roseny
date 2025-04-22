@@ -65,26 +65,26 @@ html {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  50% {
-    background: linear-gradient(#672130 40%, #632f46 90%);
+  /* 50% {
+    background: linear-gradient(#672130 40%, #ca8589 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+  } */
   60% {
-    background: linear-gradient(#632f46 40%, #94a9c7 90%);
+    background: linear-gradient(#ca8589 40%, #5677a1 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   70% {
-    background: linear-gradient(#94a9c7 40%, #1e3f7b 90%);
+    background: linear-gradient(#5677a1 40%, #516e56 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  80% {
+  /* 80% {
     background: linear-gradient(#1e3f7b 20%, #516e56 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+  } */
   90% {
     /* transition: 5s; */
     background: linear-gradient(#516e56 40%, #94a9c7 90%);

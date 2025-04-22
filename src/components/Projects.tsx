@@ -18,9 +18,9 @@ export const Projects = () => {
                 ({c.collaboration ? "collaboration" : "personal project"})
               </span>
             </div>
-            <div className="w-full py-4 flex flex-wrap gap-2">
+            <div className="w-full py-4 flex flex-wrap gap-1">
               {c.technologies.map((current) => (
-                <div className="px-2 py-1 border border-second-light text-second-light text-sm rounded-full">
+                <div className="px-2 py-[2px]  bg-second-light text-obscure text-sm rounded-full">
                   {current}
                 </div>
               ))}
