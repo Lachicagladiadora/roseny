@@ -9,7 +9,6 @@ export function ArrowTopRightOnSquare(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      // className="size-5"
       {...props}
     >
       <path
