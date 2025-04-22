@@ -27,16 +27,9 @@ html {
 }
 
 .frontend {
-  /* background: linear-gradient(#63815e 30%, #1e3f7b 90%); */
-  /* background-clip: text;
-  -webkit-text-fill-color: transparent; */
   animation: subtitle-animation infinite 2.5s ease-out;
-  transition: all;
-  /* &:hover { */
-  /* animation: section-animation 10 alternate 2s ease-out; */
-  /* transition: all; */
   /* animation: text-animation 10 alternate 5s ease-out; */
-  /* } */
+  transition: all;
 }
 
 @keyframes subtitle-animation {
@@ -65,28 +58,19 @@ html {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  50% {
-    background: linear-gradient(#672130 40%, #632f46 90%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+
   60% {
-    background: linear-gradient(#632f46 40%, #94a9c7 90%);
+    background: linear-gradient(#ca8589 40%, #5677a1 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   70% {
-    background: linear-gradient(#94a9c7 40%, #1e3f7b 90%);
+    background: linear-gradient(#5677a1 40%, #516e56 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  80% {
-    background: linear-gradient(#1e3f7b 20%, #516e56 90%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+
   90% {
-    /* transition: 5s; */
     background: linear-gradient(#516e56 40%, #94a9c7 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
