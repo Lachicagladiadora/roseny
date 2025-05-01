@@ -10,7 +10,7 @@ image:
 tags: ["git", "dev", "learn", "basic concepts", "commands"]
 ---
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-obscure-dark dark:text-blank-light'>Basic concepts</h2>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-obscure-dark dark:text-blank-light'>Basic concepts about Git</h2>
 
 1. **GIT(VCS- _Version Control System_)**:
    Software which save changes history

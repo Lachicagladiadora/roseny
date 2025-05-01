@@ -19,8 +19,11 @@ export const Projects = () => {
               </span>
             </div>
             <div className="w-full py-4 flex flex-wrap gap-1">
-              {c.technologies.map((current) => (
-                <div className="px-2 py-[2px]  bg-second-light text-obscure text-sm rounded-full">
+              {c.technologies.map((current, index) => (
+                <div
+                  key={index}
+                  className="px-2 py-[2px]  bg-second-light text-obscure text-sm rounded-full"
+                >
                   {current}
                 </div>
               ))}
