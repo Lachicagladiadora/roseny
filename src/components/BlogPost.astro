@@ -12,7 +12,7 @@ const { urlPost, title, author, description, date, coverImage } = Astro.props;
 ---
 
 <li
-  class="h-[260px] w-[260px] rounded-lg p-4 flex flex-col items-center justify-center bg-second-light/40 shadow-md dark:shadow-obscure-light
+  class="h-[260px] w-[260px] rounded-lg p-4 flex flex-col bg-blank-dark items-center justify-center shadow-md dark:shadow-obscure-light
 group/title group/image hover:bg-blank-dark text-obscure-dark dark:text-blank-light dark:hover:bg-obscure-light dark:bg-first-dark/50 md:h-[290px] md:w-[290px] lg:h-[380px] lg:w-[380px] xl:w-[422px] xl:h-[422px]"
 >
   <a
@@ -21,7 +21,7 @@ group/title group/image hover:bg-blank-dark text-obscure-dark dark:text-blank-li
   >
     <header class="w-full flex-1 flex flex-col gap-2 overflow-hidden">
       <h2
-        class="text-xl font-bold text-obscure dark:text-second-light title group-hover/title:text-obscure-light dark:group-hover/title:text-second-light"
+        class="text-xl font-bold text-obscure title group-hover/title:text-obscure-light dark:group-hover/title:text-second-light"
       >
         {title}
       </h2>
@@ -35,10 +35,8 @@ group/title group/image hover:bg-blank-dark text-obscure-dark dark:text-blank-li
         />
       </div>
     </header>
-    <main class="w-full h-16 text-sm">
-      <p
-        class="text-obscure/60 mb-2 italic flex items-center justify-between text-xs dark:text-blank-light/60"
-      >
+    <main class="w-full h-16 text-sm text-obscure">
+      <p class="mb-2 italic flex items-center justify-between text-xs">
         <span>{author}</span>
         <span>{date}</span>
       </p>
