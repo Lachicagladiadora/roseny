@@ -128,8 +128,7 @@ export const PROJECTS: Project[] = [
     collaboration: false,
     coverImage: "/social-media-dashboard.jpg",
     technologies: ["HTML", "CSS", "JavaScript"],
-    urlProject:
-      "https://lachicagladiadora.github.io/dashboard-project-html-css/",
+    urlProject: "https://lachicagladiadora.github.io/social-media-dashboard/",
     urlGitHub:
       "https://github.com/Lachicagladiadora/dashboard-project-html-css",
     about:
