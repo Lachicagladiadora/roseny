@@ -10,7 +10,7 @@ image:
 tags: ["git", "dev", "learn", "basic concepts", "commands"]
 ---
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-obscure-dark dark:text-blank-light'>Basic concepts about Git</h2>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-blank-light'>Basic concepts about Git</h2>
 
 1. **GIT(VCS- _Version Control System_)**:
    Software which save changes history
@@ -27,7 +27,7 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 7. **MERGE**:
    Join changes
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-obscure-dark dark:text-blank-light'>Main characteristics</h2>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-blank-light'>Main characteristics</h2>
 <ul class='list-disc list-inside'>
 <li>Does not require internet</li>
 <li>Is fast</li>
@@ -35,39 +35,39 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 <li>Data Integrity: Clones created from data; therefore the data is the equal, clean and not corrupted.</li>
 </ul>
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-obscure-dark dark:text-blank-light'>Workflow</h2>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-blank-light'>Workflow</h2>
 
 <img src='/workflow.png' alt='git workflow'>
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-obscure-dark dark:text-blank-light'>Tools</h2>
-<h3 class='pt-6 pb-2 text-2xl text-obscure-dark dark:text-blank-light'>Terminal</h3>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-blank-light'>Tools</h2>
+<h3 class='pt-6 pb-2 text-2xl text-blank-light'>Terminal</h3>
 <ol class='list-inside list-disc'>
 	<li>Command line</li>
 	</ol>
-<h3 class='pt-6 pb-2 text-2xl text-obscure-dark dark:text-blank-light'>Graphic clients</h3>
+<h3 class='pt-6 pb-2 text-2xl text-blank-light'>Graphic clients</h3>
   <ol class='list-inside list-disc'>
 	<li>Gitkraken</li>
   <li>Sourcetree</li>
   <li>GithubDesktop</li>
 	</ol>
-<h3 class='pt-6 pb-2 text-2xl text-obscure-dark dark:text-blank-light'>Cloud repositories</h3>
+<h3 class='pt-6 pb-2 text-2xl text-blank-light'>Cloud repositories</h3>
 	 <ol class='list-inside list-disc'>
 	<li>Github</li>
   <li>Bitbucket</li>
   <li>GitLab</li>
 	</ol>
-<h3 class='pt-6 pb-2 text-2xl text-obscure-dark dark:text-blank-light'>In visual studio code (Extensions for VScode)</h3>
+<h3 class='pt-6 pb-2 text-2xl text-blank-light'>In visual studio code (Extensions for VScode)</h3>
 		 <ol class='list-inside list-disc'>
 	<li>Git Graph</li>
   <li>Git Lents</li>
 	</ol>
 
-<h2 class='pt-6 pb-2 text-2xl font-bold text-obscure-dark dark:text-blank-light'>Commands</h2>
+<h2 class='pt-6 pb-2 text-2xl font-bold text-blank-light'>Commands</h2>
 <div class='w-full flex items-center justify-center'>
 <img src='/workflow-command.png' alt='git command workflow'>
 </div>
 
-<h3 class='pt-6 pb-2 text-2xl text-obscure-dark dark:text-blank-light'>Essentials</h3>
+<h3 class='pt-6 pb-2 text-2xl font-bold text-blank-light'>Essentials</h3>
 <p>Start tracking in git</p>
 <code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git init</code>
 
@@ -77,7 +77,7 @@ tags: ["git", "dev", "learn", "basic concepts", "commands"]
 <p>Add to git repository</p>
 <code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git commit</code>
 
-<h3 class='pt-6 pb-2 text-2xl text-obscure-dark dark:text-blank-light'>Complementary</h3>
+<h3 class='pt-6 pb-2 font-bold text-2xl text-blank-light'>Complementary</h3>
 <p>Add all changes to stage</p>
 <code class='block my-3 px-4 py-2 rounded-md bg-obscure-dark text-blank-light dark:bg-blank-light dark:text-obscure-dark'>git add .</code>
 
