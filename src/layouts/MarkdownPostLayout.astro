@@ -54,16 +54,23 @@ const { frontmatter } = Astro.props;
 
     <article class="w-full relative text-obscure-dark dark:text-blank-light">
       <slot />
-      <p class="w-full py-6 text-obscure/50 text-right dark:text-blank/50">
+      <p class="w-full py-6 text-second-dark text-base">
         by <span class="text-neutral-500 italic">{frontmatter.author}</span>
       </p>
-      <div class="w-full flex items-centerjustify-between gap-4">
+      <div class="w-full flex items-center justify-between gap-4">
         <a
           href="/blog"
-          class="p-2 flex gap-2 items-center rounded-lg font-bold text-second"
+          class="p-2 flex gap-2 items-center rounded-lg font-bold text-blank-light hover:text-second"
           title="More blog posts"
         >
           <ArrowBack />More posts
+        </a>
+        <a
+          href="#body-element"
+          class="p-2 flex gap-2 items-center rounded-lg font-bold text-blank-light hover:text-second"
+          title="Go to top of post"
+        >
+          <Arrow className="size-10 -rotate-[135deg]" /> Go to start
         </a>
       </div>
     </article>
