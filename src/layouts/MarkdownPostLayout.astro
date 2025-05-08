@@ -2,6 +2,8 @@
 // import { LeftArrow } from "../components/icons/LeftArrow";
 // import { UpArrow } from "../components/icons/UpArrow";
 // import { peruDateFormatter } from "../utils";
+import { Arrow } from "../components/icons/Arrow";
+import { ArrowBack } from "../components/icons/ArrowBack";
 import BaseLayout from "./BaseLayout.astro";
 
 const { frontmatter } = Astro.props;
@@ -55,20 +57,13 @@ const { frontmatter } = Astro.props;
       <p class="w-full py-6 text-obscure/50 text-right dark:text-blank/50">
         by <span class="text-neutral-500 italic">{frontmatter.author}</span>
       </p>
-      <div class="w-full py-10 flex items-center justify-between gap-4">
-        <a
-          class="text-4xl p-2 rounded-full absolute right-1 bg-first text-blank-light hover:text-obscure-dark hover:bg-first-light dark:bg-second dark:text-obscure-dark dark:hover:text-blank-light dark:hover:bg-second-dark"
-          href="#body-element"
-          title="Go to top of post"
-        >
-          <!-- <UpArrow /> -->
-        </a>
+      <div class="w-full flex items-centerjustify-between gap-4">
         <a
           href="/blog"
-          class="p-2 flex gap-2 items-center rounded-lg font-bold text-obscure hover:text-blank hover:bg-obscure-dark dark:text-second dark:hover:text-obscure-dark dark:hover:bg-second-dark"
+          class="p-2 flex gap-2 items-center rounded-lg font-bold text-second"
           title="More blog posts"
         >
-          <!-- <LeftArrow />More posts -->
+          <ArrowBack />More posts
         </a>
       </div>
     </article>
