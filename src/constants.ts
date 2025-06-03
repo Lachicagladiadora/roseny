@@ -116,6 +116,16 @@ export const PROJECTS: Project[] = [
   {
     name: "Chuck Norris Jokes",
     collaboration: false,
+    coverImage: "/to-do.png",
+    technologies: ["Vite", "React", "Typescript", "Tailwind"],
+    urlProject: "https://to-do-list-pi-wheat-12.vercel.app/",
+    urlGitHub: "https://github.com/Lachicagladiadora/to-do",
+    about:
+      "To-do list with react and typescript, styles with react styles. This application allows you to create to-dos to mark them once completed, and you can also delete all completed to-dos. The input is used to create new to-do and also as a search engine as you type.",
+  },
+  {
+    name: "Chuck Norris Jokes",
+    collaboration: false,
     coverImage: "/chuck-norris-jokes.png",
     technologies: ["HTML", "CSS", "JavaScript"],
     urlProject: "https://lachicagladiadora.github.io/chuck-norris-jokes/",
