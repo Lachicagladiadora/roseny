@@ -16,7 +16,6 @@
     "@astrojs/react": "^3.6.3",
     "@astrojs/rss": "^4.0.9",
     "@astrojs/tailwind": "^5.1.2",
-    "@iconify-json/mdi": "^1.2.1",
     "astro": "^4.16.14",
     "astro-icon": "^1.1.1",
     "react": "^18.3.1",
