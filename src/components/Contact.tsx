@@ -7,7 +7,7 @@ export const Contact = () => {
   return (
     <section className="flex flex-col gap-8 items-center justify-center">
       <a
-        href="mailto:dev.roseny@gmail.com"
+        href="mailto:contact@roseny.dev"
         target="_blank"
         className="flex flex-col items-center justify-center gap-1  hover:text-second-dark"
       >

@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
       "Tailwind ",
       "ev-component-library",
     ],
-    urlProject: "https://pocket-budget.jimynicanor.com/",
+    urlProject: "https://worktrack.jimynicanor.com/",
     urlGitHub: "",
     about:
       "Do you need to track your exercise? Implemented with ev-component-library, it stores data in IndexedDB. It allows for detailed exercise tracking based on your routine.",
@@ -116,7 +116,7 @@ export const PROJECTS: Project[] = [
   {
     name: "To Do",
     collaboration: false,
-    coverImage: "/to-do.png",
+    coverImage: "/to-do.jpg",
     technologies: ["Vite", "React", "Typescript", "Tailwind"],
     urlProject: "https://to-do-list-pi-wheat-12.vercel.app/",
     urlGitHub: "https://github.com/Lachicagladiadora/to-do",

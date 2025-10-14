@@ -14,22 +14,54 @@
     45deg,
     rgb(var(--accent)),
     rgb(var(--accent-light)) 30%,
-    white 60%
+    rgb(255, 255, 255) 60%
   );
 }
 
 html {
   transition: all 1s ease-out;
   overflow-y: scroll;
-  scroll-snap-align: center;
-  scrollbar-width: thin;
-  scrollbar-color: #252238 #54586b;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #252238;
+  border-radius: 5px;
+  border: 2px solid #54586b;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #54586b;
+}
+
+html::-webkit-scrollbar-button:vertical {
+  background-color: #54586b;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center;
+}
+
+html::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+html::-webkit-scrollbar-button:vertical:increment {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+html::-webkit-scrollbar-button:hover {
+  background-color: #999999;
 }
 
 .frontend {
-  animation: subtitle-animation infinite 2.5s ease-out;
+  animation: subtitle-animation infinite 2.5s ease;
   /* animation: text-animation 10 alternate 5s ease-out; */
-  transition: all;
+
+  /* transition: background-color 1s ease; */
 }
 
 @keyframes subtitle-animation {
@@ -54,7 +86,7 @@ html {
     -webkit-text-fill-color: transparent;
   }
   40% {
-    background: linear-gradient(#c37376 20%, #672130 90%);
+    background: linear-gradient(#c37376 20%, #9a0d2c 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
